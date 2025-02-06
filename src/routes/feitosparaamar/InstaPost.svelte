@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let classes = "";
+  let { classes = "" } = $props();
 </script>
 
 <div class={classes}>

@@ -23,7 +23,7 @@
         </div>
 
         {#if ($vw < 768)}
-            <span>2024</span>
+            <span>2025</span>
         {/if}
     </div>
 </footer>

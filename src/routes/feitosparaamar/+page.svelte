@@ -46,14 +46,14 @@
 
 <Section2About/>
 
-<section class="bg-[var(--theme-yellow)] flex justify-center items-center px-4 py-12">
+<section class="bg-(--theme-yellow) flex justify-center items-center px-4 py-12">
     <img class="w-full md:w-1/2 md:mr-44" src="/img/lado-a-lado-frase.svg"
          alt="E viveram lado a lado para sempre"/>
 </section>
 
 <Section3Horario/>
 
-<section class="flex flex-row bg-[var(--theme-yellow)] h-[140px] md:h-[200px]">
+<section class="flex flex-row bg-(--theme-yellow) h-[140px] md:h-[200px]">
     <div class="md:translate-x-[65%]">
         <img alt="maos-em-concha" src="/img/drawings/maos-em-concha.svg"/>
     </div>

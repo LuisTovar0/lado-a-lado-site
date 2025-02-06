@@ -13,7 +13,7 @@
                 <span class="text-right">Universidade Católica</span>
             </div>
         </div>
-        <hr class="!border-t-2 !border-[var(--theme-red)]"/>
+        <hr class="!border-t-2 !border-(--theme-red)"/>
         <div class="momento">
             <div>
                 <span>18h00</span>
