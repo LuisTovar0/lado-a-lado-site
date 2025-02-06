@@ -29,7 +29,7 @@
 </style>
 
 <header class="hidden md:flex justify-between">
-    <a href="/" class="bg-(--theme-brown)">
+    <a href="/" class="bg-[var(--theme-brown)]">
         <img class="w-4/5" src="/img/logo-name-yellow.svg" alt="Lado a Lado"/>
     </a>
     <a>Quem somos</a>
@@ -41,7 +41,7 @@
     <a>Doações</a>
 </header>
 
-<button class="md:hidden absolute top-4 right-4 bg-(--theme-brown) rounded-full h-8 w-8 grid place-content-center">
+<button class="md:hidden absolute top-4 right-4 bg-[var(--theme-brown)] rounded-full h-8 w-8 grid place-content-center">
     <img src="/img/icons/menu.svg" alt="menu" height="24" width="24"/>
 </button>
 
@@ -50,7 +50,7 @@
 
     <img src="/img/logo-name-yellow.svg" alt="Lado a Lado" class="h-[7%] absolute top-[5%] left-[5%]"/>
 
-    <div class="h-1/2 w-5/6 absolute top-1/6 left-1/2 translate-x-[-50%]">
+    <div class="h-1/2 w-5/6 absolute top-[15%] left-1/2 translate-x-[-50%]">
         <h1 class="fruits-delight text-6xl ">Inspirar jovens a encontrar no amor* o sentido da vida</h1>
         <h2 class="text-xl">Um projeto que visa blah blah, através de blah blah blah e não sei que mais</h2>
         <div class="_4-buttons mt-4 grid gap-4 grid-cols-2">
