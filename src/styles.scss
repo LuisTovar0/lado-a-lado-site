@@ -39,9 +39,15 @@ body {
   --theme-black: hsl(0, 0%, 0%);
 }
 
-.color-red {
-  color: var(--theme-red);
-}
+.bg-white { background-color: var(--theme-white); }
+
+.bg-yellow { background-color: var(--theme-yellow); }
+
+.color-red { color: var(--theme-red); }
+
+.color-brown { color: var(--theme-brown); }
+
+.color-black { color: var(--theme-black); }
 
 .mono {
   font-family: "OverpassMono", monospace;
