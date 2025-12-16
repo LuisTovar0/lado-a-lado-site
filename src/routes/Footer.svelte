@@ -7,7 +7,7 @@
         <img src="/img/logo-name-white.svg" alt="Lado a Lado escrito à mão"/>
 
         {#if ($vw >= 768)}
-            <span>2024</span>
+            <span>2026</span>
         {/if}
 
         <div class="flex gap-10 items-center">
@@ -23,7 +23,7 @@
         </div>
 
         {#if ($vw < 768)}
-            <span>2025</span>
+            <span>2026</span>
         {/if}
     </div>
 </footer>

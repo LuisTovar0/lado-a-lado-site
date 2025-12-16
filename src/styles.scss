@@ -60,38 +60,3 @@ body {
 .fruits-delight {
   font-family: "FruitsDelight", "Bush Script MT", fantasy;
 }
-
-/* Theme utilities (small set used by the page) */
-.bg-red { background-color: var(--theme-red); }
-.text-red { color: var(--theme-red); }
-.border-red { border-color: var(--theme-red); }
-
-.bg-brown { background-color: var(--theme-brown); }
-.border-brown { border-color: var(--theme-brown); }
-
-.btn-red {
-  background-color: var(--theme-red);
-  color: white;
-}
-.btn-red:hover { opacity: 0.92; }
-
-.btn-outline-red {
-  background: transparent;
-  border: 2px solid var(--theme-red);
-  color: var(--theme-red);
-}
-.btn-outline-red:hover {
-  background: var(--theme-red);
-  color: white;
-}
-
-.btn-outline-brown {
-  background: transparent;
-  border: 2px solid var(--theme-brown);
-  color: var(--theme-brown);
-}
-.btn-outline-brown:hover {
-  background: var(--theme-brown);
-  color: white;
-}
-
