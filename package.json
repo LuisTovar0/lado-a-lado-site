@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "vite":"vite",
     "dev": "vite dev",
     "build": "vite build",
     "preview": "vite preview",
@@ -10,19 +11,19 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
   },
   "devDependencies": {
-    "@sveltejs/adapter-auto": "^3.2.2",
-    "@sveltejs/adapter-node": "^5.2.0",
-    "@sveltejs/kit": "^2.5.18",
-    "@sveltejs/vite-plugin-svelte": "^3.1.1",
-    "autoprefixer": "^10.4.19",
-    "postcss": "^8.4.39",
-    "sass": "^1.77.6",
-    "svelte": "5.0.0-next.168",
-    "svelte-check": "^3.8.4",
-    "tailwindcss": "^3.4.4",
-    "tslib": "^2.6.3",
-    "typescript": "^5.5.2",
-    "vite": "^5.3.2"
+    "@sveltejs/adapter-auto": "^3.3.1",
+    "@sveltejs/adapter-node": "^5.4.0",
+    "@sveltejs/kit": "^2.49.2",
+    "@sveltejs/vite-plugin-svelte": "^4.0.4",
+    "autoprefixer": "^10.4.22",
+    "postcss": "^8.5.6",
+    "sass": "^1.96.0",
+    "svelte": "^5.45.8",
+    "svelte-check": "^3.8.6",
+    "tailwindcss": "^3.4.19",
+    "tslib": "^2.8.1",
+    "typescript": "^5.9.3",
+    "vite": "^5.4.21"
   },
   "type": "module"
 }

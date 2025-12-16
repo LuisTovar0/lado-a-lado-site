@@ -39,7 +39,7 @@
             </div>
             <div>
                 <div>
-                    <img src="/img/fvc.png" alt="Francisco Vilhena da Cunha"/>
+                    <img src="/img/fpa/fvc.png" alt="Francisco Vilhena da Cunha"/>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
             </div>
             <div>
                 <div>
-                    <img src="/img/pba.png" alt="Pe. Bernardo Aranha" class="relative top-1 right-1 scale-110"/>
+                    <img src="/img/fpa/pba.png" alt="Pe. Bernardo Aranha" class="relative top-1 right-1 scale-110"/>
                 </div>
             </div>
         </div>
@@ -71,10 +71,10 @@
             </div>
             <div class="flex">
                 <div class="over">
-                    <img src="/img/javi.png" alt="Javier Calderón" class="javi"/>
+                    <img src="/img/fpa/javi.png" alt="Javier Calderón" class="javi"/>
                 </div>
                 <div>
-                    <img src="/img/alex.png" alt="Alexandra Chumbo"/>
+                    <img src="/img/fpa/alex.png" alt="Alexandra Chumbo"/>
                 </div>
             </div>
         </div>
@@ -98,7 +98,7 @@
             </div>
             <div>
                 <div>
-                    <img class="relative right-3 top-1 scale-110" src="/img/rodolfo.png" alt="Rodolfo Nona"/>
+                    <img class="relative right-3 top-1 scale-110" src="/img/fpa/rodolfo.png" alt="Rodolfo Nona"/>
                 </div>
             </div>
         </div>
@@ -114,7 +114,7 @@
             </div>
             <div>
                 <div>
-                    <img class="relative left-1/2 -translate-x-1/2 scale-110 top-1" src="/img/mig.png"
+                    <img class="relative left-1/2 -translate-x-1/2 scale-110 top-1" src="/img/fpa/mig.png"
                          alt="Graça e Miguel Varão"/>
                 </div>
             </div>
@@ -131,7 +131,7 @@
             </div>
             <div>
                 <div>
-                    <img class="relative right-2" src="/img/var.png" alt="Vasco Almeida Ribeiro"/>
+                    <img class="relative right-2" src="/img/fpa/var.png" alt="Vasco Almeida Ribeiro"/>
                 </div>
             </div>
         </div>
@@ -147,7 +147,7 @@
             </div>
             <div>
                 <div>
-                    <img class="relative scale-[1.4] bottom-4 right-1" src="/img/fati.png"
+                    <img class="relative scale-[1.4] bottom-4 right-1" src="/img/fpa/fati.png"
                          alt="Fátima e Henrique Fonseca"/>
                 </div>
             </div>
