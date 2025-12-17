@@ -18,7 +18,7 @@
 
 <!-- Hero Section -->
 <section
-	class="min-h-screen bg-white flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden"
+	class="hero min-h-screen bg-white flex flex-col items-center justify-center px-4 py-8 relative overflow-hidden"
 >
 	<div class="absolute top-8 left-1/2 transform -translate-x-1/2 z-10">
 		<img
@@ -32,7 +32,7 @@
 		<h1
 			class="rubik color-brown text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight"
 		>
-			Foste feito<br />para <span class="color-red">amar.</span>
+			Foste feito<br />para <span class="color-red">amar</span>.
 		</h1>
 
 		<p
@@ -44,25 +44,18 @@
 		<button class="reddy-button"> Descobre Como </button>
 	</div>
 
-	<div
-		id="stats"
-		class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-8"
-	>
-		<div class="p-6">
-			<h3 class="rubik color-red text-3xl font-bold mb-2">3500+</h3>
-			<p class="mono color-brown text-lg font-semibold">
-				Jovens impactados
-			</p>
+	<div class="stats grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-8">
+		<div>
+			<h3>3500+</h3>
+			<p>Jovens impactados</p>
 		</div>
-		<div class="p-6">
-			<h3 class="rubik color-red text-3xl font-bold mb-2">40+</h3>
-			<p class="mono color-brown text-lg font-semibold">
-				Eventos realizados
-			</p>
+		<div>
+			<h3>40+</h3>
+			<p>Eventos realizados</p>
 		</div>
-		<div class="p-6">
-			<h3 class="rubik color-red text-3xl font-bold mb-2">35+</h3>
-			<p class="mono color-brown text-lg font-semibold">Voluntários</p>
+		<div>
+			<h3>35+</h3>
+			<p>Voluntários</p>
 		</div>
 	</div>
 </section>
@@ -128,11 +121,22 @@
 			</p>
 		</div>
 		<div class="flex justify-end irems-center gap-8">
-			<a class="h-16 w-16" href="https://open.spotify.com/show/79y8yNDSivKHovVU28g4oI?si=7f2c649a98df410e">
-				<img src="/img/icons/spoti.svg" alt="Spotify" class="podcast-icon" />
+			<a
+				class="h-16 w-16"
+				href="https://open.spotify.com/show/79y8yNDSivKHovVU28g4oI?si=7f2c649a98df410e"
+			>
+				<img
+					src="/img/icons/spoti.svg"
+					alt="Spotify"
+					class="podcast-icon"
+				/>
 			</a>
 			<a class="h-20 w-20" href="https://www.youtube.com/@lado_a_lado">
-				<img src="/img/icons/yt.svg" alt="YouTube" class="podcast-icon" />
+				<img
+					src="/img/icons/yt.svg"
+					alt="YouTube"
+					class="podcast-icon"
+				/>
 			</a>
 		</div>
 	</div>
@@ -261,6 +265,19 @@
 </section>
 
 <style lang="scss">
+	.hero .stats div {
+		@apply p-6;
+		h3 {
+			@apply text-5xl font-bold mb-2;
+			font-family: "Rubiks", sans-serif;
+			color: var(--theme-brown);
+		}
+		p {
+			@apply text-lg;
+			color: var(--theme-red);
+			font-family: "Open Sans", sans-serif;
+		}
+	}
 	.reddy-button {
 		font-family: "OverpassMono", monospace;
 		text-transform: uppercase;
