@@ -22,9 +22,9 @@
     const sections = [
         [ 'eventos', 'Eventos' ],
         [ 'campos', 'Campos' ],
-        [ 'podcasts', 'Podcasts' ],
         [ 'cursos', 'Cursos' ],
-        [ 'voluntariado', 'Voluntariado' ],
+        [ 'podcasts', 'Podcast' ],
+        [ 'meias', 'Merch' ],
         [ 'doacoes', 'Doações' ],
     ] as const;
     let activeSection = $state('');
@@ -208,7 +208,7 @@
 </section>
 
 <!-- Meias Section -->
-<section class="p-16 px-4 bg-white">
+<section id="meias" class="p-16 px-4 bg-white">
     <div class="max-w-[64rem] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div class="flex flex-col items-center">
             <img src="/img/main/meias.jpg" alt="Meias Lado a Lado" class="max-w-xs w-full" />
