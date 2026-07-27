@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Event Page" description="Lado a Lado conference / event landing page — hero, sections, schedule, registration band" -->
+<helmet>
+<script src="./ds-base.js"></script>
+<style>
+  body { margin: 0; background: #FCF9E9; }
+  * { box-sizing: border-box; }
+</style>
+</helmet>
+
+<div style="background: #FCF9E9; font-family: 'Rubik', sans-serif; color: #2B2522;">
+
+  <!-- Nav -->
+  <nav style="display:flex; align-items:center; justify-content:space-between; padding:22px clamp(20px,5vw,80px);">
+    <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.Logo" width="150" hint-size="150px,34px"></x-import>
+    <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.Button" variant="outline" size="sm" hint-size="160px,44px">Inscrição</x-import>
+  </nav>
+
+  <!-- Hero -->
+  <header style="position:relative; overflow:hidden; padding:70px clamp(20px,5vw,80px) 100px;">
+    <div style="position:absolute; top:-40px; right:-60px; pointer-events:none;">
+      <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.HoldingHands" width="700" hint-size="700px,450px"></x-import>
+    </div>
+    <div style="position:relative; z-index:1; max-width:720px;">
+      <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.Eyebrow" align="start" hint-size="400px,18px">Conferência • 3 Março 2024, Lisboa</x-import>
+      <h1 style="font-family:'Abhaya Libre', serif; font-weight:400; font-size:clamp(3rem,7vw,6rem); line-height:1.04; color:#000; margin:18px 0 12px;">Viver para amar</h1>
+      <p style="font-size:1.3rem; color:#2B2522; max-width:520px; margin:0 0 34px;">Um evento sobre o namoro, o casamento e a família — para jovens que querem amar de verdade.</p>
+      <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.Button" variant="primary" size="lg" hint-size="240px,56px">Reserva grátis aqui</x-import>
+    </div>
+  </header>
+
+  <!-- Sobre -->
+  <section style="padding:90px clamp(20px,5vw,80px); max-width:1200px; margin:0 auto;">
+    <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.SectionHeading" eyebrow="Sobre" align="center" hint-size="600px,120px">Em que consiste?</x-import>
+    <p style="font-family:'Open Sans', sans-serif; font-size:1.05rem; line-height:1.7; color:#2B2522; max-width:680px; margin:32px auto 0; text-align:center;">Casais que contam a sua história e especialistas no tema juntam-se para responder às tuas perguntas sobre o amor, a fidelidade e a construção de uma família.</p>
+  </section>
+
+  <!-- Feature band -->
+  <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.FeatureBand" hint-size="100%,160px">E viveram lado a lado para sempre</x-import>
+
+  <!-- Registration -->
+  <section style="background:#FFE57D; padding:80px clamp(20px,5vw,80px); text-align:center;">
+    <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.Eyebrow" align="center" color="#6D2E46" hint-size="160px,18px">Reserva</x-import>
+    <h2 style="font-family:'Abhaya Libre', serif; font-weight:400; font-size:clamp(2.2rem,4vw,3.4rem); color:#6D2E46; margin:14px 0 28px;">Viver para amar</h2>
+    <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.Button" variant="deep" size="lg" hint-size="200px,56px">Inscrição</x-import>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background:#6D2E46; color:#FCF9E9; padding:40px clamp(20px,5vw,80px); display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap;">
+    <x-import component-from-global-scope="LadoALadoDesignSystem_313ead.Logo" width="150" color="#FCF9E9" hint-size="150px,34px"></x-import>
+    <span style="font-family:'Overpass Mono', monospace; font-size:.85rem; opacity:.85;">2024</span>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>

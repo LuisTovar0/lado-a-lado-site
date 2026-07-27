@@ -1,0 +1,51 @@
+<!-- @dsCard group="Components" viewport="700x880" name="Core" subtitle="Buttons, headings, tags, avatars, cards, schedule" -->
+<!DOCTYPE html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="../../styles.css">
+<style>
+  html,body{margin:0;background:var(--surface-page)}
+  body{padding:28px;font-family:var(--font-sans);color:var(--text-body)}
+  .grp{margin-bottom:26px}
+  .lbl{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-bottom:12px}
+  .row{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+</style>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+</head><body>
+<div id="root"></div>
+<script type="text/babel">
+const { Button, Eyebrow, SectionHeading, Tag, Avatar, SpeakerCard, ScheduleRow, TestimonialCard, Card, FeatureBand } = window.LadoALadoDesignSystem_313ead;
+function G({label, children}){ return <div className="grp"><div className="lbl">{label}</div>{children}</div>; }
+function Demo(){
+  return <>
+    <G label="Buttons"><div className="row">
+      <Button variant="primary">Inscrição</Button>
+      <Button variant="deep">Reserva</Button>
+      <Button variant="outline">Saber mais</Button>
+      <Button variant="ghost">Voltar</Button>
+      <Button variant="primary" size="sm">Pequeno</Button>
+      <Button variant="primary" size="lg">Grande</Button>
+      <Button variant="primary" disabled>Indisponível</Button>
+    </div></G>
+    <G label="Section heading"><SectionHeading eyebrow="Sobre" align="start" size="m">Em que consiste?</SectionHeading></G>
+    <G label="Tags"><div className="row">
+      <Tag>Novo</Tag><Tag tone="bordo">Conferência</Tag><Tag tone="yellow">Workshop</Tag><Tag tone="cream">Lisboa</Tag><Tag tone="outline">Online</Tag>
+    </div></G>
+    <G label="Avatars / Speaker"><div className="row">
+      <Avatar initials="JS" /><Avatar tone="bordo" initials="AC" /><Avatar tone="yellow" initials="MF" />
+      <SpeakerCard name="João Silva" role="Enfermeiro" org="Hospital X" initials="JS" />
+    </div></G>
+    <G label="Schedule"><Card padding="8px 18px">
+      <ScheduleRow time="15h00 — 15h30" title="Abertura da conferência" subtitle="Introdução" />
+      <ScheduleRow time="16h00 — 16h30" title="Masculinidade vs feminidade" subtitle="Calderón e Vanessa Machado" dots={2} />
+    </Card></G>
+    <G label="Testimonial"><div style={{maxWidth:420}}>
+      <TestimonialCard quote="Aprendemos a amar lado a lado, todos os dias." name="Graça e Miguel" role="Casados há 12 anos" initials="GM" />
+    </div></G>
+    <G label="Feature band"><FeatureBand action={<Button variant="deep" size="sm">Inscrição</Button>}>E viveram <em>lado a lado</em> para sempre</FeatureBand></G>
+  </>;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Demo/>);
+</script>
+</body></html>

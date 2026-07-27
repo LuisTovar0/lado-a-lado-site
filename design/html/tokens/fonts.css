@@ -1,0 +1,12 @@
+/* ============================================================
+   Lado a Lado — Webfonts
+   Four text faces, all on Google Fonts:
+     • Abhaya Libre  — serif display ("Viver para amar")
+     • Rubik         — sans body + bold headings
+     • Overpass Mono — mono eyebrow labels (uppercase, tracked)
+     • Open Sans     — secondary UI / dense body
+   Script wordmark "ladoalado" (Fruits Delight, commercial) ships as
+   an SVG asset (assets/logo-*.svg). "Caveat" is loaded as a flagged
+   substitute for any inline handwritten accent ("para sempre").
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600;1,800&family=Overpass+Mono:wght@300;400;500;600;700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Caveat:wght@500;600;700&display=swap');

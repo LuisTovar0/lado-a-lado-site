@@ -1,0 +1,1491 @@
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --12: var(--icon-large);
+  --amarelo: rgb(255,229,125); /* @kind color */
+  --background-brand-default: var(--brand-800); /* @kind color */
+  --background-default-default-2: var(--white-1000); /* @kind color */
+  --background-default-default: var(--white-1000); /* @kind color */
+  --background-disabled-default: var(--brand-300); /* @kind color */
+  --bege: rgb(252,249,233); /* @kind color */
+  --black-100: rgba(12,12,13,0.05); /* @kind color */
+  --black-200: rgba(12,12,13,0.1); /* @kind color */
+  --body-font-family: var(--family-sans);
+  --body-font-weight-regular: var(--weight-regular);
+  --body-font-weight-strong: var(--weight-semibold);
+  --body-size-medium: var(--scale-03);
+  --body-size-small: var(--scale-02);
+  --bord: rgb(109,46,70); /* @kind color */
+  --border-brand-default: var(--brand-800); /* @kind color */
+  --border-default-default-2: var(--gray-300); /* @kind color */
+  --border-default-default: var(--gray-300); /* @kind color */
+  --border-neutral-default-2: var(--slate-900); /* @kind color */
+  --border-neutral-default: var(--slate-900); /* @kind color */
+  --brand-100: rgb(245,245,245); /* @kind color */
+  --brand-300: rgb(217,217,217); /* @kind color */
+  --brand-700: rgb(56,56,56); /* @kind color */
+  --brand-800: rgb(44,44,44); /* @kind color */
+  --brand-900: rgb(30,30,30); /* @kind color */
+  --castanho-2: var(--castanho); /* @kind color */
+  --castanho: rgb(151,104,13); /* @kind color */
+  --color-bordeu: rgb(189,71,71); /* @kind color */
+  --depth-025: 1;
+  --depth-0: 0;
+  --depth-100: 4;
+  --device-width: 1200;
+  --family-sans: "Inter";
+  --gray-300-2: rgb(217,217,217); /* @kind color */
+  --gray-300: rgb(217,217,217); /* @kind color */
+  --gray-400: rgb(179,179,179); /* @kind color */
+  --gray-500: rgb(117,117,117); /* @kind color */
+  --gray-600-2: rgb(68,68,68); /* @kind color */
+  --gray-600: rgb(68,68,68); /* @kind color */
+  --gray-900-2: rgb(30,30,30); /* @kind color */
+  --gray-900: rgb(30,30,30); /* @kind color */
+  --heading-font-family: var(--family-sans);
+  --heading-font-weight: var(--weight-semibold);
+  --heading-size-base: var(--scale-05);
+  --icon-default-default: var(--gray-900); /* @kind color */
+  --icon-large: 40;
+  --icon-medium: 32;
+  --icon-small: 24;
+  --line-14: var(--static-body-small-line-height);
+  --number-12: 12;
+  --number-14: 14;
+  --number: var(--12);
+  --preto-2: var(--preto); /* @kind color */
+  --preto: rgb(0,0,0); /* @kind color */
+  --radius-100: 4;
+  --radius-200: 8;
+  --radius-full: 9999;
+  --salm-o: rgb(243,182,134); /* @kind color */
+  --scale-02: 14;
+  --scale-03: 16;
+  --scale-04: 20;
+  --scale-05: 24;
+  --slate-100-2: rgb(243,243,243); /* @kind color */
+  --slate-100: rgb(243,243,243); /* @kind color */
+  --slate-200: rgb(227,227,227); /* @kind color */
+  --slate-900-2: rgb(48,48,48); /* @kind color */
+  --slate-900: rgb(48,48,48); /* @kind color */
+  --space-050: 2;
+  --space-0: 0;
+  --space-1200: 48;
+  --space-1600: 64;
+  --space-200: 8;
+  --space-300: 12;
+  --space-600: 24;
+  --static-body-small-line-height: 16;
+  --static-display-large-line-height: 64;
+  --string: "Fruits Delight";
+  --stroke-border: 1;
+  --subheading-font-family: var(--family-sans);
+  --subheading-font-weight: var(--weight-regular);
+  --subheading-size-medium: var(--scale-04);
+  --text-brand-on-brand: var(--brand-100); /* @kind color */
+  --text-default-default: var(--gray-900); /* @kind color */
+  --text-default-secondary: var(--gray-500); /* @kind color */
+  --text-default-tertiary: var(--gray-400); /* @kind color */
+  --vermelho: rgb(189,71,71); /* @kind color */
+  --wb-border-radius-0: 0;
+  --wb-border-radius-100: 2;
+  --wb-border-radius-400: 8;
+  --wb-border-radius-50: 1;
+  --wb-border-radius-main: var(--wb-border-radius-100);
+  --wb-border-radius-sharp: var(--wb-border-radius-0);
+  --wb-border-radius-softer: var(--wb-border-radius-400);
+  --wb-border-radius-subtle: var(--wb-border-radius-50);
+  --wb-border-weight-100: 1;
+  --wb-border-weight-150: 2;
+  --wb-border-weight-main: var(--wb-border-weight-100);
+  --wb-border-weight-strong: var(--wb-border-weight-150);
+  --wb-button-border-main-radius: var(--wb-border-radius-main);
+  --wb-button-border-ring-radius: var(--wb-border-radius-subtle);
+  --wb-button-group-md-padding-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-group-padding-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-group-padding-left: var(--wb-spacing-static-medium);
+  --wb-button-group-padding-right: var(--wb-spacing-static-medium);
+  --wb-button-group-padding-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-gap: var(--wb-spacing-static-tiny);
+  --wb-button-lg-padding-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-left: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-right: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-left: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-left: var(--wb-spacing-static-large);
+  --wb-button-lg-padding-loading-right: var(--wb-spacing-static-large);
+  --wb-button-lg-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-right: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-tertiary-left: var(--wb-spacing-static-small);
+  --wb-button-lg-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-right: var(--wb-spacing-static-small);
+  --wb-button-lg-padding-tertiary-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-top: var(--wb-spacing-static-smaller);
+  --wb-button-md-gap: var(--wb-spacing-static-tiny);
+  --wb-button-md-padding-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-left: var(--wb-spacing-static-small);
+  --wb-button-md-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-md-padding-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-md-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-right: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-left: var(--wb-spacing-static-smaller);
+  --wb-button-md-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-left: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-loading-right: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-right: var(--wb-spacing-static-smaller);
+  --wb-button-md-padding-tertiary-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-top: var(--wb-spacing-static-smallest);
+  --wb-button-primary-background-color-active: var(--wb-color-shape-brand-active); /* @kind color */
+  --wb-button-primary-background-color-default: var(--wb-color-shape-brand-default); /* @kind color */
+  --wb-button-primary-background-color-focus: var(--wb-color-shape-brand-focus); /* @kind color */
+  --wb-button-primary-background-color-hover: var(--wb-color-shape-brand-hover); /* @kind color */
+  --wb-button-primary-background-color-loading: var(--wb-color-shape-brand-default); /* @kind color */
+  --wb-button-primary-border-main-color-active: var(--wb-color-border-brand-active); /* @kind color */
+  --wb-button-primary-border-main-color-default: var(--wb-color-border-brand-default); /* @kind color */
+  --wb-button-primary-border-main-color-focus: var(--wb-color-border-brand-focus); /* @kind color */
+  --wb-button-primary-border-main-color-hover: var(--wb-color-border-brand-hover); /* @kind color */
+  --wb-button-primary-border-main-color-loading: var(--wb-color-border-brand-default); /* @kind color */
+  --wb-button-primary-border-ring-color-active: var(--wb-color-border-on-brand-active); /* @kind color */
+  --wb-button-primary-border-ring-color-focus: var(--wb-color-border-on-brand-focus); /* @kind color */
+  --wb-button-primary-border-weight: var(--wb-border-weight-main);
+  --wb-button-primary-icon-leading-color-default: var(--wb-color-icon-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-primary-icon-only-color-default: var(--wb-color-icon-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-primary-icon-trailing-color-default: var(--wb-color-icon-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-primary-text-color-default: var(--wb-color-text-on-brand-default); /* @kind color */
+  --wb-button-secondary-background-color-active: var(--wb-color-shape-accent-none-to-solid-active); /* @kind color */
+  --wb-button-secondary-background-color-default: var(--wb-color-shape-accent-none-to-solid-default); /* @kind color */
+  --wb-button-secondary-background-color-focus: var(--wb-color-shape-accent-none-to-solid-focus); /* @kind color */
+  --wb-button-secondary-background-color-hover: var(--wb-color-shape-accent-none-to-solid-hover); /* @kind color */
+  --wb-button-secondary-background-color-loading: var(--wb-color-shape-accent-none-to-solid-default); /* @kind color */
+  --wb-button-secondary-border-main-color-active: var(--wb-color-border-main-active); /* @kind color */
+  --wb-button-secondary-border-main-color-default: var(--wb-color-border-main-default); /* @kind color */
+  --wb-button-secondary-border-main-color-focus: var(--wb-color-border-main-focus); /* @kind color */
+  --wb-button-secondary-border-main-color-hover: var(--wb-color-border-main-hover); /* @kind color */
+  --wb-button-secondary-border-main-color-loading: var(--wb-color-border-main-default); /* @kind color */
+  --wb-button-secondary-border-ring-color-active: var(--wb-color-border-brand-active); /* @kind color */
+  --wb-button-secondary-border-ring-color-focus: var(--wb-color-border-brand-focus); /* @kind color */
+  --wb-button-secondary-border-weight: var(--wb-border-weight-main);
+  --wb-button-secondary-icon-leading-color-default: var(--wb-color-icon-main-default); /* @kind color */
+  --wb-button-secondary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-secondary-icon-only-color-default: var(--wb-color-icon-main-default); /* @kind color */
+  --wb-button-secondary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-secondary-icon-trailing-color-default: var(--wb-color-icon-main-default); /* @kind color */
+  --wb-button-secondary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-secondary-text-color-default: var(--wb-color-text-main-default); /* @kind color */
+  --wb-button-sm-gap: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-left: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-right: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-top: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-left: var(--wb-spacing-static-smaller);
+  --wb-button-sm-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-sm-padding-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-sm-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-right: var(--wb-spacing-static-smaller);
+  --wb-button-sm-padding-tertiary-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-left: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-left: var(--wb-spacing-static-small);
+  --wb-button-sm-padding-tertiary-loading-right: var(--wb-spacing-static-small);
+  --wb-button-sm-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-right: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-top: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-top: var(--wb-spacing-static-tiny);
+  --wb-button-tertiary-background-color-active: var(--wb-color-shape-accent-none-to-translucent-active); /* @kind color */
+  --wb-button-tertiary-background-color-default: var(--wb-color-shape-accent-none-to-translucent-default); /* @kind color */
+  --wb-button-tertiary-background-color-focus: var(--wb-color-shape-accent-none-to-translucent-focus); /* @kind color */
+  --wb-button-tertiary-background-color-hover: var(--wb-color-shape-accent-none-to-translucent-hover); /* @kind color */
+  --wb-button-tertiary-background-color-loading: var(--wb-color-shape-accent-none-to-translucent-default); /* @kind color */
+  --wb-button-tertiary-border-ring-color-active: var(--wb-color-border-brand-active); /* @kind color */
+  --wb-button-tertiary-border-ring-color-focus: var(--wb-color-border-brand-focus); /* @kind color */
+  --wb-button-tertiary-border-weight: var(--wb-border-weight-main);
+  --wb-button-tertiary-icon-leading-color-default: var(--wb-color-icon-brand-default); /* @kind color */
+  --wb-button-tertiary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-tertiary-icon-only-color-default: var(--wb-color-icon-brand-default); /* @kind color */
+  --wb-button-tertiary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-tertiary-icon-trailing-color-default: var(--wb-color-icon-brand-default); /* @kind color */
+  --wb-button-tertiary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-tertiary-text-color-default: var(--wb-color-text-brand-default); /* @kind color */
+  --wb-button-translucent-background-color-active: var(--wb-color-shape-accent-strong-active); /* @kind color */
+  --wb-button-translucent-background-color-default: var(--wb-color-shape-accent-strong-default); /* @kind color */
+  --wb-button-translucent-background-color-focus: var(--wb-color-shape-accent-strong-focus); /* @kind color */
+  --wb-button-translucent-background-color-hover: var(--wb-color-shape-accent-strong-hover); /* @kind color */
+  --wb-button-translucent-background-color-loading: var(--wb-color-shape-accent-strong-default); /* @kind color */
+  --wb-button-translucent-border-main-color-active: var(--wb-color-border-main-active); /* @kind color */
+  --wb-button-translucent-border-main-color-default: var(--wb-color-border-main-default); /* @kind color */
+  --wb-button-translucent-border-main-color-focus: var(--wb-color-border-main-focus); /* @kind color */
+  --wb-button-translucent-border-main-color-hover: var(--wb-color-border-main-hover); /* @kind color */
+  --wb-button-translucent-border-main-color-loading: var(--wb-color-border-main-default); /* @kind color */
+  --wb-button-translucent-border-ring-color-active: var(--wb-color-border-brand-active); /* @kind color */
+  --wb-button-translucent-border-ring-color-focus: var(--wb-color-border-brand-focus); /* @kind color */
+  --wb-button-translucent-border-weight: var(--wb-border-weight-main);
+  --wb-button-translucent-icon-leading-color-default: var(--wb-color-icon-main-default); /* @kind color */
+  --wb-button-translucent-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-translucent-icon-only-color-default: var(--wb-color-icon-main-default); /* @kind color */
+  --wb-button-translucent-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-translucent-icon-trailing-color-default: var(--wb-color-icon-main-default); /* @kind color */
+  --wb-button-translucent-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-translucent-text-color-default: var(--wb-color-text-main-default); /* @kind color */
+  --wb-color-amg-100: rgb(178,30,35); /* @kind color */
+  --wb-color-amg-on-contrast-100: rgb(178,30,35); /* @kind color */
+  --wb-color-black-0: rgba(0,0,0,0); /* @kind color */
+  --wb-color-black-100: rgb(0,0,0); /* @kind color */
+  --wb-color-black-opacity-low: rgba(0,0,0,0.1); /* @kind color */
+  --wb-color-black-opacity-medium: rgba(0,0,0,0.6); /* @kind color */
+  --wb-color-border-brand-active: var(--wb-color-generated-brand-mercedes-benz-main-active); /* @kind color */
+  --wb-color-border-brand-default: var(--wb-color-mercedes-benz-100); /* @kind color */
+  --wb-color-border-brand-focus: var(--wb-color-generated-brand-mercedes-benz-main-focus); /* @kind color */
+  --wb-color-border-brand-hover: var(--wb-color-generated-brand-mercedes-benz-main-hover); /* @kind color */
+  --wb-color-border-brand-on-contrast-active: var(--wb-color-generated-brand-mercedes-benz-contrast-active); /* @kind color */
+  --wb-color-border-brand-on-contrast-default: var(--wb-color-mercedes-benz-on-contrast-100); /* @kind color */
+  --wb-color-border-brand-on-contrast-focus: var(--wb-color-generated-brand-mercedes-benz-contrast-focus); /* @kind color */
+  --wb-color-border-brand-on-contrast-hover: var(--wb-color-generated-brand-mercedes-benz-contrast-hover); /* @kind color */
+  --wb-color-border-main-active: var(--wb-color-generated-grey-600-active); /* @kind color */
+  --wb-color-border-main-default: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-border-main-focus: var(--wb-color-generated-grey-600-focus); /* @kind color */
+  --wb-color-border-main-hover: var(--wb-color-generated-grey-600-hover); /* @kind color */
+  --wb-color-border-on-brand-active: var(--wb-color-generated-white-active); /* @kind color */
+  --wb-color-border-on-brand-focus: var(--wb-color-generated-white-focus); /* @kind color */
+  --wb-color-border-on-contrast-mild-active: var(--wb-color-generated-grey-400-active); /* @kind color */
+  --wb-color-border-on-contrast-mild-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-border-on-contrast-mild-focus: var(--wb-color-generated-grey-400-focus); /* @kind color */
+  --wb-color-border-on-contrast-mild-hover: var(--wb-color-generated-grey-400-hover); /* @kind color */
+  --wb-color-border-on-contrast-on-brand-active: var(--wb-color-generated-white-active); /* @kind color */
+  --wb-color-border-on-contrast-on-brand-focus: var(--wb-color-generated-white-focus); /* @kind color */
+  --wb-color-border-weaker-active: var(--wb-color-generated-grey-900-active); /* @kind color */
+  --wb-color-border-weaker-focus: var(--wb-color-generated-grey-900-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-active: var(--wb-color-generated-accent-contrast-none-to-solid-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-focus: var(--wb-color-generated-accent-contrast-none-to-solid-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-hover: var(--wb-color-generated-accent-contrast-none-to-solid-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-loading: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-active: var(--wb-color-generated-grey-400-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-focus: var(--wb-color-generated-grey-400-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-hover: var(--wb-color-generated-grey-400-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-loading: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-ring-active: var(--wb-color-generated-brand-mercedes-benz-contrast-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-ring-focus: var(--wb-color-generated-brand-mercedes-benz-contrast-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-icon-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-text-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-active: var(--wb-color-generated-accent-main-none-to-solid-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-focus: var(--wb-color-generated-accent-main-none-to-solid-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-hover: var(--wb-color-generated-accent-main-none-to-solid-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-loading: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-active: var(--wb-color-generated-grey-600-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-default: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-focus: var(--wb-color-generated-grey-600-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-hover: var(--wb-color-generated-grey-600-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-loading: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-ring-active: var(--wb-color-generated-brand-mercedes-benz-main-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-ring-focus: var(--wb-color-generated-brand-mercedes-benz-main-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-icon-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-text-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-active: var(--wb-color-generated-accent-contrast-none-to-translucent-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-focus: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-hover: var(--wb-color-generated-accent-contrast-none-to-translucent-hover); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-loading: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-border-ring-active: var(--wb-color-generated-grey-900-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-border-ring-focus: var(--wb-color-generated-grey-900-focus); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-icon-default: var(--wb-color-mercedes-benz-on-contrast-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-text-default: var(--wb-color-mercedes-benz-on-contrast-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-active: var(--wb-color-generated-accent-main-none-to-translucent-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-focus: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-hover: var(--wb-color-generated-accent-main-none-to-translucent-hover); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-loading: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-border-ring-active: var(--wb-color-generated-brand-mercedes-benz-main-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-border-ring-focus: var(--wb-color-generated-brand-mercedes-benz-main-focus); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-icon-default: var(--wb-color-mercedes-benz-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-text-default: var(--wb-color-mercedes-benz-100); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-active: var(--wb-color-generated-accent-contrast-medium-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-default: var(--wb-color-black-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-focus: var(--wb-color-generated-accent-contrast-medium-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-hover: var(--wb-color-generated-accent-contrast-medium-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-loading: var(--wb-color-black-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-active: var(--wb-color-generated-grey-400-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-focus: var(--wb-color-generated-grey-400-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-hover: var(--wb-color-generated-grey-400-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-loading: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-ring-active: var(--wb-color-generated-grey-900-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-ring-focus: var(--wb-color-generated-grey-900-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-icon-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-text-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-active: var(--wb-color-generated-accent-main-medium-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-default: var(--wb-color-white-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-focus: var(--wb-color-generated-accent-main-medium-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-hover: var(--wb-color-generated-accent-main-medium-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-loading: var(--wb-color-white-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-active: var(--wb-color-generated-grey-600-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-default: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-focus: var(--wb-color-generated-grey-600-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-hover: var(--wb-color-generated-grey-600-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-loading: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-ring-active: var(--wb-color-generated-brand-mercedes-benz-main-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-ring-focus: var(--wb-color-generated-brand-mercedes-benz-main-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-icon-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-text-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-fixed-component-spinner-basic-on-dark-image-background: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-spinner-basic-on-light-image-background: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-fixed-component-spinner-on-brand-on-dark-image-background: var(--wb-color-black-opacity-low); /* @kind color */
+  --wb-color-fixed-component-spinner-on-brand-on-light-image-background: var(--wb-color-white-opacity-low); /* @kind color */
+  --wb-color-generated-accent-contrast-medium-active: rgba(0,0,0,0.72); /* @kind color */
+  --wb-color-generated-accent-contrast-medium-focus: rgba(0,0,0,0.6); /* @kind color */
+  --wb-color-generated-accent-contrast-medium-hover: rgba(0,0,0,0.68); /* @kind color */
+  --wb-color-generated-accent-contrast-none-to-solid-active: rgb(51,51,51); /* @kind color */
+  --wb-color-generated-accent-contrast-none-to-solid-focus: rgba(0,0,0,0); /* @kind color */
+  --wb-color-generated-accent-contrast-none-to-solid-hover: rgb(26,26,26); /* @kind color */
+  --wb-color-generated-accent-contrast-none-to-translucent-active: rgba(255,255,255,0.2); /* @kind color */
+  --wb-color-generated-accent-contrast-none-to-translucent-focus: rgba(0,0,0,0); /* @kind color */
+  --wb-color-generated-accent-contrast-none-to-translucent-hover: rgba(255,255,255,0.1); /* @kind color */
+  --wb-color-generated-accent-main-medium-active: rgba(255,255,255,0.72); /* @kind color */
+  --wb-color-generated-accent-main-medium-focus: rgba(255,255,255,0.6); /* @kind color */
+  --wb-color-generated-accent-main-medium-hover: rgba(255,255,255,0.68); /* @kind color */
+  --wb-color-generated-accent-main-none-to-solid-active: rgb(224,224,224); /* @kind color */
+  --wb-color-generated-accent-main-none-to-solid-focus: rgba(255,255,255,0); /* @kind color */
+  --wb-color-generated-accent-main-none-to-solid-hover: rgb(235,235,235); /* @kind color */
+  --wb-color-generated-accent-main-none-to-translucent-active: rgba(0,0,0,0.12); /* @kind color */
+  --wb-color-generated-accent-main-none-to-translucent-focus: rgba(255,255,255,0); /* @kind color */
+  --wb-color-generated-accent-main-none-to-translucent-hover: rgba(0,0,0,0.08); /* @kind color */
+  --wb-color-generated-black-active: rgb(51,51,51); /* @kind color */
+  --wb-color-generated-black-focus: rgb(0,0,0); /* @kind color */
+  --wb-color-generated-brand-amg-contrast-active: rgb(142,24,28); /* @kind color */
+  --wb-color-generated-brand-amg-contrast-focus: rgb(178,30,35); /* @kind color */
+  --wb-color-generated-brand-amg-contrast-hover: rgb(157,26,31); /* @kind color */
+  --wb-color-generated-brand-amg-main-active: rgb(142,24,28); /* @kind color */
+  --wb-color-generated-brand-amg-main-focus: rgb(178,30,35); /* @kind color */
+  --wb-color-generated-brand-amg-main-hover: rgb(157,26,31); /* @kind color */
+  --wb-color-generated-brand-maybach-contrast-active: rgb(198,198,198); /* @kind color */
+  --wb-color-generated-brand-maybach-contrast-focus: rgb(248,248,248); /* @kind color */
+  --wb-color-generated-brand-maybach-contrast-hover: rgb(218,218,218); /* @kind color */
+  --wb-color-generated-brand-maybach-main-active: rgb(41,41,41); /* @kind color */
+  --wb-color-generated-brand-maybach-main-focus: rgb(0,0,0); /* @kind color */
+  --wb-color-generated-brand-maybach-main-hover: rgb(26,26,26); /* @kind color */
+  --wb-color-generated-brand-mercedes-benz-contrast-active: rgb(0,96,171); /* @kind color */
+  --wb-color-generated-brand-mercedes-benz-contrast-focus: rgb(0,120,214); /* @kind color */
+  --wb-color-generated-brand-mercedes-benz-contrast-hover: rgb(0,106,188); /* @kind color */
+  --wb-color-generated-brand-mercedes-benz-main-active: rgb(0,96,171); /* @kind color */
+  --wb-color-generated-brand-mercedes-benz-main-focus: rgb(0,120,214); /* @kind color */
+  --wb-color-generated-brand-mercedes-benz-main-hover: rgb(0,106,188); /* @kind color */
+  --wb-color-generated-grey-100-active: rgb(81,81,81); /* @kind color */
+  --wb-color-generated-grey-100-focus: rgb(38,38,38); /* @kind color */
+  --wb-color-generated-grey-400-active: rgb(135,135,135); /* @kind color */
+  --wb-color-generated-grey-400-focus: rgb(105,105,105); /* @kind color */
+  --wb-color-generated-grey-400-hover: rgb(120,120,120); /* @kind color */
+  --wb-color-generated-grey-500-active: rgb(178,178,178); /* @kind color */
+  --wb-color-generated-grey-500-focus: rgb(159,159,159); /* @kind color */
+  --wb-color-generated-grey-500-hover: rgb(169,169,169); /* @kind color */
+  --wb-color-generated-grey-600-active: rgb(165,165,165); /* @kind color */
+  --wb-color-generated-grey-600-focus: rgb(187,187,187); /* @kind color */
+  --wb-color-generated-grey-600-hover: rgb(172,172,172); /* @kind color */
+  --wb-color-generated-grey-900-active: rgb(218,218,218); /* @kind color */
+  --wb-color-generated-grey-900-focus: rgb(248,248,248); /* @kind color */
+  --wb-color-generated-white-active: rgb(224,224,224); /* @kind color */
+  --wb-color-generated-white-focus: rgb(255,255,255); /* @kind color */
+  --wb-color-grey-200: rgb(51,51,51); /* @kind color */
+  --wb-color-grey-400: rgb(105,105,105); /* @kind color */
+  --wb-color-grey-500: rgb(159,159,159); /* @kind color */
+  --wb-color-grey-600: rgb(187,187,187); /* @kind color */
+  --wb-color-grey-800: rgb(232,232,232); /* @kind color */
+  --wb-color-icon-brand-default: var(--wb-color-mercedes-benz-100); /* @kind color */
+  --wb-color-icon-brand-on-contrast-default: var(--wb-color-mercedes-benz-on-contrast-100); /* @kind color */
+  --wb-color-icon-main-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-icon-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-icon-on-contrast-main-default: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-icon-on-contrast-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-icon-on-contrast-strongest-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-maybach-100: rgb(0,0,0); /* @kind color */
+  --wb-color-maybach-on-contrast-100: rgb(248,248,248); /* @kind color */
+  --wb-color-mercedes-benz-100: rgb(0,120,214); /* @kind color */
+  --wb-color-mercedes-benz-on-contrast-100: rgb(0,120,214); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-active: var(--wb-color-generated-accent-main-none-to-solid-active); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-focus: var(--wb-color-generated-accent-main-none-to-solid-focus); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-hover: var(--wb-color-generated-accent-main-none-to-solid-hover); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-active: var(--wb-color-generated-accent-main-none-to-translucent-active); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-focus: var(--wb-color-generated-accent-main-none-to-translucent-focus); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-hover: var(--wb-color-generated-accent-main-none-to-translucent-hover); /* @kind color */
+  --wb-color-shape-accent-strong-active: var(--wb-color-generated-accent-main-medium-active); /* @kind color */
+  --wb-color-shape-accent-strong-default: var(--wb-color-white-opacity-medium); /* @kind color */
+  --wb-color-shape-accent-strong-focus: var(--wb-color-generated-accent-main-medium-focus); /* @kind color */
+  --wb-color-shape-accent-strong-hover: var(--wb-color-generated-accent-main-medium-hover); /* @kind color */
+  --wb-color-shape-accent-weak-default: var(--wb-color-white-opacity-low); /* @kind color */
+  --wb-color-shape-brand-active: var(--wb-color-generated-brand-mercedes-benz-main-active); /* @kind color */
+  --wb-color-shape-brand-default: var(--wb-color-mercedes-benz-100); /* @kind color */
+  --wb-color-shape-brand-focus: var(--wb-color-generated-brand-mercedes-benz-main-focus); /* @kind color */
+  --wb-color-shape-brand-hover: var(--wb-color-generated-brand-mercedes-benz-main-hover); /* @kind color */
+  --wb-color-shape-brand-on-contrast-active: var(--wb-color-generated-brand-mercedes-benz-contrast-active); /* @kind color */
+  --wb-color-shape-brand-on-contrast-default: var(--wb-color-mercedes-benz-on-contrast-100); /* @kind color */
+  --wb-color-shape-brand-on-contrast-focus: var(--wb-color-generated-brand-mercedes-benz-contrast-focus); /* @kind color */
+  --wb-color-shape-brand-on-contrast-hover: var(--wb-color-generated-brand-mercedes-benz-contrast-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-active: var(--wb-color-generated-accent-contrast-none-to-solid-active); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-focus: var(--wb-color-generated-accent-contrast-none-to-solid-focus); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-hover: var(--wb-color-generated-accent-contrast-none-to-solid-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-active: var(--wb-color-generated-accent-contrast-none-to-translucent-active); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-focus: var(--wb-color-generated-accent-contrast-none-to-translucent-focus); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-hover: var(--wb-color-generated-accent-contrast-none-to-translucent-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-active: var(--wb-color-generated-accent-contrast-medium-active); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-default: var(--wb-color-black-opacity-medium); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-focus: var(--wb-color-generated-accent-contrast-medium-focus); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-hover: var(--wb-color-generated-accent-contrast-medium-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-weak-default: var(--wb-color-black-opacity-low); /* @kind color */
+  --wb-color-shape-contrast-dim-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-shape-contrast-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-shape-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-shape-weak-default: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-shape-weakest-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-surface-accent-weak-default: var(--wb-color-white-opacity-low); /* @kind color */
+  --wb-color-text-brand-default: var(--wb-color-mercedes-benz-100); /* @kind color */
+  --wb-color-text-brand-on-contrast-default: var(--wb-color-mercedes-benz-on-contrast-100); /* @kind color */
+  --wb-color-text-main-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-text-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-text-on-contrast-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-text-on-contrast-strongest-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-text-weakest-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-white-0: rgba(255,255,255,0); /* @kind color */
+  --wb-color-white-100: rgb(255,255,255); /* @kind color */
+  --wb-color-white-opacity-low: rgba(255,255,255,0.3); /* @kind color */
+  --wb-color-white-opacity-medium: rgba(255,255,255,0.6); /* @kind color */
+  --wb-layout-spacing-unit-10x: 40;
+  --wb-layout-spacing-unit-12x: 48;
+  --wb-layout-spacing-unit-2x: 8;
+  --wb-layout-spacing-unit-3x: 12;
+  --wb-layout-spacing-unit-4x: 16;
+  --wb-layout-spacing-unit-6x: 24;
+  --wb-layout-spacing-unit-8x: 32;
+  --wb-spacing-responsive-medium: var(--wb-layout-spacing-unit-8x);
+  --wb-spacing-responsive-smaller: var(--wb-layout-spacing-unit-4x);
+  --wb-spacing-static-large: var(--wb-layout-spacing-unit-10x);
+  --wb-spacing-static-medium: var(--wb-layout-spacing-unit-8x);
+  --wb-spacing-static-small: var(--wb-layout-spacing-unit-6x);
+  --wb-spacing-static-smaller: var(--wb-layout-spacing-unit-4x);
+  --wb-spacing-static-smallest: var(--wb-layout-spacing-unit-3x);
+  --wb-spacing-static-tiny: var(--wb-layout-spacing-unit-2x);
+  --wb-spacing-xxs: 8;
+  --wb-spinner-basic-background-color: var(--wb-color-shape-weak-default); /* @kind color */
+  --wb-spinner-basic-loader-color: var(--wb-color-shape-brand-default); /* @kind color */
+  --wb-spinner-border-weight: var(--wb-border-weight-strong);
+  --wb-spinner-on-brand-background-color: var(--wb-color-shape-accent-weak-default); /* @kind color */
+  --wb-spinner-on-brand-loader-color: var(--wb-color-shape-on-brand-default); /* @kind color */
+  --wb-typography-font-family-amg-copy: "MB Corpo S Text WEB";
+  --wb-typography-font-family-maybach-copy: "MB Corpo S Text WEB";
+  --wb-typography-font-family-mercedes-benz-copy: "MB Corpo S Text WEB";
+  --wb-typography-font-letter-spacing-none: 0;
+  --wb-typography-font-letter-spacing-tiny: 0.2;
+  --wb-typography-font-line-height-unit-6x: 24;
+  --wb-typography-font-line-height-unit-7x: 28;
+  --wb-typography-font-size-unit-4x: 16;
+  --wb-typography-font-size-unit-5x: 20;
+  --wb-typography-font-size-unit-6x: 24;
+  --wb-typography-font-weight-main: "Regular";
+  --wb-typography-font-weight-strong: "Bold";
+  --wb-typography-mq4-6-copy-medium-font-family: var(--wb-typography-font-family-mercedes-benz-copy);
+  --wb-typography-mq4-6-copy-medium-font-letter-spacing: var(--wb-typography-font-letter-spacing-tiny);
+  --wb-typography-mq4-6-copy-medium-font-line-height: var(--wb-typography-font-size-unit-6x);
+  --wb-typography-mq4-6-copy-medium-font-size: var(--wb-typography-font-size-unit-4x);
+  --wb-typography-mq4-6-copy-medium-font-weight-main: var(--wb-typography-font-weight-main);
+  --wb-typography-mq4-6-heading-smallest-font-family: var(--wb-typography-font-family-mercedes-benz-copy);
+  --wb-typography-mq4-6-heading-smallest-font-letter-spacing: var(--wb-typography-font-letter-spacing-none);
+  --wb-typography-mq4-6-heading-smallest-font-line-height: var(--wb-typography-font-line-height-unit-7x);
+  --wb-typography-mq4-6-heading-smallest-font-size: var(--wb-typography-font-size-unit-5x);
+  --wb-typography-mq4-6-heading-smallest-font-weight: var(--wb-typography-font-weight-strong);
+  --wb-typography-static-large-font-family: var(--wb-typography-font-family-mercedes-benz-copy);
+  --wb-typography-static-large-font-letter-spacing: var(--wb-typography-font-letter-spacing-tiny);
+  --wb-typography-static-large-font-line-height: var(--wb-typography-font-line-height-unit-6x);
+  --wb-typography-static-large-font-size: var(--wb-typography-font-size-unit-4x);
+  --wb-typography-static-large-font-weight-strong: var(--wb-typography-font-weight-strong);
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --white-1000-2: rgb(255,255,255); /* @kind color */
+  --white-1000: rgb(255,255,255); /* @kind color */
+  --white-400: rgba(255,255,255,0.4); /* @kind color */
+  --white-500: rgba(255,255,255,0.7); /* @kind color */
+}
+
+:root[data-theme="dark"], .dark {
+  --background-brand-default: var(--brand-100); /* @kind color */
+  --background-default-default-2: var(--gray-900); /* @kind color */
+  --background-default-default: var(--gray-900); /* @kind color */
+  --background-disabled-default: var(--brand-700); /* @kind color */
+  --border-brand-default: var(--brand-100); /* @kind color */
+  --border-default-default-2: var(--gray-600); /* @kind color */
+  --border-default-default: var(--gray-600); /* @kind color */
+  --border-neutral-default-2: var(--slate-100); /* @kind color */
+  --border-neutral-default: var(--slate-100); /* @kind color */
+  --icon-default-default: var(--white-1000); /* @kind color */
+  --text-brand-on-brand: var(--brand-900); /* @kind color */
+  --text-default-default: var(--white-1000); /* @kind color */
+  --text-default-secondary: var(--white-500); /* @kind color */
+  --text-default-tertiary: var(--white-400); /* @kind color */
+  --wb-button-border-main-radius: var(--wb-border-radius-main);
+  --wb-button-border-ring-radius: var(--wb-border-radius-subtle);
+  --wb-button-group-md-padding-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-group-padding-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-group-padding-left: var(--wb-spacing-static-medium);
+  --wb-button-group-padding-right: var(--wb-spacing-static-medium);
+  --wb-button-group-padding-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-gap: var(--wb-spacing-static-tiny);
+  --wb-button-lg-padding-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-left: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-right: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-left: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-left: var(--wb-spacing-static-large);
+  --wb-button-lg-padding-loading-right: var(--wb-spacing-static-large);
+  --wb-button-lg-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-right: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-tertiary-left: var(--wb-spacing-static-small);
+  --wb-button-lg-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-right: var(--wb-spacing-static-small);
+  --wb-button-lg-padding-tertiary-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-top: var(--wb-spacing-static-smaller);
+  --wb-button-md-gap: var(--wb-spacing-static-tiny);
+  --wb-button-md-padding-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-left: var(--wb-spacing-static-small);
+  --wb-button-md-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-md-padding-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-md-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-right: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-left: var(--wb-spacing-static-smaller);
+  --wb-button-md-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-left: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-loading-right: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-right: var(--wb-spacing-static-smaller);
+  --wb-button-md-padding-tertiary-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-top: var(--wb-spacing-static-smallest);
+  --wb-button-primary-background-color-active: var(--wb-color-shape-brand-on-contrast-active); /* @kind color */
+  --wb-button-primary-background-color-default: var(--wb-color-shape-brand-on-contrast-default); /* @kind color */
+  --wb-button-primary-background-color-focus: var(--wb-color-shape-brand-on-contrast-focus); /* @kind color */
+  --wb-button-primary-background-color-hover: var(--wb-color-shape-brand-on-contrast-hover); /* @kind color */
+  --wb-button-primary-background-color-loading: var(--wb-color-shape-brand-on-contrast-default); /* @kind color */
+  --wb-button-primary-border-main-color-active: var(--wb-color-border-brand-on-contrast-active); /* @kind color */
+  --wb-button-primary-border-main-color-default: var(--wb-color-border-brand-on-contrast-default); /* @kind color */
+  --wb-button-primary-border-main-color-focus: var(--wb-color-border-brand-on-contrast-focus); /* @kind color */
+  --wb-button-primary-border-main-color-hover: var(--wb-color-border-brand-on-contrast-hover); /* @kind color */
+  --wb-button-primary-border-main-color-loading: var(--wb-color-border-brand-on-contrast-default); /* @kind color */
+  --wb-button-primary-border-ring-color-active: var(--wb-color-border-on-contrast-on-brand-active); /* @kind color */
+  --wb-button-primary-border-ring-color-focus: var(--wb-color-border-on-contrast-on-brand-focus); /* @kind color */
+  --wb-button-primary-border-weight: var(--wb-border-weight-main);
+  --wb-button-primary-icon-leading-color-default: var(--wb-color-icon-on-contrast-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-primary-icon-only-color-default: var(--wb-color-icon-on-contrast-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-primary-icon-trailing-color-default: var(--wb-color-icon-on-contrast-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-primary-text-color-default: var(--wb-color-text-on-contrast-on-brand-default); /* @kind color */
+  --wb-button-secondary-background-color-active: var(--wb-color-fixed-component-button-secondary-on-dark-image-background-active); /* @kind color */
+  --wb-button-secondary-background-color-default: var(--wb-color-fixed-component-button-secondary-on-dark-image-background-default); /* @kind color */
+  --wb-button-secondary-background-color-focus: var(--wb-color-fixed-component-button-secondary-on-dark-image-background-focus); /* @kind color */
+  --wb-button-secondary-background-color-hover: var(--wb-color-fixed-component-button-secondary-on-dark-image-background-hover); /* @kind color */
+  --wb-button-secondary-background-color-loading: var(--wb-color-fixed-component-button-secondary-on-dark-image-background-loading); /* @kind color */
+  --wb-button-secondary-border-main-color-active: var(--wb-color-fixed-component-button-secondary-on-dark-image-border-main-active); /* @kind color */
+  --wb-button-secondary-border-main-color-default: var(--wb-color-fixed-component-button-secondary-on-dark-image-border-main-default); /* @kind color */
+  --wb-button-secondary-border-main-color-focus: var(--wb-color-fixed-component-button-secondary-on-dark-image-border-main-focus); /* @kind color */
+  --wb-button-secondary-border-main-color-hover: var(--wb-color-fixed-component-button-secondary-on-dark-image-border-main-hover); /* @kind color */
+  --wb-button-secondary-border-main-color-loading: var(--wb-color-fixed-component-button-secondary-on-dark-image-border-main-loading); /* @kind color */
+  --wb-button-secondary-border-ring-color-active: var(--wb-color-fixed-component-button-secondary-on-dark-image-border-ring-active); /* @kind color */
+  --wb-button-secondary-border-ring-color-focus: var(--wb-color-fixed-component-button-secondary-on-dark-image-border-ring-focus); /* @kind color */
+  --wb-button-secondary-border-weight: var(--wb-border-weight-main);
+  --wb-button-secondary-icon-leading-color-default: var(--wb-color-fixed-component-button-secondary-on-dark-image-icon-default); /* @kind color */
+  --wb-button-secondary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-secondary-icon-only-color-default: var(--wb-color-fixed-component-button-secondary-on-dark-image-icon-default); /* @kind color */
+  --wb-button-secondary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-secondary-icon-trailing-color-default: var(--wb-color-fixed-component-button-secondary-on-dark-image-icon-default); /* @kind color */
+  --wb-button-secondary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-secondary-text-color-default: var(--wb-color-fixed-component-button-secondary-on-dark-image-text-default); /* @kind color */
+  --wb-button-sm-gap: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-left: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-right: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-top: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-left: var(--wb-spacing-static-smaller);
+  --wb-button-sm-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-sm-padding-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-sm-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-right: var(--wb-spacing-static-smaller);
+  --wb-button-sm-padding-tertiary-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-left: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-left: var(--wb-spacing-static-small);
+  --wb-button-sm-padding-tertiary-loading-right: var(--wb-spacing-static-small);
+  --wb-button-sm-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-right: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-top: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-top: var(--wb-spacing-static-tiny);
+  --wb-button-tertiary-background-color-active: var(--wb-color-fixed-component-button-tertiary-on-dark-image-background-active); /* @kind color */
+  --wb-button-tertiary-background-color-default: var(--wb-color-fixed-component-button-tertiary-on-dark-image-background-default); /* @kind color */
+  --wb-button-tertiary-background-color-focus: var(--wb-color-fixed-component-button-tertiary-on-dark-image-background-focus); /* @kind color */
+  --wb-button-tertiary-background-color-hover: var(--wb-color-fixed-component-button-tertiary-on-dark-image-background-hover); /* @kind color */
+  --wb-button-tertiary-background-color-loading: var(--wb-color-fixed-component-button-tertiary-on-dark-image-background-loading); /* @kind color */
+  --wb-button-tertiary-border-ring-color-active: var(--wb-color-fixed-component-button-tertiary-on-dark-image-border-ring-active); /* @kind color */
+  --wb-button-tertiary-border-ring-color-focus: var(--wb-color-fixed-component-button-tertiary-on-dark-image-border-ring-focus); /* @kind color */
+  --wb-button-tertiary-border-weight: var(--wb-border-weight-main);
+  --wb-button-tertiary-icon-leading-color-default: var(--wb-color-fixed-component-button-tertiary-on-dark-image-icon-default); /* @kind color */
+  --wb-button-tertiary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-tertiary-icon-only-color-default: var(--wb-color-fixed-component-button-tertiary-on-dark-image-icon-default); /* @kind color */
+  --wb-button-tertiary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-tertiary-icon-trailing-color-default: var(--wb-color-fixed-component-button-tertiary-on-dark-image-icon-default); /* @kind color */
+  --wb-button-tertiary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-tertiary-text-color-default: var(--wb-color-fixed-component-button-tertiary-on-dark-image-text-default); /* @kind color */
+  --wb-button-translucent-background-color-active: var(--wb-color-fixed-component-button-translucent-on-dark-image-background-active); /* @kind color */
+  --wb-button-translucent-background-color-default: var(--wb-color-fixed-component-button-translucent-on-dark-image-background-default); /* @kind color */
+  --wb-button-translucent-background-color-focus: var(--wb-color-fixed-component-button-translucent-on-dark-image-background-focus); /* @kind color */
+  --wb-button-translucent-background-color-hover: var(--wb-color-fixed-component-button-translucent-on-dark-image-background-hover); /* @kind color */
+  --wb-button-translucent-background-color-loading: var(--wb-color-fixed-component-button-translucent-on-dark-image-background-loading); /* @kind color */
+  --wb-button-translucent-border-main-color-active: var(--wb-color-fixed-component-button-translucent-on-dark-image-border-main-active); /* @kind color */
+  --wb-button-translucent-border-main-color-default: var(--wb-color-fixed-component-button-translucent-on-dark-image-border-main-default); /* @kind color */
+  --wb-button-translucent-border-main-color-focus: var(--wb-color-fixed-component-button-translucent-on-dark-image-border-main-focus); /* @kind color */
+  --wb-button-translucent-border-main-color-hover: var(--wb-color-fixed-component-button-translucent-on-dark-image-border-main-hover); /* @kind color */
+  --wb-button-translucent-border-main-color-loading: var(--wb-color-fixed-component-button-translucent-on-dark-image-border-main-loading); /* @kind color */
+  --wb-button-translucent-border-ring-color-active: var(--wb-color-fixed-component-button-translucent-on-dark-image-border-ring-active); /* @kind color */
+  --wb-button-translucent-border-ring-color-focus: var(--wb-color-fixed-component-button-translucent-on-dark-image-border-ring-focus); /* @kind color */
+  --wb-button-translucent-border-weight: var(--wb-border-weight-main);
+  --wb-button-translucent-icon-leading-color-default: var(--wb-color-fixed-component-button-translucent-on-dark-image-icon-default); /* @kind color */
+  --wb-button-translucent-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-translucent-icon-only-color-default: var(--wb-color-fixed-component-button-translucent-on-dark-image-icon-default); /* @kind color */
+  --wb-button-translucent-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-translucent-icon-trailing-color-default: var(--wb-color-fixed-component-button-translucent-on-dark-image-icon-default); /* @kind color */
+  --wb-button-translucent-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-translucent-text-color-default: var(--wb-color-fixed-component-button-translucent-on-dark-image-text-default); /* @kind color */
+  --wb-spinner-basic-background-color: var(--wb-color-fixed-component-spinner-basic-on-dark-image-background); /* @kind color */
+  --wb-spinner-basic-loader-color: var(--wb-color-shape-brand-on-contrast-default); /* @kind color */
+  --wb-spinner-border-weight: var(--wb-border-weight-strong);
+  --wb-spinner-on-brand-background-color: var(--wb-color-fixed-component-spinner-on-brand-on-dark-image-background); /* @kind color */
+  --wb-spinner-on-brand-loader-color: var(--wb-color-shape-contrast-on-brand-default); /* @kind color */
+}
+
+:root[data-mode="mobile"] {
+  --device-width: 375;
+}
+
+:root[data-mode="tablet"] {
+  --device-width: 768;
+}
+
+:root[data-mode="mq4-5"] {
+  --wb-spacing-responsive-medium: var(--wb-layout-spacing-unit-12x);
+  --wb-spacing-responsive-smaller: var(--wb-layout-spacing-unit-6x);
+  --wb-spacing-static-large: var(--wb-layout-spacing-unit-10x);
+  --wb-spacing-static-medium: var(--wb-layout-spacing-unit-8x);
+  --wb-spacing-static-small: var(--wb-layout-spacing-unit-6x);
+  --wb-spacing-static-smaller: var(--wb-layout-spacing-unit-4x);
+  --wb-spacing-static-smallest: var(--wb-layout-spacing-unit-3x);
+  --wb-spacing-static-tiny: var(--wb-layout-spacing-unit-2x);
+}
+
+:root[data-mode="mq6"] {
+  --wb-spacing-responsive-medium: var(--wb-layout-spacing-unit-12x);
+  --wb-spacing-responsive-smaller: var(--wb-layout-spacing-unit-6x);
+  --wb-spacing-static-large: var(--wb-layout-spacing-unit-10x);
+  --wb-spacing-static-medium: var(--wb-layout-spacing-unit-8x);
+  --wb-spacing-static-small: var(--wb-layout-spacing-unit-6x);
+  --wb-spacing-static-smaller: var(--wb-layout-spacing-unit-4x);
+  --wb-spacing-static-smallest: var(--wb-layout-spacing-unit-3x);
+  --wb-spacing-static-tiny: var(--wb-layout-spacing-unit-2x);
+}
+
+:root[data-mode="on-contrast-surface"] {
+  --wb-button-border-main-radius: var(--wb-border-radius-main);
+  --wb-button-border-ring-radius: var(--wb-border-radius-subtle);
+  --wb-button-group-md-padding-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-group-padding-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-group-padding-left: var(--wb-spacing-static-medium);
+  --wb-button-group-padding-right: var(--wb-spacing-static-medium);
+  --wb-button-group-padding-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-gap: var(--wb-spacing-static-tiny);
+  --wb-button-lg-padding-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-left: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-right: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-left: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-left: var(--wb-spacing-static-large);
+  --wb-button-lg-padding-loading-right: var(--wb-spacing-static-large);
+  --wb-button-lg-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-right: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-tertiary-left: var(--wb-spacing-static-small);
+  --wb-button-lg-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-right: var(--wb-spacing-static-small);
+  --wb-button-lg-padding-tertiary-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-top: var(--wb-spacing-static-smaller);
+  --wb-button-md-gap: var(--wb-spacing-static-tiny);
+  --wb-button-md-padding-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-left: var(--wb-spacing-static-small);
+  --wb-button-md-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-md-padding-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-md-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-right: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-left: var(--wb-spacing-static-smaller);
+  --wb-button-md-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-left: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-loading-right: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-right: var(--wb-spacing-static-smaller);
+  --wb-button-md-padding-tertiary-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-top: var(--wb-spacing-static-smallest);
+  --wb-button-primary-background-color-active: var(--wb-color-shape-brand-on-contrast-active); /* @kind color */
+  --wb-button-primary-background-color-default: var(--wb-color-shape-brand-on-contrast-default); /* @kind color */
+  --wb-button-primary-background-color-focus: var(--wb-color-shape-brand-on-contrast-focus); /* @kind color */
+  --wb-button-primary-background-color-hover: var(--wb-color-shape-brand-on-contrast-hover); /* @kind color */
+  --wb-button-primary-background-color-loading: var(--wb-color-shape-brand-on-contrast-default); /* @kind color */
+  --wb-button-primary-border-main-color-active: var(--wb-color-border-brand-on-contrast-active); /* @kind color */
+  --wb-button-primary-border-main-color-default: var(--wb-color-border-brand-on-contrast-default); /* @kind color */
+  --wb-button-primary-border-main-color-focus: var(--wb-color-border-brand-on-contrast-focus); /* @kind color */
+  --wb-button-primary-border-main-color-hover: var(--wb-color-border-brand-on-contrast-hover); /* @kind color */
+  --wb-button-primary-border-main-color-loading: var(--wb-color-border-brand-on-contrast-default); /* @kind color */
+  --wb-button-primary-border-ring-color-active: var(--wb-color-border-on-contrast-on-brand-active); /* @kind color */
+  --wb-button-primary-border-ring-color-focus: var(--wb-color-border-on-contrast-on-brand-focus); /* @kind color */
+  --wb-button-primary-border-weight: var(--wb-border-weight-main);
+  --wb-button-primary-icon-leading-color-default: var(--wb-color-icon-on-contrast-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-primary-icon-only-color-default: var(--wb-color-icon-on-contrast-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-primary-icon-trailing-color-default: var(--wb-color-icon-on-contrast-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-primary-text-color-default: var(--wb-color-text-on-contrast-on-brand-default); /* @kind color */
+  --wb-button-secondary-background-color-active: var(--wb-color-shape-contrast-accent-none-to-solid-active); /* @kind color */
+  --wb-button-secondary-background-color-default: var(--wb-color-shape-contrast-accent-none-to-solid-default); /* @kind color */
+  --wb-button-secondary-background-color-focus: var(--wb-color-shape-contrast-accent-none-to-solid-focus); /* @kind color */
+  --wb-button-secondary-background-color-hover: var(--wb-color-shape-contrast-accent-none-to-solid-hover); /* @kind color */
+  --wb-button-secondary-background-color-loading: var(--wb-color-shape-contrast-accent-none-to-solid-default); /* @kind color */
+  --wb-button-secondary-border-main-color-active: var(--wb-color-border-on-contrast-mild-active); /* @kind color */
+  --wb-button-secondary-border-main-color-default: var(--wb-color-border-on-contrast-mild-default); /* @kind color */
+  --wb-button-secondary-border-main-color-focus: var(--wb-color-border-on-contrast-mild-focus); /* @kind color */
+  --wb-button-secondary-border-main-color-hover: var(--wb-color-border-on-contrast-mild-hover); /* @kind color */
+  --wb-button-secondary-border-main-color-loading: var(--wb-color-border-on-contrast-mild-default); /* @kind color */
+  --wb-button-secondary-border-ring-color-active: var(--wb-color-border-brand-on-contrast-active); /* @kind color */
+  --wb-button-secondary-border-ring-color-focus: var(--wb-color-border-brand-on-contrast-focus); /* @kind color */
+  --wb-button-secondary-border-weight: var(--wb-border-weight-main);
+  --wb-button-secondary-icon-leading-color-default: var(--wb-color-icon-on-contrast-strongest-default); /* @kind color */
+  --wb-button-secondary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-secondary-icon-only-color-default: var(--wb-color-icon-on-contrast-strongest-default); /* @kind color */
+  --wb-button-secondary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-secondary-icon-trailing-color-default: var(--wb-color-icon-on-contrast-strongest-default); /* @kind color */
+  --wb-button-secondary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-secondary-text-color-default: var(--wb-color-icon-on-contrast-strongest-default); /* @kind color */
+  --wb-button-sm-gap: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-left: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-right: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-top: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-left: var(--wb-spacing-static-smaller);
+  --wb-button-sm-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-sm-padding-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-sm-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-right: var(--wb-spacing-static-smaller);
+  --wb-button-sm-padding-tertiary-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-left: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-left: var(--wb-spacing-static-small);
+  --wb-button-sm-padding-tertiary-loading-right: var(--wb-spacing-static-small);
+  --wb-button-sm-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-right: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-top: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-top: var(--wb-spacing-static-tiny);
+  --wb-button-tertiary-background-color-active: var(--wb-color-shape-contrast-accent-none-to-translucent-active); /* @kind color */
+  --wb-button-tertiary-background-color-default: var(--wb-color-shape-contrast-accent-none-to-translucent-default); /* @kind color */
+  --wb-button-tertiary-background-color-focus: var(--wb-color-shape-contrast-accent-none-to-translucent-focus); /* @kind color */
+  --wb-button-tertiary-background-color-hover: var(--wb-color-shape-contrast-accent-none-to-translucent-hover); /* @kind color */
+  --wb-button-tertiary-background-color-loading: var(--wb-color-shape-contrast-accent-none-to-translucent-default); /* @kind color */
+  --wb-button-tertiary-border-ring-color-active: var(--wb-color-border-weaker-active); /* @kind color */
+  --wb-button-tertiary-border-ring-color-focus: var(--wb-color-border-weaker-focus); /* @kind color */
+  --wb-button-tertiary-border-weight: var(--wb-border-weight-main);
+  --wb-button-tertiary-icon-leading-color-default: var(--wb-color-icon-brand-on-contrast-default); /* @kind color */
+  --wb-button-tertiary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-tertiary-icon-only-color-default: var(--wb-color-icon-brand-on-contrast-default); /* @kind color */
+  --wb-button-tertiary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-tertiary-icon-trailing-color-default: var(--wb-color-icon-brand-on-contrast-default); /* @kind color */
+  --wb-button-tertiary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-tertiary-text-color-default: var(--wb-color-text-brand-on-contrast-default); /* @kind color */
+  --wb-button-translucent-background-color-active: var(--wb-color-shape-contrast-accent-strong-active); /* @kind color */
+  --wb-button-translucent-background-color-default: var(--wb-color-shape-contrast-accent-strong-default); /* @kind color */
+  --wb-button-translucent-background-color-focus: var(--wb-color-shape-contrast-accent-strong-focus); /* @kind color */
+  --wb-button-translucent-background-color-hover: var(--wb-color-shape-contrast-accent-strong-hover); /* @kind color */
+  --wb-button-translucent-background-color-loading: var(--wb-color-shape-contrast-accent-strong-default); /* @kind color */
+  --wb-button-translucent-border-main-color-active: var(--wb-color-border-on-contrast-mild-active); /* @kind color */
+  --wb-button-translucent-border-main-color-default: var(--wb-color-border-on-contrast-mild-default); /* @kind color */
+  --wb-button-translucent-border-main-color-focus: var(--wb-color-border-on-contrast-mild-focus); /* @kind color */
+  --wb-button-translucent-border-main-color-hover: var(--wb-color-border-on-contrast-mild-hover); /* @kind color */
+  --wb-button-translucent-border-main-color-loading: var(--wb-color-border-on-contrast-mild-default); /* @kind color */
+  --wb-button-translucent-border-ring-color-active: var(--wb-color-border-weaker-active); /* @kind color */
+  --wb-button-translucent-border-ring-color-focus: var(--wb-color-border-weaker-focus); /* @kind color */
+  --wb-button-translucent-border-weight: var(--wb-border-weight-main);
+  --wb-button-translucent-icon-leading-color-default: var(--wb-color-icon-on-contrast-strongest-default); /* @kind color */
+  --wb-button-translucent-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-translucent-icon-only-color-default: var(--wb-color-icon-on-contrast-strongest-default); /* @kind color */
+  --wb-button-translucent-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-translucent-icon-trailing-color-default: var(--wb-color-icon-on-contrast-strongest-default); /* @kind color */
+  --wb-button-translucent-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-translucent-text-color-default: var(--wb-color-text-on-contrast-strongest-default); /* @kind color */
+  --wb-spinner-basic-background-color: var(--wb-color-shape-contrast-dim-default); /* @kind color */
+  --wb-spinner-basic-loader-color: var(--wb-color-shape-brand-on-contrast-default); /* @kind color */
+  --wb-spinner-border-weight: var(--wb-border-weight-strong);
+  --wb-spinner-on-brand-background-color: var(--wb-color-shape-contrast-accent-weak-default); /* @kind color */
+  --wb-spinner-on-brand-loader-color: var(--wb-color-shape-contrast-on-brand-default); /* @kind color */
+}
+
+:root[data-theme="light"], .light {
+  --wb-button-border-main-radius: var(--wb-border-radius-main);
+  --wb-button-border-ring-radius: var(--wb-border-radius-subtle);
+  --wb-button-group-md-padding-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-group-padding-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-group-padding-left: var(--wb-spacing-static-medium);
+  --wb-button-group-padding-right: var(--wb-spacing-static-medium);
+  --wb-button-group-padding-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-gap: var(--wb-spacing-static-tiny);
+  --wb-button-lg-padding-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-left: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-right: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-icon-only-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-left: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-loading-left: var(--wb-spacing-static-large);
+  --wb-button-lg-padding-loading-right: var(--wb-spacing-static-large);
+  --wb-button-lg-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-right: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-bottom: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-tertiary-left: var(--wb-spacing-static-small);
+  --wb-button-lg-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-lg-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-lg-padding-tertiary-right: var(--wb-spacing-static-small);
+  --wb-button-lg-padding-tertiary-top: var(--wb-spacing-static-smaller);
+  --wb-button-lg-padding-top: var(--wb-spacing-static-smaller);
+  --wb-button-md-gap: var(--wb-spacing-static-tiny);
+  --wb-button-md-padding-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-left: var(--wb-spacing-static-small);
+  --wb-button-md-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-md-padding-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-md-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-right: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-left: var(--wb-spacing-static-smaller);
+  --wb-button-md-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-loading-left: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-loading-right: var(--wb-spacing-static-small);
+  --wb-button-md-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-tertiary-right: var(--wb-spacing-static-smaller);
+  --wb-button-md-padding-tertiary-top: var(--wb-spacing-static-smallest);
+  --wb-button-md-padding-top: var(--wb-spacing-static-smallest);
+  --wb-button-primary-background-color-active: var(--wb-color-shape-brand-active); /* @kind color */
+  --wb-button-primary-background-color-default: var(--wb-color-shape-brand-default); /* @kind color */
+  --wb-button-primary-background-color-focus: var(--wb-color-shape-brand-focus); /* @kind color */
+  --wb-button-primary-background-color-hover: var(--wb-color-shape-brand-hover); /* @kind color */
+  --wb-button-primary-background-color-loading: var(--wb-color-shape-brand-default); /* @kind color */
+  --wb-button-primary-border-main-color-active: var(--wb-color-border-brand-active); /* @kind color */
+  --wb-button-primary-border-main-color-default: var(--wb-color-border-brand-default); /* @kind color */
+  --wb-button-primary-border-main-color-focus: var(--wb-color-border-brand-focus); /* @kind color */
+  --wb-button-primary-border-main-color-hover: var(--wb-color-border-brand-hover); /* @kind color */
+  --wb-button-primary-border-main-color-loading: var(--wb-color-border-brand-default); /* @kind color */
+  --wb-button-primary-border-ring-color-active: var(--wb-color-border-on-brand-active); /* @kind color */
+  --wb-button-primary-border-ring-color-focus: var(--wb-color-border-on-brand-focus); /* @kind color */
+  --wb-button-primary-border-weight: var(--wb-border-weight-main);
+  --wb-button-primary-icon-leading-color-default: var(--wb-color-icon-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-primary-icon-only-color-default: var(--wb-color-icon-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-primary-icon-trailing-color-default: var(--wb-color-icon-on-brand-default); /* @kind color */
+  --wb-button-primary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-primary-text-color-default: var(--wb-color-text-on-brand-default); /* @kind color */
+  --wb-button-secondary-background-color-active: var(--wb-color-fixed-component-button-secondary-on-light-image-background-active); /* @kind color */
+  --wb-button-secondary-background-color-default: var(--wb-color-fixed-component-button-secondary-on-light-image-background-default); /* @kind color */
+  --wb-button-secondary-background-color-focus: var(--wb-color-fixed-component-button-secondary-on-light-image-background-focus); /* @kind color */
+  --wb-button-secondary-background-color-hover: var(--wb-color-fixed-component-button-secondary-on-light-image-background-hover); /* @kind color */
+  --wb-button-secondary-background-color-loading: var(--wb-color-fixed-component-button-secondary-on-light-image-background-loading); /* @kind color */
+  --wb-button-secondary-border-main-color-active: var(--wb-color-fixed-component-button-secondary-on-light-image-border-main-active); /* @kind color */
+  --wb-button-secondary-border-main-color-default: var(--wb-color-fixed-component-button-secondary-on-light-image-border-main-default); /* @kind color */
+  --wb-button-secondary-border-main-color-focus: var(--wb-color-fixed-component-button-secondary-on-light-image-border-main-focus); /* @kind color */
+  --wb-button-secondary-border-main-color-hover: var(--wb-color-fixed-component-button-secondary-on-light-image-border-main-hover); /* @kind color */
+  --wb-button-secondary-border-main-color-loading: var(--wb-color-fixed-component-button-secondary-on-light-image-border-main-loading); /* @kind color */
+  --wb-button-secondary-border-ring-color-active: var(--wb-color-fixed-component-button-secondary-on-light-image-border-ring-active); /* @kind color */
+  --wb-button-secondary-border-ring-color-focus: var(--wb-color-fixed-component-button-secondary-on-light-image-border-ring-focus); /* @kind color */
+  --wb-button-secondary-border-weight: var(--wb-border-weight-main);
+  --wb-button-secondary-icon-leading-color-default: var(--wb-color-fixed-component-button-secondary-on-light-image-icon-default); /* @kind color */
+  --wb-button-secondary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-secondary-icon-only-color-default: var(--wb-color-fixed-component-button-secondary-on-light-image-icon-default); /* @kind color */
+  --wb-button-secondary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-secondary-icon-trailing-color-default: var(--wb-color-fixed-component-button-secondary-on-light-image-icon-default); /* @kind color */
+  --wb-button-secondary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-secondary-text-color-default: var(--wb-color-fixed-component-button-secondary-on-light-image-text-default); /* @kind color */
+  --wb-button-sm-gap: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-left: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-right: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-icon-only-top: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-left: var(--wb-spacing-static-smaller);
+  --wb-button-sm-padding-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-loading-left: var(--wb-spacing-static-medium);
+  --wb-button-sm-padding-loading-right: var(--wb-spacing-static-medium);
+  --wb-button-sm-padding-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-right: var(--wb-spacing-static-smaller);
+  --wb-button-sm-padding-tertiary-bottom: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-left: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-loading-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-bottom: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-left: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-right: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-icon-only-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-loading-left: var(--wb-spacing-static-small);
+  --wb-button-sm-padding-tertiary-loading-right: var(--wb-spacing-static-small);
+  --wb-button-sm-padding-tertiary-loading-top: var(--wb-spacing-static-smallest);
+  --wb-button-sm-padding-tertiary-right: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-tertiary-top: var(--wb-spacing-static-tiny);
+  --wb-button-sm-padding-top: var(--wb-spacing-static-tiny);
+  --wb-button-tertiary-background-color-active: var(--wb-color-fixed-component-button-tertiary-on-light-image-background-active); /* @kind color */
+  --wb-button-tertiary-background-color-default: var(--wb-color-fixed-component-button-tertiary-on-light-image-background-default); /* @kind color */
+  --wb-button-tertiary-background-color-focus: var(--wb-color-fixed-component-button-tertiary-on-light-image-background-focus); /* @kind color */
+  --wb-button-tertiary-background-color-hover: var(--wb-color-fixed-component-button-tertiary-on-light-image-background-hover); /* @kind color */
+  --wb-button-tertiary-background-color-loading: var(--wb-color-fixed-component-button-tertiary-on-light-image-background-loading); /* @kind color */
+  --wb-button-tertiary-border-ring-color-active: var(--wb-color-fixed-component-button-tertiary-on-light-image-border-ring-active); /* @kind color */
+  --wb-button-tertiary-border-ring-color-focus: var(--wb-color-fixed-component-button-tertiary-on-light-image-border-ring-focus); /* @kind color */
+  --wb-button-tertiary-border-weight: var(--wb-border-weight-main);
+  --wb-button-tertiary-icon-leading-color-default: var(--wb-color-fixed-component-button-tertiary-on-light-image-icon-default); /* @kind color */
+  --wb-button-tertiary-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-tertiary-icon-only-color-default: var(--wb-color-fixed-component-button-tertiary-on-light-image-icon-default); /* @kind color */
+  --wb-button-tertiary-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-tertiary-icon-trailing-color-default: var(--wb-color-fixed-component-button-tertiary-on-light-image-icon-default); /* @kind color */
+  --wb-button-tertiary-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-tertiary-text-color-default: var(--wb-color-fixed-component-button-tertiary-on-light-image-text-default); /* @kind color */
+  --wb-button-translucent-background-color-active: var(--wb-color-fixed-component-button-translucent-on-light-image-background-active); /* @kind color */
+  --wb-button-translucent-background-color-default: var(--wb-color-fixed-component-button-translucent-on-light-image-background-default); /* @kind color */
+  --wb-button-translucent-background-color-focus: var(--wb-color-fixed-component-button-translucent-on-light-image-background-focus); /* @kind color */
+  --wb-button-translucent-background-color-hover: var(--wb-color-fixed-component-button-translucent-on-light-image-background-hover); /* @kind color */
+  --wb-button-translucent-background-color-loading: var(--wb-color-fixed-component-button-translucent-on-light-image-background-loading); /* @kind color */
+  --wb-button-translucent-border-main-color-active: var(--wb-color-fixed-component-button-translucent-on-light-image-border-main-active); /* @kind color */
+  --wb-button-translucent-border-main-color-default: var(--wb-color-fixed-component-button-translucent-on-light-image-border-main-default); /* @kind color */
+  --wb-button-translucent-border-main-color-focus: var(--wb-color-fixed-component-button-translucent-on-light-image-border-main-focus); /* @kind color */
+  --wb-button-translucent-border-main-color-hover: var(--wb-color-fixed-component-button-translucent-on-light-image-border-main-hover); /* @kind color */
+  --wb-button-translucent-border-main-color-loading: var(--wb-color-fixed-component-button-translucent-on-light-image-border-main-loading); /* @kind color */
+  --wb-button-translucent-border-ring-color-active: var(--wb-color-fixed-component-button-translucent-on-light-image-border-ring-active); /* @kind color */
+  --wb-button-translucent-border-ring-color-focus: var(--wb-color-fixed-component-button-translucent-on-light-image-border-ring-focus); /* @kind color */
+  --wb-button-translucent-border-weight: var(--wb-border-weight-main);
+  --wb-button-translucent-icon-leading-color-default: var(--wb-color-fixed-component-button-translucent-on-light-image-icon-default); /* @kind color */
+  --wb-button-translucent-icon-leading-size: var(--wb-spacing-static-smaller);
+  --wb-button-translucent-icon-only-color-default: var(--wb-color-fixed-component-button-translucent-on-light-image-icon-default); /* @kind color */
+  --wb-button-translucent-icon-only-size: var(--wb-spacing-static-small);
+  --wb-button-translucent-icon-trailing-color-default: var(--wb-color-fixed-component-button-translucent-on-light-image-icon-default); /* @kind color */
+  --wb-button-translucent-icon-trailing-size: var(--wb-spacing-static-smaller);
+  --wb-button-translucent-text-color-default: var(--wb-color-fixed-component-button-translucent-on-light-image-text-default); /* @kind color */
+  --wb-spinner-basic-background-color: var(--wb-color-fixed-component-spinner-basic-on-light-image-background); /* @kind color */
+  --wb-spinner-basic-loader-color: var(--wb-color-shape-brand-default); /* @kind color */
+  --wb-spinner-border-weight: var(--wb-border-weight-strong);
+  --wb-spinner-on-brand-background-color: var(--wb-color-fixed-component-spinner-on-brand-on-light-image-background); /* @kind color */
+  --wb-spinner-on-brand-loader-color: var(--wb-color-shape-on-brand-default); /* @kind color */
+}
+
+:root[data-mode="amg"] {
+  --wb-border-radius-main: var(--wb-border-radius-100);
+  --wb-border-radius-sharp: var(--wb-border-radius-0);
+  --wb-border-radius-softer: var(--wb-border-radius-400);
+  --wb-border-radius-subtle: var(--wb-border-radius-50);
+  --wb-border-weight-main: var(--wb-border-weight-100);
+  --wb-border-weight-strong: var(--wb-border-weight-150);
+  --wb-color-border-brand-active: var(--wb-color-generated-brand-amg-main-active); /* @kind color */
+  --wb-color-border-brand-default: var(--wb-color-amg-100); /* @kind color */
+  --wb-color-border-brand-focus: var(--wb-color-generated-brand-amg-main-focus); /* @kind color */
+  --wb-color-border-brand-hover: var(--wb-color-generated-brand-amg-main-hover); /* @kind color */
+  --wb-color-border-brand-on-contrast-active: var(--wb-color-generated-brand-amg-contrast-active); /* @kind color */
+  --wb-color-border-brand-on-contrast-default: var(--wb-color-amg-on-contrast-100); /* @kind color */
+  --wb-color-border-brand-on-contrast-focus: var(--wb-color-generated-brand-amg-contrast-focus); /* @kind color */
+  --wb-color-border-brand-on-contrast-hover: var(--wb-color-generated-brand-amg-contrast-hover); /* @kind color */
+  --wb-color-border-main-active: var(--wb-color-generated-grey-500-active); /* @kind color */
+  --wb-color-border-main-default: var(--wb-color-grey-500); /* @kind color */
+  --wb-color-border-main-focus: var(--wb-color-generated-grey-500-focus); /* @kind color */
+  --wb-color-border-main-hover: var(--wb-color-generated-grey-500-hover); /* @kind color */
+  --wb-color-border-on-brand-active: var(--wb-color-generated-white-active); /* @kind color */
+  --wb-color-border-on-brand-focus: var(--wb-color-generated-white-focus); /* @kind color */
+  --wb-color-border-on-contrast-mild-active: var(--wb-color-generated-grey-400-active); /* @kind color */
+  --wb-color-border-on-contrast-mild-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-border-on-contrast-mild-focus: var(--wb-color-generated-grey-400-focus); /* @kind color */
+  --wb-color-border-on-contrast-mild-hover: var(--wb-color-generated-grey-400-hover); /* @kind color */
+  --wb-color-border-on-contrast-on-brand-active: var(--wb-color-generated-white-active); /* @kind color */
+  --wb-color-border-on-contrast-on-brand-focus: var(--wb-color-generated-white-focus); /* @kind color */
+  --wb-color-border-weaker-active: var(--wb-color-generated-grey-100-active); /* @kind color */
+  --wb-color-border-weaker-focus: var(--wb-color-generated-grey-100-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-active: var(--wb-color-generated-accent-contrast-none-to-solid-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-focus: var(--wb-color-generated-accent-contrast-none-to-solid-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-hover: var(--wb-color-generated-accent-contrast-none-to-solid-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-loading: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-active: var(--wb-color-generated-grey-500-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-default: var(--wb-color-grey-500); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-focus: var(--wb-color-generated-grey-500-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-hover: var(--wb-color-generated-grey-500-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-loading: var(--wb-color-grey-500); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-ring-active: var(--wb-color-generated-brand-amg-main-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-ring-focus: var(--wb-color-generated-brand-amg-main-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-icon-default: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-text-default: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-active: var(--wb-color-generated-accent-main-none-to-solid-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-focus: var(--wb-color-generated-accent-main-none-to-solid-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-hover: var(--wb-color-generated-accent-main-none-to-solid-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-loading: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-active: var(--wb-color-generated-grey-400-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-focus: var(--wb-color-generated-grey-400-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-hover: var(--wb-color-generated-grey-400-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-loading: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-ring-active: var(--wb-color-generated-brand-amg-contrast-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-ring-focus: var(--wb-color-generated-brand-amg-contrast-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-icon-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-text-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-active: var(--wb-color-generated-accent-contrast-none-to-translucent-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-focus: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-hover: var(--wb-color-generated-accent-contrast-none-to-translucent-hover); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-loading: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-border-ring-active: var(--wb-color-generated-brand-amg-main-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-border-ring-focus: var(--wb-color-generated-brand-amg-main-focus); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-icon-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-text-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-active: var(--wb-color-generated-accent-main-none-to-translucent-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-focus: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-hover: var(--wb-color-generated-accent-main-none-to-translucent-hover); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-loading: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-border-ring-active: var(--wb-color-generated-black-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-border-ring-focus: var(--wb-color-generated-black-focus); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-icon-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-text-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-active: var(--wb-color-generated-accent-contrast-medium-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-default: var(--wb-color-black-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-focus: var(--wb-color-generated-accent-contrast-medium-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-hover: var(--wb-color-generated-accent-contrast-medium-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-loading: var(--wb-color-black-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-active: var(--wb-color-generated-grey-500-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-default: var(--wb-color-grey-500); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-focus: var(--wb-color-generated-grey-500-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-hover: var(--wb-color-generated-grey-500-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-loading: var(--wb-color-grey-500); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-ring-active: var(--wb-color-generated-brand-amg-main-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-ring-focus: var(--wb-color-generated-brand-amg-main-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-icon-default: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-text-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-active: var(--wb-color-generated-accent-main-medium-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-default: var(--wb-color-white-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-focus: var(--wb-color-generated-accent-main-medium-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-hover: var(--wb-color-generated-accent-main-medium-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-loading: var(--wb-color-white-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-active: var(--wb-color-generated-grey-400-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-focus: var(--wb-color-generated-grey-400-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-hover: var(--wb-color-generated-grey-400-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-loading: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-ring-active: var(--wb-color-generated-black-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-ring-focus: var(--wb-color-generated-black-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-icon-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-text-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-fixed-component-spinner-basic-on-dark-image-background: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-fixed-component-spinner-basic-on-light-image-background: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-fixed-component-spinner-on-brand-on-dark-image-background: var(--wb-color-black-opacity-low); /* @kind color */
+  --wb-color-fixed-component-spinner-on-brand-on-light-image-background: var(--wb-color-white-opacity-low); /* @kind color */
+  --wb-color-icon-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-icon-brand-on-contrast-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-icon-main-default: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-icon-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-icon-on-contrast-main-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-icon-on-contrast-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-icon-on-contrast-strongest-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-active: var(--wb-color-generated-accent-contrast-none-to-solid-active); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-focus: var(--wb-color-generated-accent-contrast-none-to-solid-focus); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-hover: var(--wb-color-generated-accent-contrast-none-to-solid-hover); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-active: var(--wb-color-generated-accent-contrast-none-to-translucent-active); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-focus: var(--wb-color-generated-accent-contrast-none-to-translucent-focus); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-hover: var(--wb-color-generated-accent-contrast-none-to-translucent-hover); /* @kind color */
+  --wb-color-shape-accent-strong-active: var(--wb-color-generated-accent-contrast-medium-active); /* @kind color */
+  --wb-color-shape-accent-strong-default: var(--wb-color-black-opacity-medium); /* @kind color */
+  --wb-color-shape-accent-strong-focus: var(--wb-color-generated-accent-contrast-medium-focus); /* @kind color */
+  --wb-color-shape-accent-strong-hover: var(--wb-color-generated-accent-contrast-medium-hover); /* @kind color */
+  --wb-color-shape-accent-weak-default: var(--wb-color-black-opacity-low); /* @kind color */
+  --wb-color-shape-brand-active: var(--wb-color-generated-brand-amg-main-active); /* @kind color */
+  --wb-color-shape-brand-default: var(--wb-color-amg-100); /* @kind color */
+  --wb-color-shape-brand-focus: var(--wb-color-generated-brand-amg-main-focus); /* @kind color */
+  --wb-color-shape-brand-hover: var(--wb-color-generated-brand-amg-main-hover); /* @kind color */
+  --wb-color-shape-brand-on-contrast-active: var(--wb-color-generated-brand-amg-contrast-active); /* @kind color */
+  --wb-color-shape-brand-on-contrast-default: var(--wb-color-amg-on-contrast-100); /* @kind color */
+  --wb-color-shape-brand-on-contrast-focus: var(--wb-color-generated-brand-amg-contrast-focus); /* @kind color */
+  --wb-color-shape-brand-on-contrast-hover: var(--wb-color-generated-brand-amg-contrast-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-active: var(--wb-color-generated-accent-main-none-to-solid-active); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-focus: var(--wb-color-generated-accent-main-none-to-solid-focus); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-hover: var(--wb-color-generated-accent-main-none-to-solid-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-active: var(--wb-color-generated-accent-main-none-to-translucent-active); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-focus: var(--wb-color-generated-accent-main-none-to-translucent-focus); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-hover: var(--wb-color-generated-accent-main-none-to-translucent-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-active: var(--wb-color-generated-accent-main-medium-active); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-default: var(--wb-color-white-opacity-medium); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-focus: var(--wb-color-generated-accent-main-medium-focus); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-hover: var(--wb-color-generated-accent-main-medium-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-weak-default: var(--wb-color-white-opacity-low); /* @kind color */
+  --wb-color-shape-contrast-dim-default: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-shape-contrast-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-shape-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-shape-weak-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-shape-weakest-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-surface-accent-weak-default: var(--wb-color-black-opacity-low); /* @kind color */
+  --wb-color-text-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-text-brand-on-contrast-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-text-main-default: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-text-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-text-on-contrast-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-text-on-contrast-strongest-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-text-weakest-default: var(--wb-color-grey-500); /* @kind color */
+  --wb-typography-mq4-6-copy-medium-font-family: var(--wb-typography-font-family-amg-copy);
+  --wb-typography-mq4-6-copy-medium-font-letter-spacing: var(--wb-typography-font-letter-spacing-tiny);
+  --wb-typography-mq4-6-copy-medium-font-line-height: var(--wb-typography-font-size-unit-6x);
+  --wb-typography-mq4-6-copy-medium-font-size: var(--wb-typography-font-size-unit-4x);
+  --wb-typography-mq4-6-copy-medium-font-weight-main: var(--wb-typography-font-weight-main);
+  --wb-typography-mq4-6-heading-smallest-font-family: var(--wb-typography-font-family-amg-copy);
+  --wb-typography-mq4-6-heading-smallest-font-letter-spacing: var(--wb-typography-font-letter-spacing-none);
+  --wb-typography-mq4-6-heading-smallest-font-line-height: var(--wb-typography-font-line-height-unit-7x);
+  --wb-typography-mq4-6-heading-smallest-font-size: var(--wb-typography-font-size-unit-5x);
+  --wb-typography-mq4-6-heading-smallest-font-weight: var(--wb-typography-font-weight-strong);
+  --wb-typography-static-large-font-family: var(--wb-typography-font-family-amg-copy);
+  --wb-typography-static-large-font-letter-spacing: var(--wb-typography-font-letter-spacing-tiny);
+  --wb-typography-static-large-font-line-height: var(--wb-typography-font-line-height-unit-6x);
+  --wb-typography-static-large-font-size: var(--wb-typography-font-size-unit-4x);
+  --wb-typography-static-large-font-weight-strong: var(--wb-typography-font-weight-strong);
+}
+
+:root[data-mode="maybach"] {
+  --wb-border-radius-main: var(--wb-border-radius-100);
+  --wb-border-radius-sharp: var(--wb-border-radius-0);
+  --wb-border-radius-softer: var(--wb-border-radius-400);
+  --wb-border-radius-subtle: var(--wb-border-radius-50);
+  --wb-border-weight-main: var(--wb-border-weight-100);
+  --wb-border-weight-strong: var(--wb-border-weight-150);
+  --wb-color-border-brand-active: var(--wb-color-generated-brand-maybach-main-active); /* @kind color */
+  --wb-color-border-brand-default: var(--wb-color-maybach-100); /* @kind color */
+  --wb-color-border-brand-focus: var(--wb-color-generated-brand-maybach-main-focus); /* @kind color */
+  --wb-color-border-brand-hover: var(--wb-color-generated-brand-maybach-main-hover); /* @kind color */
+  --wb-color-border-brand-on-contrast-active: var(--wb-color-generated-brand-maybach-contrast-active); /* @kind color */
+  --wb-color-border-brand-on-contrast-default: var(--wb-color-maybach-on-contrast-100); /* @kind color */
+  --wb-color-border-brand-on-contrast-focus: var(--wb-color-generated-brand-maybach-contrast-focus); /* @kind color */
+  --wb-color-border-brand-on-contrast-hover: var(--wb-color-generated-brand-maybach-contrast-hover); /* @kind color */
+  --wb-color-border-main-active: var(--wb-color-generated-grey-600-active); /* @kind color */
+  --wb-color-border-main-default: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-border-main-focus: var(--wb-color-generated-grey-600-focus); /* @kind color */
+  --wb-color-border-main-hover: var(--wb-color-generated-grey-600-hover); /* @kind color */
+  --wb-color-border-on-brand-active: var(--wb-color-generated-white-active); /* @kind color */
+  --wb-color-border-on-brand-focus: var(--wb-color-generated-white-focus); /* @kind color */
+  --wb-color-border-on-contrast-mild-active: var(--wb-color-generated-grey-400-active); /* @kind color */
+  --wb-color-border-on-contrast-mild-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-border-on-contrast-mild-focus: var(--wb-color-generated-grey-400-focus); /* @kind color */
+  --wb-color-border-on-contrast-mild-hover: var(--wb-color-generated-grey-400-hover); /* @kind color */
+  --wb-color-border-on-contrast-on-brand-active: var(--wb-color-generated-black-active); /* @kind color */
+  --wb-color-border-on-contrast-on-brand-focus: var(--wb-color-generated-black-focus); /* @kind color */
+  --wb-color-border-weaker-active: var(--wb-color-generated-grey-900-active); /* @kind color */
+  --wb-color-border-weaker-focus: var(--wb-color-generated-grey-900-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-active: var(--wb-color-generated-accent-contrast-none-to-solid-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-focus: var(--wb-color-generated-accent-contrast-none-to-solid-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-hover: var(--wb-color-generated-accent-contrast-none-to-solid-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-background-loading: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-active: var(--wb-color-generated-grey-400-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-focus: var(--wb-color-generated-grey-400-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-hover: var(--wb-color-generated-grey-400-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-main-loading: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-ring-active: var(--wb-color-generated-brand-maybach-contrast-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-border-ring-focus: var(--wb-color-generated-brand-maybach-contrast-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-icon-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-dark-image-text-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-active: var(--wb-color-generated-accent-main-none-to-solid-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-focus: var(--wb-color-generated-accent-main-none-to-solid-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-hover: var(--wb-color-generated-accent-main-none-to-solid-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-background-loading: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-active: var(--wb-color-generated-grey-600-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-default: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-focus: var(--wb-color-generated-grey-600-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-hover: var(--wb-color-generated-grey-600-hover); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-main-loading: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-ring-active: var(--wb-color-generated-brand-maybach-main-active); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-border-ring-focus: var(--wb-color-generated-brand-maybach-main-focus); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-icon-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-fixed-component-button-secondary-on-light-image-text-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-active: var(--wb-color-generated-accent-contrast-none-to-translucent-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-focus: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-hover: var(--wb-color-generated-accent-contrast-none-to-translucent-hover); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-background-loading: var(--wb-color-black-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-border-ring-active: var(--wb-color-generated-grey-900-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-border-ring-focus: var(--wb-color-generated-grey-900-focus); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-icon-default: var(--wb-color-maybach-on-contrast-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-dark-image-text-default: var(--wb-color-maybach-on-contrast-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-active: var(--wb-color-generated-accent-main-none-to-translucent-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-focus: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-hover: var(--wb-color-generated-accent-main-none-to-translucent-hover); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-background-loading: var(--wb-color-white-0); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-border-ring-active: var(--wb-color-generated-brand-maybach-main-active); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-border-ring-focus: var(--wb-color-generated-brand-maybach-main-focus); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-icon-default: var(--wb-color-maybach-100); /* @kind color */
+  --wb-color-fixed-component-button-tertiary-on-light-image-text-default: var(--wb-color-maybach-100); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-active: var(--wb-color-generated-accent-contrast-medium-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-default: var(--wb-color-black-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-focus: var(--wb-color-generated-accent-contrast-medium-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-hover: var(--wb-color-generated-accent-contrast-medium-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-background-loading: var(--wb-color-black-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-active: var(--wb-color-generated-grey-400-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-focus: var(--wb-color-generated-grey-400-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-hover: var(--wb-color-generated-grey-400-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-main-loading: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-ring-active: var(--wb-color-generated-grey-900-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-border-ring-focus: var(--wb-color-generated-grey-900-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-icon-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-dark-image-text-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-active: var(--wb-color-generated-accent-main-medium-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-default: var(--wb-color-white-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-focus: var(--wb-color-generated-accent-main-medium-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-hover: var(--wb-color-generated-accent-main-medium-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-background-loading: var(--wb-color-white-opacity-medium); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-active: var(--wb-color-generated-grey-600-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-default: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-focus: var(--wb-color-generated-grey-600-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-hover: var(--wb-color-generated-grey-600-hover); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-main-loading: var(--wb-color-grey-600); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-ring-active: var(--wb-color-generated-brand-maybach-main-active); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-border-ring-focus: var(--wb-color-generated-brand-maybach-main-focus); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-icon-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-fixed-component-button-translucent-on-light-image-text-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-fixed-component-spinner-basic-on-dark-image-background: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-fixed-component-spinner-basic-on-light-image-background: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-fixed-component-spinner-on-brand-on-dark-image-background: var(--wb-color-black-opacity-low); /* @kind color */
+  --wb-color-fixed-component-spinner-on-brand-on-light-image-background: var(--wb-color-white-opacity-low); /* @kind color */
+  --wb-color-icon-brand-default: var(--wb-color-maybach-100); /* @kind color */
+  --wb-color-icon-brand-on-contrast-default: var(--wb-color-maybach-on-contrast-100); /* @kind color */
+  --wb-color-icon-main-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-icon-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-icon-on-contrast-main-default: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-icon-on-contrast-on-brand-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-icon-on-contrast-strongest-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-active: var(--wb-color-generated-accent-main-none-to-solid-active); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-focus: var(--wb-color-generated-accent-main-none-to-solid-focus); /* @kind color */
+  --wb-color-shape-accent-none-to-solid-hover: var(--wb-color-generated-accent-main-none-to-solid-hover); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-active: var(--wb-color-generated-accent-main-none-to-translucent-active); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-default: var(--wb-color-white-0); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-focus: var(--wb-color-generated-accent-main-none-to-translucent-focus); /* @kind color */
+  --wb-color-shape-accent-none-to-translucent-hover: var(--wb-color-generated-accent-main-none-to-translucent-hover); /* @kind color */
+  --wb-color-shape-accent-strong-active: var(--wb-color-generated-accent-main-medium-active); /* @kind color */
+  --wb-color-shape-accent-strong-default: var(--wb-color-white-opacity-medium); /* @kind color */
+  --wb-color-shape-accent-strong-focus: var(--wb-color-generated-accent-main-medium-focus); /* @kind color */
+  --wb-color-shape-accent-strong-hover: var(--wb-color-generated-accent-main-medium-hover); /* @kind color */
+  --wb-color-shape-accent-weak-default: var(--wb-color-white-opacity-low); /* @kind color */
+  --wb-color-shape-brand-active: var(--wb-color-generated-brand-maybach-main-active); /* @kind color */
+  --wb-color-shape-brand-default: var(--wb-color-maybach-100); /* @kind color */
+  --wb-color-shape-brand-focus: var(--wb-color-generated-brand-maybach-main-focus); /* @kind color */
+  --wb-color-shape-brand-hover: var(--wb-color-generated-brand-maybach-main-hover); /* @kind color */
+  --wb-color-shape-brand-on-contrast-active: var(--wb-color-generated-brand-maybach-contrast-active); /* @kind color */
+  --wb-color-shape-brand-on-contrast-default: var(--wb-color-maybach-on-contrast-100); /* @kind color */
+  --wb-color-shape-brand-on-contrast-focus: var(--wb-color-generated-brand-maybach-contrast-focus); /* @kind color */
+  --wb-color-shape-brand-on-contrast-hover: var(--wb-color-generated-brand-maybach-contrast-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-active: var(--wb-color-generated-accent-contrast-none-to-solid-active); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-focus: var(--wb-color-generated-accent-contrast-none-to-solid-focus); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-solid-hover: var(--wb-color-generated-accent-contrast-none-to-solid-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-active: var(--wb-color-generated-accent-contrast-none-to-translucent-active); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-default: var(--wb-color-black-0); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-focus: var(--wb-color-generated-accent-contrast-none-to-translucent-focus); /* @kind color */
+  --wb-color-shape-contrast-accent-none-to-translucent-hover: var(--wb-color-generated-accent-contrast-none-to-translucent-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-active: var(--wb-color-generated-accent-contrast-medium-active); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-default: var(--wb-color-black-opacity-medium); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-focus: var(--wb-color-generated-accent-contrast-medium-focus); /* @kind color */
+  --wb-color-shape-contrast-accent-strong-hover: var(--wb-color-generated-accent-contrast-medium-hover); /* @kind color */
+  --wb-color-shape-contrast-accent-weak-default: var(--wb-color-black-opacity-low); /* @kind color */
+  --wb-color-shape-contrast-dim-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-color-shape-contrast-on-brand-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-shape-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-shape-weak-default: var(--wb-color-grey-800); /* @kind color */
+  --wb-color-shape-weakest-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-surface-accent-weak-default: var(--wb-color-white-opacity-low); /* @kind color */
+  --wb-color-text-brand-default: var(--wb-color-maybach-100); /* @kind color */
+  --wb-color-text-brand-on-contrast-default: var(--wb-color-maybach-on-contrast-100); /* @kind color */
+  --wb-color-text-main-default: var(--wb-color-grey-200); /* @kind color */
+  --wb-color-text-on-brand-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-text-on-contrast-on-brand-default: var(--wb-color-black-100); /* @kind color */
+  --wb-color-text-on-contrast-strongest-default: var(--wb-color-white-100); /* @kind color */
+  --wb-color-text-weakest-default: var(--wb-color-grey-400); /* @kind color */
+  --wb-typography-mq4-6-copy-medium-font-family: var(--wb-typography-font-family-maybach-copy);
+  --wb-typography-mq4-6-copy-medium-font-letter-spacing: var(--wb-typography-font-letter-spacing-tiny);
+  --wb-typography-mq4-6-copy-medium-font-line-height: var(--wb-typography-font-size-unit-6x);
+  --wb-typography-mq4-6-copy-medium-font-size: var(--wb-typography-font-size-unit-4x);
+  --wb-typography-mq4-6-copy-medium-font-weight-main: var(--wb-typography-font-weight-main);
+  --wb-typography-mq4-6-heading-smallest-font-family: var(--wb-typography-font-family-maybach-copy);
+  --wb-typography-mq4-6-heading-smallest-font-letter-spacing: var(--wb-typography-font-letter-spacing-none);
+  --wb-typography-mq4-6-heading-smallest-font-line-height: var(--wb-typography-font-line-height-unit-7x);
+  --wb-typography-mq4-6-heading-smallest-font-size: var(--wb-typography-font-size-unit-5x);
+  --wb-typography-mq4-6-heading-smallest-font-weight: var(--wb-typography-font-weight-strong);
+  --wb-typography-static-large-font-family: var(--wb-typography-font-family-maybach-copy);
+  --wb-typography-static-large-font-letter-spacing: var(--wb-typography-font-letter-spacing-tiny);
+  --wb-typography-static-large-font-line-height: var(--wb-typography-font-line-height-unit-6x);
+  --wb-typography-static-large-font-size: var(--wb-typography-font-size-unit-4x);
+  --wb-typography-static-large-font-weight-strong: var(--wb-typography-font-weight-strong);
+}
+
+:root[data-mode="mq-4-5"] {
+  --wb-spacing-xxs: 8;
+}
+
+:root[data-mode="mq-6"] {
+  --wb-spacing-xxs: 8;
+}

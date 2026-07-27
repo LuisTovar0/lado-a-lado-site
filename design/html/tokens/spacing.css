@@ -1,0 +1,49 @@
+/* ============================================================
+   Lado a Lado — Spacing, radii, shadows, motion
+   ============================================================ */
+:root {
+  /* ---- Spacing scale (8pt base) ---- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* ---- Radii ----
+     Brand mixes fully-rounded pills (buttons, tags) with crisp
+     near-square cards. */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   20px;
+  --radius-card: 16px;
+  --radius-pill: 999px;
+  --radius-full: 50%;
+
+  /* ---- Borders ---- */
+  --border-width:        1.5px;  /* @kind other */
+  --border-width-strong: 3px;     /* @kind other */
+  --border-width-ring:   5px;  /* @kind other */
+
+  /* ---- Shadows (soft, warm, low-contrast) ---- */
+  --shadow-xs:   0 1px 2px rgba(109,46,70,0.08);
+  --shadow-sm:   0 2px 8px rgba(109,46,70,0.10);
+  --shadow-md:   0 8px 24px rgba(109,46,70,0.12);
+  --shadow-lg:   0 18px 48px rgba(109,46,70,0.16);
+  --shadow-ink:  6px 6px 0 var(--lal-preto);   /* playful hard offset */
+
+  /* ---- Layout ---- */
+  --container-max: 1200px;  /* @kind other */
+  --container-pad: clamp(20px, 5vw, 80px);  /* @kind other */
+
+  /* ---- Motion ---- */
+  --ease-out:   cubic-bezier(0.22, 1, 0.36, 1);  /* @kind other */
+  --ease-soft:  cubic-bezier(0.4, 0, 0.2, 1);    /* @kind other */
+  --dur-fast:   140ms;  /* @kind other */
+  --dur-base:   240ms;  /* @kind other */
+  --dur-slow:   420ms;  /* @kind other */
+}
