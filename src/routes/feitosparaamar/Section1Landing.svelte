@@ -9,7 +9,7 @@
     </div>
 
     <img class="huge-logo absolute top-20 md:-top-16 -right-[25%] w-[120%] md:w-full max-w-none max-h-[40%] md:max-h-[80%]"
-         src="/img/logo-hands.svg" alt="Desenho de mãos dadas"/>
+         src="/img/logo-hands.svg" alt="Desenho de mãos dadas" />
 </section>
 
 <style>

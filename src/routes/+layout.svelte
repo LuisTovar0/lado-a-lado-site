@@ -1,19 +1,19 @@
 <script>
-  import {onMount} from "svelte";
-  import "../styles.scss";
-  import Footer from "./Footer.svelte";
-  import {updateVw} from "$lib";
+    import {onMount} from "svelte";
+    import "../styles.scss";
+    import Footer from "./Footer.svelte";
+    import {updateVw} from "$lib";
 
-  onMount(() => updateVw());
+    onMount(() => updateVw());
 </script>
 
-<svelte:window on:resize={updateVw}/>
+<svelte:window on:resize={updateVw} />
 
 <main>
-    <slot/>
+    <slot />
 </main>
 
-<Footer/>
+<Footer />
 
 <style>
     main {

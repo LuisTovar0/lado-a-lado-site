@@ -1,0 +1,332 @@
+:global([id]) {
+  scroll-margin-top: 5rem;
+}
+
+/* ==================== @apply UTILITIES ==================== */
+.section {
+  @apply max-w-container mx-auto py-[var(--section-pad-y)] px-[var(--container-pad)];
+}
+
+.eyebrow {
+  @apply font-['OverpassMono',monospace] font-bold text-base tracking-[0.16em] uppercase text-[var(--theme-red)] block;
+}
+
+.eyebrow--sub {
+  @apply text-[var(--theme-brown)] mt-2;
+}
+
+.section-desc {
+  @apply font-[var(--font-ui)] text-[1.05rem]/[1.65] text-[var(--theme-black)] max-w-[560px] mt-[22px] mx-auto text-center;
+}
+
+.card-body {
+  @apply px-[30px] pt-[30px] pb-8 flex flex-col gap-3.5 flex-1;
+}
+
+.apoiar-card {
+  @apply flex flex-col gap-4 h-full;
+
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.1;
+    color: var(--theme-brown);
+    margin: 4px 0 0;
+  }
+
+  p {
+    font-family: var(--font-ui);
+    font-size: 1rem;
+    line-height: 1.65;
+    color: var(--theme-black);
+    margin: 0;
+  }
+}
+
+/* ==================== HERO NAV ==================== */
+.navlinks a {
+  font-family: 'OverpassMono', monospace;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--theme-black);
+  transition: color 140ms;
+
+  &:hover {
+    color: var(--theme-red);
+  }
+}
+
+@media (max-width: 768px) {
+  .navlinks {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    align-items: stretch;
+    background: var(--theme-white);
+    padding: 6px var(--container-pad) 22px;
+    box-shadow: 0 8px 24px rgba(109, 46, 70, 0.12);
+    z-index: 9;
+
+    &--open {
+      display: flex;
+    }
+
+    a {
+      padding: 14px 0;
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    }
+  }
+}
+
+/* ==================== SOBRE ==================== */
+#sobre .stats > div {
+  align-items: center;
+
+  :first-child {
+    font-family: var(--font-display);
+    @apply text-[clamp(2.4rem,5vw,3.4rem)] leading-none text-[var(--theme-red)] block;
+  }
+
+  :last-child {
+    @apply font-[var(--font-mono)] text-[0.74rem] tracking-[0.12em] uppercase text-[var(--theme-black)] opacity-60 mt-2 block;
+  }
+}
+
+/* ==================== COMUNIDADE SLIDESHOW ==================== */
+.slideshow {
+  @apply relative mt-12 aspect-[16/7] rounded-card overflow-hidden shadow-lal;
+}
+
+.slide {
+  @apply absolute inset-0 opacity-0;
+  animation: lalSlideFade 16s infinite;
+
+  &--1 {
+    animation-delay: 0s;
+    background: repeating-linear-gradient(38deg, #f3b686 0 16px, #efc49f 16px 32px);
+  }
+
+  &--2 {
+    animation-delay: 4s;
+    background: repeating-linear-gradient(38deg, #ffe9b0 0 16px, #f6dc9c 16px 32px);
+  }
+
+  &--3 {
+    animation-delay: 8s;
+    background: repeating-linear-gradient(38deg, #e9a6a6 0 16px, #e0b3b3 16px 32px);
+  }
+
+  &--4 {
+    animation-delay: 12s;
+    background: repeating-linear-gradient(38deg, #f3b686 0 16px, #efc49f 16px 32px);
+  }
+}
+
+.slide-label {
+  @apply absolute left-6 bottom-[22px] font-['OverpassMono',monospace] text-[0.7rem] tracking-[0.1em] uppercase text-[var(--theme-brown)] bg-[var(--theme-white)] py-[7px] px-3 rounded-pill whitespace-nowrap;
+}
+
+/* ==================== EVENTO ==================== */
+.evento-grid {
+  @apply grid gap-0 items-stretch rounded-card overflow-hidden shadow-lal bg-[var(--theme-white)];
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+.evento-image {
+  @apply relative overflow-hidden bg-[var(--theme-brown)] flex items-end justify-center min-h-[340px];
+
+  img {
+    @apply absolute inset-0 w-full h-full object-cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .evento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .evento-image {
+    min-height: 220px;
+  }
+}
+
+/* ==================== TESTEMUNHOS ==================== */
+.testemunhos {
+  background: color-mix(in srgb, var(--theme-yellow) 30%, var(--theme-white));
+  padding: var(--section-pad-y) 0;
+}
+
+.testemunhos-inner {
+  @apply max-w-container mx-auto px-[var(--container-pad)];
+}
+
+.testemunhos-grid {
+  @apply grid grid-cols-3 gap-5 mt-[54px];
+}
+
+.testemunhos-card {
+  @apply m-0 bg-[var(--theme-white)] rounded-card shadow-lal-sm p-8 px-[30px] flex flex-col gap-[22px];
+
+  blockquote {
+    @apply m-0 font-[var(--font-display)] text-[1.4rem]/[1.32] text-[var(--theme-brown)];
+  }
+
+  figcaption {
+    @apply flex items-center gap-3.5 mt-auto;
+  }
+}
+
+.testemunhos-avatar {
+  @apply relative w-14 h-14 shrink-0;
+
+  img {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 64px;
+    height: auto;
+    z-index: 1;
+    mask-image: radial-gradient(circle 28px at 32px 40px, #000 99%, transparent 100%),
+    linear-gradient(#000, #000);
+    mask-size: 100% 100%, 100% 40px;
+    mask-repeat: no-repeat;
+    mask-composite: add;
+    -webkit-mask-image: radial-gradient(circle 28px at 32px 40px, #000 99%, transparent 100%),
+    linear-gradient(#000, #000);
+    -webkit-mask-size: 100% 100%, 100% 40px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-composite: source-over;
+  }
+}
+
+@media (max-width: 768px) {
+  .testemunhos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ==================== LOJA ==================== */
+.loja-product-img {
+  @apply relative aspect-square overflow-hidden;
+
+  img {
+    @apply w-full h-full object-cover block;
+  }
+}
+
+.loja-product-body {
+  @apply p-5 pb-[22px] flex flex-col gap-3.5 flex-1;
+}
+
+.loja-product-head {
+  @apply flex items-start justify-between gap-3;
+
+  strong {
+    font-family: var(--font-sans);
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--theme-brown);
+    line-height: 1.2;
+  }
+}
+
+/* ==================== NEWSLETTER ==================== */
+.newsletter {
+  @apply bg-[var(--theme-yellow)] py-[clamp(56px,10vw,88px)] px-[var(--container-pad)] text-center;
+}
+
+.newsletter-inner {
+  @apply max-w-[640px] mx-auto;
+}
+
+.newsletter-form {
+  @apply flex gap-3 justify-center flex-wrap;
+}
+
+.newsletter-input {
+  font-family: var(--font-ui);
+  padding: 15px 20px;
+  min-width: 260px;
+  border: 3px solid var(--theme-brown);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--theme-brown);
+  outline: none;
+  font-size: 1rem;
+
+  &::placeholder {
+    color: var(--theme-brown);
+    opacity: 0.6;
+  }
+
+  &:focus {
+    border-color: var(--theme-red);
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter-form {
+    flex-direction: column;
+
+    > * {
+      width: 100%;
+    }
+  }
+
+  .newsletter-input {
+    min-width: 0;
+    flex: 1 1 100%;
+  }
+}
+
+/* ==================== INSTAGRAM ==================== */
+.instagram-inner {
+  @apply max-w-[80vw] mx-auto py-[var(--section-pad-y)] px-[var(--container-pad)];
+}
+
+.instagram-grid {
+  @apply flex gap-8 overflow-x-auto pb-4;
+
+  @media (min-width: 768px) {
+    @apply grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] overflow-x-visible;
+  }
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes lalSlideFade {
+  0% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  23% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide {
+    animation: none !important;
+
+    &:first-child {
+      opacity: 1 !important;
+    }
+  }
+}

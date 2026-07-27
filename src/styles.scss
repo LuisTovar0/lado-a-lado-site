@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
 @font-face {
   font-family: "FruitsDelight";
   src: url("/fonts/FruitsDelight.otf");
@@ -14,8 +16,16 @@
 }
 
 @font-face {
-  font-family: "Rubiks";
-  src: url("/fonts/Rubik.ttf"), url("/fonts/RubikItalic.ttf");
+  font-family: "Rubik";
+  src: url("/fonts/Rubik.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("/fonts/RubikItalic.ttf") format("truetype");
+  font-style: italic;
   font-display: swap;
 }
 
@@ -37,6 +47,14 @@ body {
   --theme-red: hsl(0, 47%, 51%);
   --theme-brown: hsl(337, 41%, 30%);
   --theme-black: hsl(0, 0%, 0%);
+
+  --font-display: "Abhaya Libre", Georgia, "Times New Roman", serif;
+  --font-sans: "Rubik", -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-ui: "Open Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "OverpassMono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  --container-pad: clamp(20px, 5vw, 80px);
+  --section-pad-y: clamp(56px, 11vw, 104px);
 }
 
 .bg-white { background-color: var(--theme-white); }
@@ -54,7 +72,7 @@ body {
 }
 
 .rubik {
-  font-family: "Rubiks", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 .fruits-delight {
