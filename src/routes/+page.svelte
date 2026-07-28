@@ -4,13 +4,16 @@
     import FeatureBand from '$lib/components/FeatureBand.svelte';
     import SectionHeading from '$lib/components/SectionHeading.svelte';
     import Tag from '$lib/components/Tag.svelte';
+    import type { PageData } from './$types';
     import { FILTERS, getFilteredItems, parceiros, urls } from './page.data';
     import '$lib/styles/home.scss';
+
+    let { data }: { data: PageData } = $props();
 
     let filter = $state('todos');
     let navOpen = $state(false);
 
-    const filteredItems = $derived(getFilteredItems(filter));
+    const filteredItems = $derived(getFilteredItems(filter, data.podcastItems));
 
     function closeNav() {
         navOpen = false;
