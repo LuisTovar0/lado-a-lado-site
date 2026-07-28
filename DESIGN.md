@@ -29,12 +29,13 @@ It should avoid looking corporate, tech-branded, minimal-luxury, or youth-cultur
 
 The live Svelte site defines a compact palette in `src/styles.scss`:
 
-- `--theme-white`: warm paper background
+- `--theme-cream`: warm paper background
 - `--theme-yellow`: signature yellow feature surface
 - `--theme-toast`: darker yellow accent
 - `--theme-red`: primary action and emphasis color
 - `--theme-brown`: deep wine/brown brand anchor
 - `--theme-black`: ink black
+- `--theme-white`: pure white card surfaces (`--surface-card` in the HTML design system)
 
 The parallel HTML design system under `design/html` expands this into a fuller token set with Portuguese brand names such as `--lal-amarelo`, `--lal-bege`, `--lal-vermelho`, and `--lal-bordo`.
 

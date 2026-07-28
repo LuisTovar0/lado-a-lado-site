@@ -22,7 +22,7 @@
 
 <!-- ====== HERO ====== -->
 <header class="relative overflow-hidden text-[var(--theme-black)]">
-    <div class="relative bg-[var(--theme-white)] overflow-hidden">
+    <div class="relative bg-[var(--theme-cream)] overflow-hidden">
         <!--<img
             src="/img/logo-hands.svg"
             alt=""

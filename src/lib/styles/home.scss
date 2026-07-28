@@ -70,7 +70,7 @@
     flex-direction: column;
     gap: 0;
     align-items: stretch;
-    background: var(--theme-white);
+    background: var(--theme-cream);
     padding: 6px var(--container-pad) 22px;
     box-shadow: 0 8px 24px rgba(109, 46, 70, 0.12);
     z-index: 9;
@@ -132,7 +132,7 @@
 }
 
 .slide-label {
-  @apply absolute left-6 bottom-[22px] font-['OverpassMono',monospace] text-[0.7rem] tracking-[0.1em] uppercase text-[var(--theme-brown)] bg-[var(--theme-white)] py-[7px] px-3 rounded-pill whitespace-nowrap;
+  @apply absolute left-6 bottom-[22px] font-['OverpassMono',monospace] text-[0.7rem] tracking-[0.1em] uppercase text-[var(--theme-brown)] bg-[var(--theme-cream)] py-[7px] px-3 rounded-pill whitespace-nowrap;
 }
 
 /* ==================== EVENTO ==================== */
@@ -161,7 +161,7 @@
 
 /* ==================== TESTEMUNHOS ==================== */
 .testemunhos {
-  background: color-mix(in srgb, var(--theme-yellow) 30%, var(--theme-white));
+  background: color-mix(in srgb, var(--theme-yellow) 30%, var(--theme-cream));
   padding: var(--section-pad-y) 0;
 }
 

@@ -82,7 +82,7 @@
 <style lang="scss">
     .lal-footer {
         background: var(--theme-brown);
-        color: var(--theme-white);
+        color: var(--theme-cream);
     }
 
     .lal-footer__inner {
@@ -113,7 +113,7 @@
 
         a {
             text-decoration: none;
-            color: var(--theme-white);
+            color: var(--theme-cream);
             opacity: 0.9;
             transition: opacity 140ms;
 
@@ -136,7 +136,7 @@
             height: 44px;
             border-radius: 50%;
             border: 1px solid rgba(252, 249, 233, 0.3);
-            color: var(--theme-white);
+            color: var(--theme-cream);
             transition: background 200ms, border-color 200ms;
 
             &:hover {

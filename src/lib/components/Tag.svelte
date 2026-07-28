@@ -30,7 +30,7 @@
     }
 
     .lal-tag--red {
-        color: var(--theme-white);
+        color: var(--theme-cream);
         background-color: var(--theme-red);
     }
 

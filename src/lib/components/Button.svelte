@@ -23,12 +23,12 @@
 </script>
 
 <svelte:element
-    this={tag}
-    {href}
-    {target}
-    {disabled}
-    class="lal-btn lal-btn--{variant} lal-btn--{size}"
-    rel={target === '_blank' ? 'noopener' : undefined}
+        this={tag}
+        {href}
+        {target}
+        {disabled}
+        class="lal-btn lal-btn--{variant} lal-btn--{size}"
+        rel={target === '_blank' ? 'noopener' : undefined}
 >
     {@render children()}
 </svelte:element>
@@ -47,10 +47,9 @@
         text-decoration: none;
         white-space: nowrap;
         line-height: 1;
-        transition:
-            transform 140ms cubic-bezier(0.22, 1, 0.36, 1),
-            background 240ms cubic-bezier(0.4, 0, 0.2, 1),
-            color 240ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: transform 140ms cubic-bezier(0.22, 1, 0.36, 1),
+        background 240ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 240ms cubic-bezier(0.4, 0, 0.2, 1);
 
         &:active {
             transform: scale(0.97);
@@ -80,7 +79,7 @@
 
     /* Variants */
     .lal-btn--primary {
-        color: var(--theme-white);
+        color: var(--theme-cream);
         background-color: var(--theme-red);
         border: 3px solid var(--theme-red);
 
@@ -96,13 +95,13 @@
         border: 3px solid var(--theme-red);
 
         &:hover {
-            color: var(--theme-white);
+            color: var(--theme-cream);
             background-color: var(--theme-red);
         }
     }
 
     .lal-btn--deep {
-        color: var(--theme-white);
+        color: var(--theme-cream);
         background-color: var(--theme-brown);
         border: 3px solid var(--theme-brown);
 
