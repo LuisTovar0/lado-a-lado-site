@@ -62,7 +62,7 @@
             </p>
             <div class="flex gap-3.5 flex-wrap justify-center">
                 <Button href="#sobre" variant="primary" size="lg">Saber mais</Button>
-                <Button href="#evento" variant="outline" size="lg">PrÃ³ximo evento</Button>
+                <Button href="#evento" variant="outline" size="lg">Próximo evento</Button>
             </div>
         </div>
     </div>
@@ -95,37 +95,38 @@
 <section id="comunidade" class="section">
     <SectionHeading eyebrow="A comunidade">Jovens como tu</SectionHeading>
     <p class="section-desc">
-        Milhares de jovens que escolhem amar a sÃ©rio, por todo o paÃ­s.<br />NÃ£o se vive lado a
+        Milhares de jovens que escolhem amar a sério, por todo o país.<br />Não se vive lado a
         lado sozinho.
     </p>
 
     <div class="slideshow">
         <div class="slide slide--1">
-            <span class="slide-label">ConferÃªncia Â· auditÃ³rio cheio</span>
+            <span class="slide-label">Conferência · auditório cheio</span>
         </div>
         <div class="slide slide--2">
-            <span class="slide-label">Run Club Â· corrida de domingo</span>
+            <span class="slide-label">Run Club · corrida de domingo</span>
         </div>
         <div class="slide slide--3">
-            <span class="slide-label">Passeio Â· fim de tarde juntos</span>
+            <span class="slide-label">Passeio · fim de tarde juntos</span>
         </div>
         <div class="slide slide--4">
-            <span class="slide-label">VoluntÃ¡rios Â· a montar tudo</span>
+            <span class="slide-label">Voluntários · a montar tudo</span>
         </div>
     </div>
 
     <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-7 mt-16">
         <Card padding="0">
             <div class="aspect-video relative overflow-hidden [&_img]:w-full [&_img]:h-full [&_img]:object-cover [&_img]:block">
-                <img src="/img/comunidade/padrinhos.jpg" alt="Casal padrinho com a sua famÃ­lia" />
+                <img src="/img/comunidade/padrinhos.jpg" alt="Casal padrinho com a sua família" />
             </div>
             <div class="card-body">
                 <Tag tone="red">Apadrinhamento</Tag>
                 <h3 class="font-[var(--font-display)] text-[1.9rem] leading-[1.1] text-[var(--theme-brown)] mt-0.5">
                     Caminhar com um casal padrinho</h3>
                 <p class="font-[var(--font-ui)] text-base/[1.65] text-[var(--theme-black)] m-0">
-                    Para namorados que querem ser acompanhados de forma pessoal e prÃ³xima, por um
-                    casal jovem que jÃ¡ percorreu parte do caminho.
+                    Para namorados que querem ser acompanhados de forma pessoal e próxima, por um
+                    casal jovem que já percorreu parte do caminho. Conversas reais, exemplo vivo e alguém a torcer por
+                    vocês a cada passo.
                 </p>
                 <div class="mt-auto pt-2.5">
                     <Button variant="outline" size="sm">Quero padrinhos</Button>
@@ -145,8 +146,8 @@
                 <h3 class="font-[var(--font-display)] text-[1.9rem] leading-[1.1] text-[var(--theme-brown)] mt-0.5">
                     Conhecer gente, lado a lado</h3>
                 <p class="font-[var(--font-ui)] text-base/[1.65] text-[var(--theme-black)] m-0">
-                    Corridas, passeios e convÃ­vios abertos a todos. A forma mais simples e
-                    descontraÃ­da de fazer amigos e fazer parte do Lado a Lado.
+                    Corridas, passeios e convívios abertos a todos. A forma mais simples e
+                    descontraída de fazer amigos, conhecer pessoas e fazer parte do Lado a Lado.
                 </p>
                 <div class="mt-auto pt-2.5">
                     <Button
@@ -166,7 +167,7 @@
 <section id="fazemos" class="section">
     <SectionHeading eyebrow="Atividades">O que fazemos?</SectionHeading>
     <p class="section-desc">
-        NÃ£o nascemos ensinados. TambÃ©m temos que aprender a amar.
+        Não nascemos ensinados. Também temos que aprender a amar.
     </p>
 
     <div class="flex flex-wrap gap-2.5 justify-center my-11 mx-0">
@@ -209,20 +210,20 @@
     <span>Descobre o sentido da vida no amor</span>
 </FeatureBand>
 
-<!-- ====== PRÃ“XIMO EVENTO ====== -->
+<!-- ====== PRÓXIMO EVENTO ====== -->
 <section id="evento" class="section pt-6">
     <div class="evento-grid">
         <div class="py-14 px-[clamp(28px,4vw,56px)]">
-            <span class="eyebrow">PRÃ“XIMO EVENTO</span>
-            <span class="eyebrow eyebrow--sub">SETEMBRO 2026 Â· LISBOA</span>
+            <span class="eyebrow">PRÓXIMO EVENTO</span>
+            <span class="eyebrow eyebrow--sub">SETEMBRO 2026 · LISBOA</span>
             <div class="flex gap-2.5 my-[18px]">
-                <Tag tone="red">ConferÃªncia</Tag>
+                <Tag tone="red">Conferência</Tag>
             </div>
             <h2 class="font-[var(--font-display)] text-[clamp(2.4rem,5vw,4rem)] leading-[1.05] text-[var(--theme-brown)] my-3.5 mb-4">
                 Feitos para amar</h2>
             <p class="font-[var(--font-ui)] text-[1.05rem]/[1.7] text-[var(--theme-black)] max-w-[440px] mb-[30px]">
-                2Âª ediÃ§Ã£o de um evento ao vivo com casais convidados e especialistas para falar
-                sobre namoro, casamento e famÃ­lia.
+                2ª edição de um evento ao vivo com casais convidados e especialistas para falar
+                sobre namoro, casamento e família.
             </p>
             <Button variant="primary" size="lg">Reserva o teu lugar</Button>
         </div>
@@ -245,8 +246,8 @@
         <div class="testemunhos-grid">
             <figure class="testemunhos-card">
                 <blockquote>
-                    <span class="text-[var(--theme-red)]">"</span>SaÃ­ de lÃ¡ a acreditar outra vez
-                    que vale a pena amar para sempre.<span class="text-[var(--theme-red)]">"</span>
+                    <span class="text-[var(--theme-red)]">“</span>Saí de lá a acreditar outra vez
+                    que vale a pena amar para sempre.<span class="text-[var(--theme-red)]">?</span>
                 </blockquote>
                 <figcaption>
                     <div class="testemunhos-avatar">
@@ -262,9 +263,9 @@
 
             <figure class="testemunhos-card">
                 <blockquote>
-                    <span class="text-[var(--theme-red)]">"</span>Pensava que o compromisso era
-                    antiquado. Hoje sei que Ã© a coisa mais corajosa que existe.<span
-                        class="text-[var(--theme-red)]">"</span
+                    <span class="text-[var(--theme-red)]">?</span>Pensava que o compromisso era
+                    antiquado. Hoje sei que é a coisa mais corajosa que existe.<span
+                        class="text-[var(--theme-red)]">?</span
                 >
                 </blockquote>
                 <figcaption>
@@ -281,9 +282,9 @@
 
             <figure class="testemunhos-card">
                 <blockquote>
-                    <span class="text-[var(--theme-red)]">"</span>Aprendi que o amor tambÃ©m se
-                    trabalha, e que nÃ£o estou sozinho nesta caminhada.<span
-                        class="text-[var(--theme-red)]">"</span
+                    <span class="text-[var(--theme-red)]">?</span>Aprendi que o amor também se
+                    trabalha, e que não estou sozinho nesta caminhada.<span
+                        class="text-[var(--theme-red)]">?</span
                 >
                 </blockquote>
                 <figcaption>
@@ -312,15 +313,15 @@
         <Card padding="0">
             <div class="loja-product-img" style="background:#E7C200;">
                 <img src="/img/merch/tshirt-runclub.png" alt="T-shirt Run Club" />
-                <span class="absolute left-3.5 top-3.5"><Tag tone="red">DisponÃ­vel</Tag></span>
+                <span class="absolute left-3.5 top-3.5"><Tag tone="red">Disponível</Tag></span>
             </div>
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>T-shirt Run Club</strong>
-                    <span class="font-[var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">14â‚¬</span>
+                    <span class="font-[var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">14€</span>
                 </div>
                 <p class="font-[var(--font-display)] italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
-                    "NÃ£o Ã© um sprint. Ã‰ uma maratona. Como o amor. Como a vida. Como tudo o que
+                    "Não é um sprint. É uma maratona. Como o amor. Como a vida. Como tudo o que
                     vale a pena."
                 </p>
                 <Button variant="primary" size="sm">Comprar</Button>
@@ -335,12 +336,12 @@
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>Meias Lado a Lado</strong>
-                    <span class="font-[var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">8â‚¬</span>
+                    <span class="font-[var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">8€</span>
                 </div>
                 <p class="font-[var(--font-display)] italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
-                    O amor nÃ£o Ã© descartÃ¡vel... e as tuas meias tambÃ©m nÃ£o.
+                    O amor não é descartável... e as tuas meias também não.
                 </p>
-                <Button variant="primary" size="sm">PrÃ©-reserva</Button>
+                <Button variant="primary" size="sm">Pré-reserva</Button>
             </div>
         </Card>
 
@@ -352,12 +353,12 @@
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>Jogo para namorados</strong>
-                    <span class="font-[var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">22â‚¬</span>
+                    <span class="font-[var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">22€</span>
                 </div>
                 <p class="font-[var(--font-display)] italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
-                    EstÃ¡s a namorar? Calma! NÃ£o te cases antes de fazeres estas 100 perguntas!
+                    Estás a namorar? Calma! Não te cases antes de fazeres estas 100 perguntas!
                 </p>
-                <Button variant="primary" size="sm">PrÃ©-reserva</Button>
+                <Button variant="primary" size="sm">Pré-reserva</Button>
             </div>
         </Card>
     </div>
@@ -365,9 +366,9 @@
 
 <!-- ====== APOIAR ====== -->
 <section id="apoiar" class="section">
-    <SectionHeading eyebrow="Apoiar">Faz parte de quem torna isto possÃ­vel</SectionHeading>
+    <SectionHeading eyebrow="Apoiar">Faz parte de quem torna isto possível</SectionHeading>
     <p class="section-desc">
-        O Lado a Lado vive do contributo de quem se identifica com esta missÃ£o.
+        O Lado a Lado vive do contributo de quem se identifica com esta missão.
     </p>
 
     <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-7 mt-14">
@@ -377,7 +378,7 @@
                 <h3>Apoia com um donativo</h3>
                 <p>
                     Cada contributo ajuda a levar campos, cursos e eventos a mais jovens por todo o
-                    paÃ­s. Qualquer valor faz diferenÃ§a.
+                    país. Qualquer valor faz diferença.
                 </p>
                 <div class="mt-auto pt-3">
                     <Button variant="primary" size="md">Quero doar</Button>
@@ -388,13 +389,13 @@
         <Card padding="40px 38px 42px">
             <div class="apoiar-card">
                 <Tag tone="yellow">Voluntariado</Tag>
-                <h3>Junta-te como voluntÃ¡rio</h3>
+                <h3>Junta-te como voluntário</h3>
                 <p>
-                    DÃ¡ o teu tempo e talento a montar eventos, acompanhar jovens, concretizar ideias
-                    e manter esta missÃ£o viva. Trabalhamos lado a lado, na prÃ¡tica.
+                    Dá o teu tempo e talento a montar eventos, acompanhar jovens, concretizar ideias
+                    e manter esta missão viva. Trabalhamos lado a lado, na prática.
                 </p>
                 <div class="mt-auto pt-3">
-                    <Button variant="outline" size="md">Quero ser voluntÃ¡rio</Button>
+                    <Button variant="outline" size="md">Quero ser voluntário</Button>
                 </div>
             </div>
         </Card>
@@ -405,10 +406,10 @@
 <section id="newsletter" class="newsletter">
     <div class="newsletter-inner">
         <span class="eyebrow text-[var(--theme-brown)]">Junta-te</span>
-        <h2 class="font-[var(--font-display)] text-[clamp(1.9rem,3.4vw,2.8rem)] text-[var(--theme-brown)] my-3.5">NÃ£o
+        <h2 class="font-[var(--font-display)] text-[clamp(1.9rem,3.4vw,2.8rem)] text-[var(--theme-brown)] my-3.5">Não
             fiques de fora</h2>
         <p class="font-[var(--font-ui)] text-[1.05rem]/[1.6] text-[var(--theme-brown)] mb-[30px]">
-            Recebe novidades, eventos e conteÃºdos para amar melhor â€” direto no teu email.
+            Recebe novidades, eventos e conteúdos para amar melhor — direto no teu email.
         </p>
         <form class="newsletter-form" onsubmit={(e) => e.preventDefault()}>
             <input type="email" placeholder="O teu email" class="newsletter-input" />
@@ -431,20 +432,20 @@
 
 <!-- ====== FAIXA FINAL ====== -->
 <FeatureBand>
-    <span>Que a tua histÃ³ria termine com " ... e viveram</span>
+    <span>Que a tua história termine com “ ... e viveram</span>
     <img
             src="/img/lado-a-lado-frase.svg"
             alt="Lado a Lado"
             class="h-[27px] w-auto"
     />
-    <span>para sempre."</span>
+    <span>para sempre.?</span>
 </FeatureBand>
 
 <!-- ====== INSTAGRAM ====== -->
 <section class="section">
     <div class="instagram-inner">
         <h2 class="font-[var(--font-sans)] font-bold text-[clamp(1rem,2vw,1.3rem)] text-[var(--theme-brown)] text-center mb-12">
-            NÃ£o deixes escapar nada...</h2>
+            Não deixes escapar nada...</h2>
         <div class="instagram-grid">
             {#each urls as url}
                 <blockquote
