@@ -255,7 +255,7 @@
                         <img src="/img/testemunhos/testi-1.png" alt="Maria" />
                     </div>
                     <div class="flex flex-col">
-                        <strong class="font-[var(--font-sans)] font-bold text-[0.98rem] text-[var(--theme-brown)]">Maria</strong>
+                        <strong class="[font-family:var(--font-sans)] font-bold text-[0.98rem] text-[var(--theme-brown)]">Maria</strong>
                         <span class="font-[var(--font-ui)] text-[0.88rem] text-[var(--theme-black)] opacity-60">25 anos, Porto</span>
                     </div>
                 </figcaption>
@@ -274,7 +274,7 @@
                         <img src="/img/testemunhos/testi-2.png" alt="Joana" />
                     </div>
                     <div class="flex flex-col">
-                        <strong class="font-[var(--font-sans)] font-bold text-[0.98rem] text-[var(--theme-brown)]">Joana</strong>
+                        <strong class="[font-family:var(--font-sans)] font-bold text-[0.98rem] text-[var(--theme-brown)]">Joana</strong>
                         <span class="font-[var(--font-ui)] text-[0.88rem] text-[var(--theme-black)] opacity-60">22 anos, Lisboa</span>
                     </div>
                 </figcaption>
@@ -293,7 +293,7 @@
                         <img src="/img/testemunhos/testi-3.png" alt="Rafael" />
                     </div>
                     <div class="flex flex-col">
-                        <strong class="font-[var(--font-sans)] font-bold text-[0.98rem] text-[var(--theme-brown)]">Rafael</strong>
+                        <strong class="[font-family:var(--font-sans)] font-bold text-[0.98rem] text-[var(--theme-brown)]">Rafael</strong>
                         <span class="font-[var(--font-ui)] text-[0.88rem] text-[var(--theme-black)] opacity-60">28 anos, Braga</span>
                     </div>
                 </figcaption>
@@ -318,7 +318,7 @@
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>T-shirt Run Club</strong>
-                    <span class="font-[var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">14€</span>
+                    <span class="[font-family:var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">14€</span>
                 </div>
                 <p class="font-[var(--font-display)] italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
                     "Não é um sprint. É uma maratona. Como o amor. Como a vida. Como tudo o que
@@ -336,7 +336,7 @@
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>Meias Lado a Lado</strong>
-                    <span class="font-[var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">8€</span>
+                    <span class="[font-family:var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">8€</span>
                 </div>
                 <p class="font-[var(--font-display)] italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
                     O amor não é descartável... e as tuas meias também não.
@@ -353,7 +353,7 @@
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>Jogo para namorados</strong>
-                    <span class="font-[var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">22€</span>
+                    <span class="[font-family:var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">22€</span>
                 </div>
                 <p class="font-[var(--font-display)] italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
                     Estás a namorar? Calma! Não te cases antes de fazeres estas 100 perguntas!
@@ -443,19 +443,17 @@
 
 <!-- ====== INSTAGRAM ====== -->
 <section class="section">
-    <div class="instagram-inner">
-        <h2 class="font-[var(--font-sans)] font-bold text-[clamp(1rem,2vw,1.3rem)] text-[var(--theme-brown)] text-center mb-12">
-            Não deixes escapar nada...</h2>
-        <div class="instagram-grid">
-            {#each urls as url}
-                <blockquote
-                        class="instagram-media"
-                        data-instgrm-permalink={url}
-                        data-instgrm-version="14"
-                        style="max-width:320px; width:100%;"
-                ></blockquote>
-            {/each}
-        </div>
-        <script async src="https://www.instagram.com/embed.js"></script>
+    <h2 class="[font-family:var(--font-sans)] font-bold text-[clamp(1rem,2vw,1.3rem)] text-[var(--theme-brown)] text-center mb-12">
+        Não deixes escapar nada...</h2>
+    <div class="instagram-grid">
+        {#each urls as url}
+            <blockquote
+                    class="instagram-media"
+                    data-instgrm-permalink={url}
+                    data-instgrm-version="14"
+                    style="max-width:320px; width:100%;"
+            ></blockquote>
+        {/each}
     </div>
+    <script async src="https://www.instagram.com/embed.js"></script>
 </section>
