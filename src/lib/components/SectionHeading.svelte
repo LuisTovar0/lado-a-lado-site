@@ -12,7 +12,7 @@
 
 <div class="lal-section-heading lal-section-heading--{align}">
     <span class="lal-section-heading__eyebrow">{eyebrow}</span>
-    <h2 class="lal-section-heading__title">{@render children()}</h2>
+    <h2 class="lal-section-heading__title font-display">{@render children()}</h2>
 </div>
 
 <style lang="scss">
@@ -38,7 +38,6 @@
     }
 
     .lal-section-heading__title {
-        font-family: var(--font-display);
         font-weight: 400;
         font-size: clamp(1.9rem, 3.4vw, 2.8rem);
         line-height: 1.2;

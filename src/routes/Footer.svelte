@@ -1,10 +1,10 @@
-<footer class="lal-footer">
-    <div class="lal-footer__inner">
+﻿<footer class="lal-footer">
+    <div class="lal-footer__inner flex-col items-center text-center gap-7 md:flex-row md:items-center md:text-left md:gap-10">
         <div class="lal-footer__brand">
             <img src="/img/logo-name-white.svg" alt="Lado a Lado" class="lal-footer__logo" />
         </div>
 
-        <nav class="lal-footer__nav">
+        <nav class="lal-footer__nav justify-center md:justify-start">
             <a href="#sobre">Sobre</a>
             <a href="#fazemos">O que fazemos</a>
             <a href="#apoiar">Apoiar</a>
@@ -159,18 +159,5 @@
         font-size: 0.78rem;
         letter-spacing: 0.08em;
         opacity: 0.8;
-    }
-
-    @media (max-width: 768px) {
-        .lal-footer__inner {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 28px;
-        }
-
-        .lal-footer__nav {
-            justify-content: center;
-        }
     }
 </style>

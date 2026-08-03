@@ -1,4 +1,4 @@
-<script lang="ts">
+﻿<script lang="ts">
     import type { Snippet } from 'svelte';
 
     interface Props {
@@ -9,7 +9,7 @@
 </script>
 
 <div class="lal-feature-band">
-    <div class="lal-feature-band__inner">
+    <div class="lal-feature-band__inner font-display flex-wrap whitespace-normal text-[1.15rem] sm:flex-nowrap sm:whitespace-nowrap sm:text-[clamp(0.95rem,2vw,1.7rem)]">
         {@render children()}
     </div>
 </div>
@@ -28,7 +28,6 @@
     }
 
     .lal-feature-band__inner {
-        font-family: var(--font-display);
         font-weight: 500;
         font-style: italic;
         font-size: clamp(0.95rem, 2vw, 1.7rem);
@@ -41,13 +40,5 @@
         align-items: center;
         justify-content: center;
         gap: 0.3em;
-    }
-
-    @media (max-width: 600px) {
-        .lal-feature-band__inner {
-            flex-wrap: wrap;
-            white-space: normal;
-            font-size: 1.15rem;
-        }
     }
 </style>

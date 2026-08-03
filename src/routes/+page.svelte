@@ -5,20 +5,31 @@
     import SectionHeading from '$lib/components/SectionHeading.svelte';
     import Tag from '$lib/components/Tag.svelte';
     import type { PageData } from './$types';
-    import { FILTERS, getFilteredItems, parceiros, urls } from './page.data';
+    import { FILTERS, getFeaturedItems, getFilteredItems, parceiros, urls } from './page.data';
     import '$lib/styles/home.scss';
 
     let { data }: { data: PageData } = $props();
 
-    let filter = $state('todos');
+    let filter = $state('destaques');
     let navOpen = $state(false);
 
     const filteredItems = $derived(getFilteredItems(filter, data.podcastItems));
+    const visibleItems = $derived(
+        filter === 'destaques'
+            ? getFeaturedItems(data.podcastItems)
+            : filteredItems
+    );
 
     function closeNav() {
         navOpen = false;
     }
+
+    function onWindowKeydown(e: KeyboardEvent) {
+        if (e.key === 'Escape') closeNav();
+    }
 </script>
+
+<svelte:window onkeydown={onWindowKeydown} />
 
 <!-- ====== HERO ====== -->
 <header class="relative overflow-hidden text-[var(--theme-black)]">
@@ -30,33 +41,50 @@
             aria-hidden="true"
         />-->
 
-        <nav class="relative z-[2] flex items-center gap-3.5 py-[22px] px-[var(--container-pad)] md:grid md:grid-cols-[1fr_auto_1fr] md:gap-8">
-            <a href="/" class="md:justify-self-start">
+        <nav class="site-nav relative z-30 flex items-center justify-between gap-3.5 py-[22px] px-[var(--container-pad)] nav:grid nav:grid-cols-[1fr_auto_1fr] nav:gap-8">
+            <a href="/" class="site-nav__brand nav:justify-self-start">
                 <img class="w-40 h-auto" src="/img/logo-name-black.svg" alt="Lado a Lado" />
             </a>
 
             <div
-                    class="navlinks hidden md:flex md:items-center md:justify-self-center md:gap-8"
+                    id="nav-principal"
+                    class="navlinks hidden nav:static nav:z-auto nav:flex nav:flex-row nav:items-center nav:justify-self-center nav:gap-8"
                     class:navlinks--open={navOpen}
+                    style:position={navOpen ? 'fixed' : undefined}
+                    style:inset={navOpen ? '0' : undefined}
             >
                 <a href="#sobre" onclick={closeNav}>Sobre</a>
                 <a href="#fazemos" onclick={closeNav}>O que fazemos</a>
                 <a href="#apoiar" onclick={closeNav}>Apoiar</a>
                 <a href="#loja" onclick={closeNav}>Loja</a>
+                <a href="#comunidade" class="navlinks__cta nav:hidden" onclick={closeNav}>Junta-te</a>
             </div>
 
-            <div class="flex items-center gap-3 md:justify-self-end">
-                <span class="hidden md:inline-flex">
+            <div class="site-nav__actions flex items-center gap-3 nav:justify-self-end">
+                <span class="hidden nav:inline-flex">
                     <Button href="#comunidade" variant="outline" size="sm">Junta-te</Button>
                 </span>
+                <button
+                        type="button"
+                        class="burger nav:hidden"
+                        class:burger--open={navOpen}
+                        aria-expanded={navOpen}
+                        aria-controls="nav-principal"
+                        aria-label={navOpen ? 'Fechar menu' : 'Abrir menu'}
+                        onclick={() => (navOpen = !navOpen)}
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </nav>
 
-        <div class="relative z-[2] max-w-[760px] mx-auto py-16 px-[var(--container-pad)] pb-28 text-center max-md:pt-9 max-md:pb-[72px]">
-            <h1 class="[font-family:var(--font-display)] font-bold text-[clamp(3rem,9vw,7rem)] leading-[1.0] tracking-[-0.01em] text-[var(--theme-brown)] my-4 mb-7 max-md:whitespace-normal">
-                Foste feito<br />para <span class="text-[var(--theme-red)]">amar</span>.
+        <div class="relative z-[2] max-w-3xl mx-auto pt-9 pb-16 nav:py-16 nav:pb-28 px-[var(--container-pad)] text-center">
+            <h1 class="font-display font-medium [-webkit-text-stroke:0.5px_currentColor] text-[clamp(3rem,9vw,7rem)] leading-[1.0] tracking-[-0.01em] text-[var(--theme-brown)] my-4 mb-7">
+                Foste feito<br />para <span class="color-red">amar</span>.
             </h1>
-            <p class="font-[var(--font-sans)] text-xl/[1.5] max-w-[520px] mx-auto mb-[34px] text-[var(--theme-black)] max-md:text-[1.08rem]">
+            <p class="font-sans text-xl/[1.5] max-w-[520px] mx-auto mb-[34px] text-[var(--theme-black)] max-md:text-[1.08rem]">
                 Somos jovens que acreditam no amor verdadeiro, na fidelidade e em construir
                 família lado a lado.
             </p>
@@ -68,25 +96,27 @@
     </div>
 </header>
 
-<!-- ====== SOBRE / MISSÃO ====== -->
+<!-- ====== SOBRE / MISSÃƒO ====== -->
 <section id="sobre" class="section text-center">
     <span class="eyebrow mb-6">Sobre</span>
-    <p class="[font-family:var(--font-display)] font-[var(--font-display)] text-[clamp(1.9rem,3.4vw,2.8rem)] leading-[1.28] text-[var(--theme-black)] mx-auto">
-        O Lado a Lado existe para dar resposta ao<br />desejo mais profundo que todos temos:<br />amar e sermos amados.
+    <p class="font-display text-[clamp(1.9rem,3.4vw,2.8rem)] leading-[1.28] text-[var(--theme-black)] mx-auto [text-wrap:balance]">
+        <span class="md:block">O Lado a Lado existe para dar resposta ao</span>
+        <span class="md:block">desejo mais profundo que todos temos:</span>
+        <span class="md:block">amar e sermos amados.</span>
     </p>
 
     <div class="stats flex flex-wrap justify-center gap-[clamp(28px,6vw,80px)] mt-[52px]">
         <div>
-            <span>+3500</span>
-            <span>Jovens impactados</span>
+            <span class="font-display">+3500</span>
+            <span class="font-mono">Jovens impactados</span>
         </div>
         <div>
-            <span>+40</span>
-            <span>Eventos realizados</span>
+            <span class="font-display">+40</span>
+            <span class="font-mono">Eventos realizados</span>
         </div>
         <div>
-            <span>+35</span>
-            <span>Voluntários</span>
+            <span class="font-display">+35</span>
+            <span class="font-mono">Voluntários</span>
         </div>
     </div>
 </section>
@@ -94,36 +124,34 @@
 <!-- ====== COMUNIDADE ====== -->
 <section id="comunidade" class="section">
     <SectionHeading eyebrow="A comunidade">Jovens como tu</SectionHeading>
-    <p class="section-desc">
+    <p class="section-desc font-ui">
         Milhares de jovens que escolhem amar a sério, por todo o país.<br />Não se vive lado a
         lado sozinho.
     </p>
 
     <div class="slideshow">
         <div class="slide slide--1">
-            <span class="slide-label">Conferência · auditório cheio</span>
+            <img src="/img/comunidade/auditório.jpg" alt="Auditório cheio durante uma conferência" />
+            <span class="slide-label">Conferência &middot; auditório cheio</span>
         </div>
         <div class="slide slide--2">
-            <span class="slide-label">Run Club · corrida de domingo</span>
-        </div>
-        <div class="slide slide--3">
-            <span class="slide-label">Passeio · fim de tarde juntos</span>
-        </div>
-        <div class="slide slide--4">
-            <span class="slide-label">Voluntários · a montar tudo</span>
+            <img src="/img/comunidade/equipa.jpg" alt="Equipa de voluntários do Lado a Lado" />
+            <span class="slide-label">Voluntários &middot; a montar tudo</span>
         </div>
     </div>
 
-    <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-7 mt-16">
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(min(320px,100%),1fr))] gap-7 mt-16">
         <Card padding="0">
             <div class="aspect-video relative overflow-hidden [&_img]:w-full [&_img]:h-full [&_img]:object-cover [&_img]:block">
                 <img src="/img/comunidade/padrinhos.jpg" alt="Casal padrinho com a sua família" />
             </div>
             <div class="card-body">
-                <Tag tone="red">Apadrinhamento</Tag>
-                <h3 class="font-[var(--font-display)] text-[1.9rem] leading-[1.1] text-[var(--theme-brown)] mt-0.5">
+                <div class="flex gap-2">
+                    <Tag tone="red">Apadrinhamento</Tag>
+                </div>
+                <h3 class="font-display text-[1.9rem] leading-[1.1] text-[var(--theme-brown)] mt-0.5">
                     Caminhar com um casal padrinho</h3>
-                <p class="font-[var(--font-ui)] text-base/[1.65] text-[var(--theme-black)] m-0">
+                <p class="font-ui text-base/[1.65] text-[var(--theme-black)] m-0">
                     Para namorados que querem ser acompanhados de forma pessoal e próxima, por um
                     casal jovem que já percorreu parte do caminho. Conversas reais, exemplo vivo e alguém a torcer por
                     vocês a cada passo.
@@ -142,10 +170,12 @@
                 />
             </div>
             <div class="card-body">
-                <Tag tone="yellow">Run &amp; Walk Club</Tag>
-                <h3 class="font-[var(--font-display)] text-[1.9rem] leading-[1.1] text-[var(--theme-brown)] mt-0.5">
+                <div class="flex gap-2">
+                    <Tag tone="yellow">Run &amp; Walk Club</Tag>
+                </div>
+                <h3 class="font-display text-[1.9rem] leading-[1.1] text-[var(--theme-brown)] mt-0.5">
                     Conhecer gente, lado a lado</h3>
-                <p class="font-[var(--font-ui)] text-base/[1.65] text-[var(--theme-black)] m-0">
+                <p class="font-ui text-base/[1.65] text-[var(--theme-black)] m-0">
                     Corridas, passeios e convívios abertos a todos. A forma mais simples e
                     descontraída de fazer amigos, conhecer pessoas e fazer parte do Lado a Lado.
                 </p>
@@ -179,16 +209,16 @@
         {/each}
     </div>
 
-    <div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-6">
-        {#each filteredItems as item}
+    <div class="grid grid-cols-[repeat(auto-fill,minmax(min(300px,100%),1fr))] gap-6">
+        {#each visibleItems as item}
             <Card padding="24px">
                 <div class="flex flex-col gap-3.5 h-full">
                     <div class="flex items-center justify-between gap-2.5">
                         <Tag tone={item.typeTone}>{item.typeLabel}</Tag>
                         <Tag tone={item.statusTone}>{item.statusLabel}</Tag>
                     </div>
-                    <h3 class="font-[var(--font-display)] text-[1.7rem] leading-[1.12] text-[var(--theme-brown)] mt-1.5">{item.title}</h3>
-                    <span class="font-[var(--font-mono)] text-[0.78rem] tracking-[0.08em] uppercase text-[var(--theme-black)] opacity-60">{item.meta}</span>
+                    <h3 class="font-display text-[1.7rem] leading-[1.12] text-[var(--theme-brown)] mt-1.5">{item.title}</h3>
+                    <span class="font-mono text-[0.78rem] tracking-[0.08em] uppercase text-[var(--theme-black)] opacity-60">{item.meta}</span>
                     {#if item.showCta}
                         <div class="mt-auto pt-2">
                             <Button
@@ -203,6 +233,9 @@
             </Card>
         {/each}
     </div>
+    <div class=activities-show-all style:display={filter===`todos`?`none`:undefined}>
+        <button type=button onclick={() => (filter = `todos`)}>Ver todas as atividades</button>
+    </div>
 </section>
 
 <!-- ====== FEATURE BAND ====== -->
@@ -211,21 +244,21 @@
 </FeatureBand>
 
 <!-- ====== PRÓXIMO EVENTO ====== -->
-<section id="evento" class="section pt-6">
+<section id="evento" class="section">
     <div class="evento-grid">
-        <div class="py-14 px-[clamp(28px,4vw,56px)]">
+        <div class="py-14 px-[clamp(28px,4vw,56px)] min-w-0">
             <span class="eyebrow">PRÓXIMO EVENTO</span>
-            <span class="eyebrow eyebrow--sub">SETEMBRO 2026 · LISBOA</span>
+            <span class="eyebrow eyebrow--sub">SETEMBRO 2026 &middot; LISBOA</span>
             <div class="flex gap-2.5 my-[18px]">
                 <Tag tone="red">Conferência</Tag>
             </div>
-            <h2 class="font-[var(--font-display)] text-[clamp(2.4rem,5vw,4rem)] leading-[1.05] text-[var(--theme-brown)] my-3.5 mb-4">
+            <h2 class="font-display text-[clamp(2.4rem,5vw,4rem)] leading-[1.05] text-[var(--theme-brown)] my-3.5 mb-4">
                 Feitos para amar</h2>
-            <p class="font-[var(--font-ui)] text-[1.05rem]/[1.7] text-[var(--theme-black)] max-w-[440px] mb-[30px]">
+            <p class="font-ui text-[1.05rem]/[1.7] text-[var(--theme-black)] max-w-[440px] mb-[30px]">
                 2ª edição de um evento ao vivo com casais convidados e especialistas para falar
                 sobre namoro, casamento e família.
             </p>
-            <Button variant="primary" size="lg">Reserva o teu lugar</Button>
+            <Button class="max-phone:w-full max-phone:px-4 max-phone:py-[18px] max-phone:text-sm max-phone:tracking-[0.08em]" variant="primary" size="lg">Reserva o teu lugar</Button>
         </div>
 
         <div class="evento-image">
@@ -246,55 +279,53 @@
         <div class="testemunhos-grid">
             <figure class="testemunhos-card">
                 <blockquote>
-                    <span class="text-[var(--theme-red)]">“</span>Saí de lá a acreditar outra vez
-                    que vale a pena amar para sempre.<span class="text-[var(--theme-red)]">?</span>
+                    <span class="quotation-mark">&ldquo;</span><span class="quote">Saí de lá a acreditar outra vez que
+                    vale a pena amar para sempre.</span><span class="quotation-mark">&rdquo;</span>
                 </blockquote>
                 <figcaption>
                     <div class="testemunhos-avatar">
-                        <div class="absolute inset-0 bg-[var(--theme-red)] rounded-full"></div>
+                        <div class="testemunhos-avatar-backdrop"></div>
                         <img src="/img/testemunhos/testi-1.png" alt="Maria" />
                     </div>
-                    <div class="flex flex-col">
-                        <strong class="[font-family:var(--font-sans)] font-bold text-[0.98rem] text-[var(--theme-brown)]">Maria</strong>
-                        <span class="font-[var(--font-ui)] text-[0.88rem] text-[var(--theme-black)] opacity-60">25 anos, Porto</span>
+                    <div class="testemunhos-author">
+                        <strong class="testemunhos-author-name">Maria</strong>
+                        <span class="testemunhos-author-meta">25 anos, Porto</span>
                     </div>
                 </figcaption>
             </figure>
 
             <figure class="testemunhos-card">
                 <blockquote>
-                    <span class="text-[var(--theme-red)]">?</span>Pensava que o compromisso era
-                    antiquado. Hoje sei que é a coisa mais corajosa que existe.<span
-                        class="text-[var(--theme-red)]">?</span
-                >
+                    <span class="quotation-mark">&ldquo;</span><span class="quote">Pensava que o compromisso era
+                    antiquado. Hoje sei que é a coisa mais corajosa que existe.</span><span
+                        class="quotation-mark">&rdquo;</span>
                 </blockquote>
                 <figcaption>
                     <div class="testemunhos-avatar">
-                        <div class="absolute inset-0 bg-[var(--theme-red)] rounded-full"></div>
+                        <div class="testemunhos-avatar-backdrop"></div>
                         <img src="/img/testemunhos/testi-2.png" alt="Joana" />
                     </div>
-                    <div class="flex flex-col">
-                        <strong class="[font-family:var(--font-sans)] font-bold text-[0.98rem] text-[var(--theme-brown)]">Joana</strong>
-                        <span class="font-[var(--font-ui)] text-[0.88rem] text-[var(--theme-black)] opacity-60">22 anos, Lisboa</span>
+                    <div class="testemunhos-author">
+                        <strong class="testemunhos-author-name">Joana</strong>
+                        <span class="testemunhos-author-meta">22 anos, Lisboa</span>
                     </div>
                 </figcaption>
             </figure>
 
             <figure class="testemunhos-card">
                 <blockquote>
-                    <span class="text-[var(--theme-red)]">?</span>Aprendi que o amor também se
-                    trabalha, e que não estou sozinho nesta caminhada.<span
-                        class="text-[var(--theme-red)]">?</span
-                >
+                    <span class="quotation-mark">&ldquo;</span><span class="quote">Aprendi que o amor também se
+                    trabalha, e que não estou sozinho nesta caminhada.</span><span
+                        class="quotation-mark">&rdquo;</span>
                 </blockquote>
                 <figcaption>
                     <div class="testemunhos-avatar">
-                        <div class="absolute inset-0 bg-[var(--theme-red)] rounded-full"></div>
+                        <div class="testemunhos-avatar-backdrop"></div>
                         <img src="/img/testemunhos/testi-3.png" alt="Rafael" />
                     </div>
-                    <div class="flex flex-col">
-                        <strong class="[font-family:var(--font-sans)] font-bold text-[0.98rem] text-[var(--theme-brown)]">Rafael</strong>
-                        <span class="font-[var(--font-ui)] text-[0.88rem] text-[var(--theme-black)] opacity-60">28 anos, Braga</span>
+                    <div class="testemunhos-author">
+                        <strong class="testemunhos-author-name">Rafael</strong>
+                        <span class="testemunhos-author-meta">28 anos, Braga</span>
                     </div>
                 </figcaption>
             </figure>
@@ -309,7 +340,7 @@
         <Button variant="outline" size="md">Ver toda a loja</Button>
     </div>
 
-    <div class="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-[26px]">
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(min(260px,100%),1fr))] gap-[26px]">
         <Card padding="0">
             <div class="loja-product-img" style="background:#E7C200;">
                 <img src="/img/merch/tshirt-runclub.png" alt="T-shirt Run Club" />
@@ -317,14 +348,16 @@
             </div>
             <div class="loja-product-body">
                 <div class="loja-product-head">
-                    <strong>T-shirt Run Club</strong>
-                    <span class="[font-family:var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">14€</span>
+                    <strong class="font-sans">T-shirt Run Club</strong>
+                    <span class="font-mono font-bold color-red whitespace-nowrap">14€</span>
                 </div>
-                <p class="font-[var(--font-display)] italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
+                <p class="font-display italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
                     "Não é um sprint. É uma maratona. Como o amor. Como a vida. Como tudo o que
                     vale a pena."
                 </p>
-                <Button variant="primary" size="sm">Comprar</Button>
+                <div class="mt-auto">
+                    <Button variant="primary" size="sm">Comprar</Button>
+                </div>
             </div>
         </Card>
 
@@ -336,12 +369,14 @@
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>Meias Lado a Lado</strong>
-                    <span class="[font-family:var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">8€</span>
+                    <span class="font-mono font-bold color-red whitespace-nowrap">8€</span>
                 </div>
-                <p class="font-[var(--font-display)] italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
+                <p class="font-display italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
                     O amor não é descartável... e as tuas meias também não.
                 </p>
-                <Button variant="primary" size="sm">Pré-reserva</Button>
+                <div class="mt-auto">
+                    <Button variant="primary" size="sm">Pré-reserva</Button>
+                </div>
             </div>
         </Card>
 
@@ -353,12 +388,14 @@
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>Jogo para namorados</strong>
-                    <span class="[font-family:var(--font-mono)] font-bold text-[var(--theme-red)] whitespace-nowrap">22€</span>
+                    <span class="font-mono font-bold color-red whitespace-nowrap">22€</span>
                 </div>
-                <p class="font-[var(--font-display)] italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
+                <p class="font-display italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
                     Estás a namorar? Calma! Não te cases antes de fazeres estas 100 perguntas!
                 </p>
-                <Button variant="primary" size="sm">Pré-reserva</Button>
+                <div class="mt-auto">
+                    <Button variant="primary" size="sm">Pré-reserva</Button>
+                </div>
             </div>
         </Card>
     </div>
@@ -371,12 +408,14 @@
         O Lado a Lado vive do contributo de quem se identifica com esta missão.
     </p>
 
-    <div class="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-7 mt-14">
+    <div class="grid grid-cols-[repeat(auto-fit,minmax(min(320px,100%),1fr))] gap-7 mt-14">
         <Card padding="40px 38px 42px">
             <div class="apoiar-card">
-                <Tag tone="red">Doar</Tag>
-                <h3>Apoia com um donativo</h3>
-                <p>
+                <div class="flex">
+                    <Tag tone="red">Doar</Tag>
+                </div>
+                <h3 class="font-display">Apoia com um donativo</h3>
+                <p class="font-ui">
                     Cada contributo ajuda a levar campos, cursos e eventos a mais jovens por todo o
                     país. Qualquer valor faz diferença.
                 </p>
@@ -388,9 +427,11 @@
 
         <Card padding="40px 38px 42px">
             <div class="apoiar-card">
-                <Tag tone="yellow">Voluntariado</Tag>
-                <h3>Junta-te como voluntário</h3>
-                <p>
+                <div class="flex">
+                    <Tag tone="yellow">Voluntariado</Tag>
+                </div>
+                <h3 class="font-display">Junta-te como voluntário</h3>
+                <p class="font-ui">
                     Dá o teu tempo e talento a montar eventos, acompanhar jovens, concretizar ideias
                     e manter esta missão viva. Trabalhamos lado a lado, na prática.
                 </p>
@@ -406,13 +447,21 @@
 <section id="newsletter" class="newsletter">
     <div class="newsletter-inner">
         <span class="eyebrow text-[var(--theme-brown)]">Junta-te</span>
-        <h2 class="font-[var(--font-display)] text-[clamp(1.9rem,3.4vw,2.8rem)] text-[var(--theme-brown)] my-3.5">Não
+        <h2 class="font-display text-[clamp(1.9rem,3.4vw,2.8rem)] text-[var(--theme-brown)] my-3.5">Não
             fiques de fora</h2>
-        <p class="font-[var(--font-ui)] text-[1.05rem]/[1.6] text-[var(--theme-brown)] mb-[30px]">
-            Recebe novidades, eventos e conteúdos para amar melhor — direto no teu email.
+        <p class="font-ui text-[1.05rem]/[1.6] text-[var(--theme-brown)] mb-[30px]">
+            Recebe novidades, eventos e conteúdos para amar melhor – direto no teu email.
         </p>
         <form class="newsletter-form" onsubmit={(e) => e.preventDefault()}>
-            <input type="email" placeholder="O teu email" class="newsletter-input" />
+            <input
+                    type="email"
+                    name="email"
+                    autocomplete="email"
+                    required
+                    aria-label="O teu email"
+                    placeholder="O teu email"
+                    class="newsletter-input font-ui"
+            />
             <Button variant="deep" size="lg">Quero entrar</Button>
         </form>
     </div>
@@ -432,28 +481,11 @@
 
 <!-- ====== FAIXA FINAL ====== -->
 <FeatureBand>
-    <span>Que a tua história termine com “ ... e viveram</span>
+    <span>Que a tua história termine com &ldquo;... e viveram</span>
     <img
-            src="/img/lado-a-lado-frase.svg"
+            src="/img/logo-name-black.svg"
             alt="Lado a Lado"
-            class="h-[27px] w-auto"
+            class="h-[27px] w-auto translate-y-[0.06em]"
     />
-    <span>para sempre.?</span>
+    <span>para sempre.&rdquo;</span>
 </FeatureBand>
-
-<!-- ====== INSTAGRAM ====== -->
-<section class="section">
-    <h2 class="[font-family:var(--font-sans)] font-bold text-[clamp(1rem,2vw,1.3rem)] text-[var(--theme-brown)] text-center mb-12">
-        Não deixes escapar nada...</h2>
-    <div class="instagram-grid">
-        {#each urls as url}
-            <blockquote
-                    class="instagram-media"
-                    data-instgrm-permalink={url}
-                    data-instgrm-version="14"
-                    style="max-width:320px; width:100%;"
-            ></blockquote>
-        {/each}
-    </div>
-    <script async src="https://www.instagram.com/embed.js"></script>
-</section>

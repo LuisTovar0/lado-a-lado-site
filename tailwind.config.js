@@ -3,6 +3,10 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
+      screens: {
+        phone: '480px',
+        nav: '900px',
+      },
       borderRadius: {
         sm: '6px',
         card: '16px',

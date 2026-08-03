@@ -1,4 +1,4 @@
-<script lang="ts">
+﻿<script lang="ts">
     import type { Snippet } from 'svelte';
 
     interface Props {
@@ -7,6 +7,7 @@
         href?: string;
         target?: string;
         disabled?: boolean;
+        class?: string;
         children: Snippet;
     }
 
@@ -16,6 +17,7 @@
         href,
         target,
         disabled = false,
+        class: className = '',
         children,
     }: Props = $props();
 
@@ -27,7 +29,7 @@
         {href}
         {target}
         {disabled}
-        class="lal-btn lal-btn--{variant} lal-btn--{size}"
+        class="lal-btn lal-btn--{variant} lal-btn--{size} {className}"
         rel={target === '_blank' ? 'noopener' : undefined}
 >
     {@render children()}
@@ -61,7 +63,7 @@
         }
     }
 
-    /* Sizes — matching design system exactly */
+    /* Sizes â€” matching design system exactly */
     .lal-btn--sm {
         font-size: 12px;
         padding: 10px 22px;

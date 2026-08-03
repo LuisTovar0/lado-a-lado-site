@@ -88,6 +88,15 @@ Until these are consolidated, production changes should preserve the established
 
 The main homepage uses section-based scrolling with sticky navigation. The event page uses large hero composition and editorial sections. Both should preserve strong rhythm over dense information density.
 
+## Responsive Breakpoints
+
+The homepage (`src/routes/+page.svelte` + `src/lib/styles/home.scss`) follows the breakpoint model of `design/html/templates/homepage/Homepage.dc.html`:
+
+- **900px is the main breakpoint.** Below it: burger button toggles the nav drawer (which includes the "Junta-te" CTA), evento grid and testemunhos stack to one column, hero copy gets compact padding. At and above it: full nav, multi-column layouts.
+- **768px is the minor breakpoint.** Below it: slideshow switches from 16/7 to 4/3, newsletter form stacks, Instagram strip becomes a snap-scrolling row.
+- **480–520px are the small-phone tweaks.** Below 480px the evento CTA goes full-width with tighter padding so the mono label fits 320px viewports; partner logos shrink.
+- Fluid grids use `minmax(min(Npx, 100%), 1fr)` so columns never overflow narrow viewports.
+
 ## Components and Patterns
 
 Current recurring patterns include:
