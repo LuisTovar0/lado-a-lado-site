@@ -19,12 +19,21 @@ export const urls = [
 ] as const;
 
 export const FILTERS = [
+  { key: 'destaques', label: 'Destaques' },
   { key: 'todos', label: 'Todos' },
   { key: 'conferencias', label: 'Eventos' },
   { key: 'campos', label: 'Campos' },
   { key: 'cursos', label: 'Cursos' },
   { key: 'podcast', label: 'Podcast' },
 ] as const;
+
+const FEATURED_LIMIT = 6;
+const FEATURED_STATUS_ORDER = {
+  aberta: 0,
+  brevemente: 1,
+  ouvir: 2,
+  passada: 3,
+} as const;
 
 export const TYPE: Record<string, { label: string; tone: 'red' | 'yellow' | 'outline' }> = {
   conferencias: { label: 'Evento', tone: 'red' },
@@ -188,6 +197,29 @@ export const PODCAST_SNAPSHOT: readonly PodcastItem[] = [
 export function getFilteredItems(filter: string, podcastItems: readonly PodcastItem[] = PODCAST_SNAPSHOT) {
   return [ ...DATA, ...podcastItems ]
       .filter((d) => filter === 'todos' || d.cat === filter)
+      .map((d) => {
+        const t = TYPE[d.cat];
+        const s = STATUS[d.status];
+        const isPast = d.status === 'passada';
+        return {
+          typeLabel: t.label,
+          typeTone: t.tone,
+          statusLabel: s.label,
+          statusTone: s.tone,
+          title: d.title,
+          meta: d.meta,
+          ctaLabel: d.cta,
+          ctaDisabled: false,
+          showCta: !isPast,
+          href: 'href' in d ? d.href : undefined,
+        };
+      });
+}
+
+export function getFeaturedItems(podcastItems: readonly PodcastItem[] = PODCAST_SNAPSHOT) {
+  return [ ...DATA, ...podcastItems ]
+      .sort((a, b) => FEATURED_STATUS_ORDER[a.status] - FEATURED_STATUS_ORDER[b.status])
+      .slice(0, FEATURED_LIMIT)
       .map((d) => {
         const t = TYPE[d.cat];
         const s = STATUS[d.status];
