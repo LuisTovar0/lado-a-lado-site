@@ -2,7 +2,7 @@
 <div class="links grid p-4">
     <a href="https://www.instagram.com/ladoaladopt">
         <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/tBxa1IFcTQH.png" alt="Instagram logo" />
-        <span>Instagram</span>
+        <span class="font-mono">Instagram</span>
     </a>
 </div>
 
@@ -18,9 +18,7 @@
                 height: 30px;
             }
 
-            span {
-                font-family: var(--font-mono);
-                font-weight: 700;
+            span {                font-weight: 700;
                 font-size: 0.85rem;
                 letter-spacing: 0.12em;
                 text-transform: uppercase;
