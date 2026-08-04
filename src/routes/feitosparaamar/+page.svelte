@@ -29,7 +29,7 @@
 
 <svelte:window on:scroll={updateScrollHeight} />
 
-<header class="fixed z-10 w-lvw flex" style="background-color: rgba(255,229,125,{$scrollHeight/30})">
+<header class="fixed inset-x-0 z-10 flex" style="background-color: rgba(255,229,125,{$scrollHeight/30})">
     <a class="logo block m-7 w-36" href="/"><img class="w-full" src="/img/logo-name-black.svg" alt="Lado a Lado" /></a>
 </header>
 

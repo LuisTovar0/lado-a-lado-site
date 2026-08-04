@@ -132,6 +132,28 @@
     align-items: stretch;
     gap: 0;
     overflow-y: auto;
+    scrollbar-gutter: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    &::-webkit-scrollbar {
+      width: 8px;
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 4px;
+      background: transparent;
+      transition: background-color 300ms ease;
+    }
+
+    &:hover {
+      scrollbar-color: var(--theme-brown) transparent;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+      background: var(--theme-brown);
+    }
     overscroll-behavior: contain;
     padding: max(7rem, calc(env(safe-area-inset-top) + 5rem)) var(--container-pad)
       max(2rem, env(safe-area-inset-bottom));
@@ -406,10 +428,22 @@
   img {
     @apply w-full h-full object-cover block;
   }
+
+  span {
+    @apply absolute left-3.5 top-3.5;
+  }
 }
 
 .loja-product-body {
   @apply p-5 pb-[22px] flex flex-col gap-3.5 flex-1;
+
+  p {
+    @apply italic text-[1.05rem]/[1.35] m-0;
+    font-family: var(--font-display);
+    color: var(--theme-brown);
+  }
+
+  .cta { @apply mt-auto; }
 }
 
 .loja-product-head {
@@ -420,6 +454,12 @@
     font-size: 1.1rem;
     color: var(--theme-brown);
     line-height: 1.2;
+  }
+
+  span {
+    @apply font-bold whitespace-nowrap;
+    font-family: var(--font-mono);
+    color: var(--theme-red);
   }
 }
 

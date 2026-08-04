@@ -344,18 +344,18 @@
         <Card padding="0">
             <div class="loja-product-img" style="background:#E7C200;">
                 <img src="/img/merch/tshirt-runclub.png" alt="T-shirt Run Club" />
-                <span class="absolute left-3.5 top-3.5"><Tag tone="red">Disponível</Tag></span>
+                <span><Tag tone="red">Disponível</Tag></span>
             </div>
             <div class="loja-product-body">
                 <div class="loja-product-head">
-                    <strong class="font-sans">T-shirt Run Club</strong>
-                    <span class="font-mono font-bold color-red whitespace-nowrap">14€</span>
+                    <strong>T-shirt Run Club</strong>
+                    <span>14€</span>
                 </div>
-                <p class="font-display italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
+                <p>
                     "Não é um sprint. É uma maratona. Como o amor. Como a vida. Como tudo o que
                     vale a pena."
                 </p>
-                <div class="mt-auto">
+                <div class="cta">
                     <Button variant="primary" size="sm">Comprar</Button>
                 </div>
             </div>
@@ -364,17 +364,17 @@
         <Card padding="0">
             <div class="loja-product-img" style="background:#EDE8DC;">
                 <img src="/img/main/meias.jpg" alt="Meias Lado a Lado" />
-                <span class="absolute left-3.5 top-3.5"><Tag tone="yellow">Brevemente</Tag></span>
+                <span><Tag tone="yellow">Brevemente</Tag></span>
             </div>
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>Meias Lado a Lado</strong>
-                    <span class="font-mono font-bold color-red whitespace-nowrap">8€</span>
+                    <span>8€</span>
                 </div>
-                <p class="font-display italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
+                <p>
                     O amor não é descartável... e as tuas meias também não.
                 </p>
-                <div class="mt-auto">
+                <div class="cta">
                     <Button variant="primary" size="sm">Pré-reserva</Button>
                 </div>
             </div>
@@ -383,17 +383,17 @@
         <Card padding="0">
             <div class="loja-product-img" style="background:var(--theme-brown);">
                 <img src="/img/merch/jogo-perguntas.png" alt="Jogo de perguntas para namorados" />
-                <span class="absolute left-3.5 top-3.5"><Tag tone="yellow">Brevemente</Tag></span>
+                <span><Tag tone="yellow">Brevemente</Tag></span>
             </div>
             <div class="loja-product-body">
                 <div class="loja-product-head">
                     <strong>Jogo para namorados</strong>
-                    <span class="font-mono font-bold color-red whitespace-nowrap">22€</span>
+                    <span>22€</span>
                 </div>
-                <p class="font-display italic text-[1.05rem]/[1.35] text-[var(--theme-brown)] m-0">
+                <p>
                     Estás a namorar? Calma! Não te cases antes de fazeres estas 100 perguntas!
                 </p>
-                <div class="mt-auto">
+                <div class="cta">
                     <Button variant="primary" size="sm">Pré-reserva</Button>
                 </div>
             </div>

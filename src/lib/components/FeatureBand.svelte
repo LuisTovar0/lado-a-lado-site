@@ -35,10 +35,18 @@
         text-align: center;
         color: var(--theme-brown);
         display: inline-flex;
-        flex-wrap: nowrap;
-        white-space: nowrap;
+        max-width: 100%;
+        flex-wrap: wrap;
+        white-space: normal;
         align-items: center;
         justify-content: center;
         gap: 0.3em;
+    }
+
+    @media (min-width: 640px) {
+        .lal-feature-band__inner {
+            flex-wrap: nowrap;
+            white-space: nowrap;
+        }
     }
 </style>
