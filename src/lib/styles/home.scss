@@ -262,10 +262,13 @@
 
 .slide {
   @apply absolute inset-0 opacity-0;
-  animation: lalSlideFade 8s infinite;
+  animation: lalSlideFade 12s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+  will-change: opacity;
 
   img {
     @apply w-full h-full object-cover block;
+    animation: lalSlideDrift 12s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+    will-change: transform;
   }
 
   &--1 {
@@ -273,7 +276,11 @@
   }
 
   &--2 {
-    animation-delay: 4s;
+    animation-delay: -6s;
+
+    img {
+      animation-delay: -6s;
+    }
   }
 }
 .slide-label {
@@ -330,31 +337,54 @@
 }
 
 .testemunhos-avatar {
-  @apply relative w-14 h-14 shrink-0;
+  /* The portrait deliberately overhangs its round colour field by 4px per side.
+     Keep these measurements together: they are the proportions of the homepage
+     reference, rather than a generic circular-image treatment. */
+  --avatar-diameter: 56px;
+  --portrait-width: 64px;
+  --portrait-mask-radius: 28px;
+  --portrait-mask-centre-x: 32px;
+  --portrait-mask-centre-y: 40px;
+  --portrait-mask-band-height: 40px;
+
+  position: relative;
+  isolation: isolate;
+  flex: 0 0 var(--avatar-diameter);
+  width: var(--avatar-diameter);
+  height: var(--avatar-diameter);
+  overflow: visible;
 
   img {
+    display: block;
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 64px;
+    width: var(--portrait-width);
+    max-width: none;
     height: auto;
     z-index: 1;
-    mask-image: radial-gradient(circle 28px at 32px 40px, #000 99%, transparent 100%),
+    mask-image: radial-gradient(circle var(--portrait-mask-radius) at var(--portrait-mask-centre-x) var(--portrait-mask-centre-y), #000 99%, transparent 100%),
     linear-gradient(#000, #000);
-    mask-size: 100% 100%, 100% 40px;
+    mask-size: 100% 100%, 100% var(--portrait-mask-band-height);
     mask-repeat: no-repeat;
     mask-composite: add;
-    -webkit-mask-image: radial-gradient(circle 28px at 32px 40px, #000 99%, transparent 100%),
+    -webkit-mask-image: radial-gradient(circle var(--portrait-mask-radius) at var(--portrait-mask-centre-x) var(--portrait-mask-centre-y), #000 99%, transparent 100%),
     linear-gradient(#000, #000);
-    -webkit-mask-size: 100% 100%, 100% 40px;
+    -webkit-mask-size: 100% 100%, 100% var(--portrait-mask-band-height);
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-composite: source-over;
   }
 }
 
 .testemunhos-avatar-backdrop {
-  @apply absolute inset-0 rounded-full bg-[var(--theme-red)];
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: var(--avatar-diameter);
+  height: var(--avatar-diameter);
+  border-radius: 50%;
+  background: var(--theme-red);
 }
 
 .testemunhos-author {
@@ -460,13 +490,34 @@
 
 @keyframes lalSlideFade {
   0%,
-  49.999% {
+  41.667% {
     opacity: 1;
   }
 
   50%,
-  100% {
+  91.667% {
     opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+@keyframes lalSlideDrift {
+  0% {
+    transform: scale(1.04);
+  }
+
+  41.667%,
+  50% {
+    transform: scale(1);
+  }
+
+  91.667%,
+  100% {
+    transform: scale(1.04);
   }
 }
 
@@ -476,6 +527,10 @@
 
     &:first-child {
       opacity: 1 !important;
+    }
+
+    img {
+      animation: none !important;
     }
   }
 
