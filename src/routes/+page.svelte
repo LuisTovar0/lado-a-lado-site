@@ -221,12 +221,12 @@
                     <span class="font-mono text-[0.78rem] tracking-[0.08em] uppercase text-[var(--theme-black)] opacity-60">{item.meta}</span>
                     {#if item.showCta}
                         <div class="mt-auto pt-2">
-                            <Button
-                                    variant="outline"
+                            <Button variant="outline"
                                     size="sm"
                                     href={item.href}
-                                    target={item.href ? '_blank' : undefined}>{item.ctaLabel}</Button
-                            >
+                                    target={item.href ? '_blank' : undefined}>
+                                {item.ctaLabel}
+                            </Button>
                         </div>
                     {/if}
                 </div>
@@ -334,6 +334,7 @@
 </section>
 
 <!-- ====== LOJA / MERCH ====== -->
+<!--
 <section id="loja" class="section">
     <div class="flex items-end justify-between gap-6 flex-wrap mb-12">
         <SectionHeading eyebrow="Loja" align="start">Veste o que defendes</SectionHeading>
@@ -381,7 +382,7 @@
         </Card>
 
         <Card padding="0">
-            <div class="loja-product-img" style="background:var(--theme-brown);">
+            <div class="loja-product-img" style="background:var(&#45;&#45;theme-brown);">
                 <img src="/img/merch/jogo-perguntas.png" alt="Jogo de perguntas para namorados" />
                 <span><Tag tone="yellow">Brevemente</Tag></span>
             </div>
@@ -400,6 +401,7 @@
         </Card>
     </div>
 </section>
+-->
 
 <!-- ====== APOIAR ====== -->
 <section id="apoiar" class="section">
@@ -452,18 +454,7 @@
         <p class="font-ui text-[1.05rem]/[1.6] text-[var(--theme-brown)] mb-[30px]">
             Recebe novidades, eventos e conteúdos para amar melhor – direto no teu email.
         </p>
-        <form class="newsletter-form" onsubmit={(e) => e.preventDefault()}>
-            <input
-                    type="email"
-                    name="email"
-                    autocomplete="email"
-                    required
-                    aria-label="O teu email"
-                    placeholder="O teu email"
-                    class="newsletter-input font-ui"
-            />
-            <Button variant="deep" size="lg">Quero entrar</Button>
-        </form>
+        <Button variant="deep" size="lg">Quero entrar</Button>
     </div>
 </section>
 

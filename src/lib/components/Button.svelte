@@ -5,6 +5,7 @@
         variant?: 'primary' | 'outline' | 'deep';
         size?: 'sm' | 'md' | 'lg';
         href?: string;
+        onclick?: (event: MouseEvent) => void;
         target?: string;
         disabled?: boolean;
         class?: string;
@@ -15,27 +16,49 @@
         variant = 'primary',
         size = 'md',
         href,
+        onclick,
         target,
         disabled = false,
         class: className = '',
         children,
     }: Props = $props();
 
-    const tag = $derived(href ? 'a' : 'button');
 </script>
 
-<svelte:element
-        this={tag}
+{#if !href && !onclick}
+    <span class="lal-coming-soon">Disponível em breve</span>
+{:else if href}
+<a
         {href}
         {target}
-        {disabled}
+        {onclick}
         class="lal-btn lal-btn--{variant} lal-btn--{size} {className}"
         rel={target === '_blank' ? 'noopener' : undefined}
 >
     {@render children()}
-</svelte:element>
+</a>
+{:else}
+    <button
+        {onclick}
+        {disabled}
+        class="lal-btn lal-btn--{variant} lal-btn--{size} {className}"
+    >
+        {@render children()}
+    </button>
+{/if}
 
 <style lang="scss">
+    .lal-coming-soon {
+        display: inline-block;
+        max-width: 100%;
+        padding-block: 10px;
+        color: var(--theme-brown);
+        font-family: 'OverpassMono', monospace;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+
     .lal-btn {
         display: inline-flex;
         align-items: center;

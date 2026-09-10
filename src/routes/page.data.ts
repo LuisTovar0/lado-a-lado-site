@@ -20,7 +20,7 @@ export const urls = [
 
 export const FILTERS = [
   { key: 'destaques', label: 'Destaques' },
-  { key: 'todos', label: 'Todos' },
+  { key: 'todos', label: 'Tudo' },
   { key: 'conferencias', label: 'Eventos' },
   { key: 'campos', label: 'Campos' },
   { key: 'cursos', label: 'Cursos' },
