@@ -8,7 +8,7 @@
             <a href="#sobre">Sobre</a>
             <a href="#fazemos">O que fazemos</a>
             <a href="#apoiar">Apoiar</a>
-            <a href="#loja">Loja</a>
+            <!--<a href="#loja">Loja</a>-->
         </nav>
 
         <div class="lal-footer__social">

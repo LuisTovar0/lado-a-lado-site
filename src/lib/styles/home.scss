@@ -305,9 +305,6 @@
     }
   }
 }
-.slide-label {
-  @apply absolute left-6 bottom-[22px] font-['OverpassMono',monospace] text-[0.7rem] tracking-[0.1em] uppercase text-[var(--theme-brown)] bg-[var(--theme-cream)] py-[7px] px-3 rounded-pill whitespace-nowrap;
-}
 
 /* ==================== EVENTO ==================== */
 .evento-grid {

@@ -1,6 +1,7 @@
 <script>
     import {onMount} from "svelte";
     import "../styles.scss";
+    import DialogHost from "$lib/components/DialogHost.svelte";
     import Footer from "./Footer.svelte";
     import {updateVw} from "$lib";
 
@@ -14,6 +15,8 @@
 </main>
 
 <Footer />
+
+<DialogHost />
 
 <style>
     main {

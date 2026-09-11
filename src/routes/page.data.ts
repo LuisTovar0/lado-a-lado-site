@@ -51,8 +51,8 @@ export const STATUS: Record<string, { label: string; tone: 'red' | 'yellow' | 'o
 
 export const DATA = [
   {
-    cat: 'campos', title: 'À procura do autêntico', meta: 'Agosto 2026 · Teologia do corpo', status: 'brevemente',
-    cta: 'Avisa-me',
+    cat: 'campos', title: 'À procura do autêntico', meta: 'Agosto 2026 · Teologia do corpo', status: 'passada',
+    cta: 'Ver registo',
   },
   {
     cat: 'campos', title: 'À procura do autêntico', meta: 'Agosto 2025 · Mogofores', status: 'passada',
@@ -63,7 +63,7 @@ export const DATA = [
     cta: 'Ver registo',
   },
   {
-    cat: 'conferencias', title: 'Feitos para amar', meta: 'Setembro 2026 · Lisboa · 2ª edição', status: 'brevemente',
+    cat: 'conferencias', title: 'Feitos para amar', meta: '2026 · Lisboa · 2ª edição', status: 'brevemente',
     cta: 'Avisa-me',
   },
   {

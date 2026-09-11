@@ -1,11 +1,13 @@
 <script lang="ts">
     import Button from '$lib/components/Button.svelte';
     import Card from '$lib/components/Card.svelte';
+    import DonationDialog from '$lib/components/DonationDialog.svelte';
     import FeatureBand from '$lib/components/FeatureBand.svelte';
     import SectionHeading from '$lib/components/SectionHeading.svelte';
     import Tag from '$lib/components/Tag.svelte';
+    import { dialogService } from '$lib/services/DialogService.svelte';
     import type { PageData } from './$types';
-    import { FILTERS, getFeaturedItems, getFilteredItems, parceiros, urls } from './page.data';
+    import { FILTERS, getFeaturedItems, getFilteredItems, parceiros } from './page.data';
     import '$lib/styles/home.scss';
 
     let { data }: { data: PageData } = $props();
@@ -15,13 +17,17 @@
 
     const filteredItems = $derived(getFilteredItems(filter, data.podcastItems));
     const visibleItems = $derived(
-        filter === 'destaques'
-            ? getFeaturedItems(data.podcastItems)
-            : filteredItems
+            filter === 'destaques'
+                    ? getFeaturedItems(data.podcastItems)
+                    : filteredItems,
     );
 
     function closeNav() {
         navOpen = false;
+    }
+
+    function openDonationModal() {
+        dialogService.open(DonationDialog, {});
     }
 
     function onWindowKeydown(e: KeyboardEvent) {
@@ -56,7 +62,7 @@
                 <a href="#sobre" onclick={closeNav}>Sobre</a>
                 <a href="#fazemos" onclick={closeNav}>O que fazemos</a>
                 <a href="#apoiar" onclick={closeNav}>Apoiar</a>
-                <a href="#loja" onclick={closeNav}>Loja</a>
+                <!--<a href="#loja" onclick={closeNav}>Loja</a>-->
                 <a href="#comunidade" class="navlinks__cta nav:hidden" onclick={closeNav}>Junta-te</a>
             </div>
 
@@ -96,7 +102,7 @@
     </div>
 </header>
 
-<!-- ====== SOBRE / MISSÃƒO ====== -->
+<!-- ====== SOBRE / MISSÃO ====== -->
 <section id="sobre" class="section text-center">
     <span class="eyebrow mb-6">Sobre</span>
     <p class="font-display text-[clamp(1.9rem,3.4vw,2.8rem)] leading-[1.28] text-[var(--theme-black)] mx-auto [text-wrap:balance]">
@@ -132,11 +138,9 @@
     <div class="slideshow">
         <div class="slide slide--1">
             <img src="/img/comunidade/auditório.jpg" alt="Auditório cheio durante uma conferência" />
-            <span class="slide-label">Conferência &middot; auditório cheio</span>
         </div>
         <div class="slide slide--2">
             <img src="/img/comunidade/equipa.jpg" alt="Equipa de voluntários do Lado a Lado" />
-            <span class="slide-label">Voluntários &middot; a montar tudo</span>
         </div>
     </div>
 
@@ -157,7 +161,9 @@
                     vocês a cada passo.
                 </p>
                 <div class="mt-auto pt-2.5">
-                    <Button variant="outline" size="sm">Quero padrinhos</Button>
+                    <Button href="https://forms.gle/FwDSn2qQEP1C3sXt5" variant="outline" size="sm">
+                        Quero padrinhos
+                    </Button>
                 </div>
             </div>
         </Card>
@@ -248,17 +254,21 @@
     <div class="evento-grid">
         <div class="py-14 px-[clamp(28px,4vw,56px)] min-w-0">
             <span class="eyebrow">PRÓXIMO EVENTO</span>
-            <span class="eyebrow eyebrow--sub">SETEMBRO 2026 &middot; LISBOA</span>
+            <span class="eyebrow eyebrow--sub">16-18 outubro 2026 &middot; FÁTIMA</span>
             <div class="flex gap-2.5 my-[18px]">
-                <Tag tone="red">Conferência</Tag>
+                <Tag tone="red">Curso</Tag>
             </div>
             <h2 class="font-display text-[clamp(2.4rem,5vw,4rem)] leading-[1.05] text-[var(--theme-brown)] my-3.5 mb-4">
-                Feitos para amar</h2>
+                Congresso internacional
+            </h2>
             <p class="font-ui text-[1.05rem]/[1.7] text-[var(--theme-black)] max-w-[440px] mb-[30px]">
-                2ª edição de um evento ao vivo com casais convidados e especialistas para falar
-                sobre namoro, casamento e família.
+                Evento ao vivo com especiialistas em Teologia do Corpo de todo o mundo para falar de amor e vocação.
             </p>
-            <Button class="max-phone:w-full max-phone:px-4 max-phone:py-[18px] max-phone:text-sm max-phone:tracking-[0.08em]" variant="primary" size="lg">Reserva o teu lugar</Button>
+            <Button href="https://tobportugal.carrd.co"
+                    class="max-phone:w-full max-phone:px-4 max-phone:py-[18px] max-phone:text-sm max-phone:tracking-[0.08em]"
+                    variant="primary"
+                    size="lg">Reserva o teu lugar
+            </Button>
         </div>
 
         <div class="evento-image">
@@ -422,7 +432,12 @@
                     país. Qualquer valor faz diferença.
                 </p>
                 <div class="mt-auto pt-3">
-                    <Button variant="primary" size="md">Quero doar</Button>
+                    <Button
+                            variant="primary"
+                            size="md"
+                            onclick={openDonationModal}
+                    >Quero doar
+                    </Button>
                 </div>
             </div>
         </Card>
@@ -443,6 +458,7 @@
             </div>
         </Card>
     </div>
+
 </section>
 
 <!-- ====== NEWSLETTER ====== -->
@@ -463,8 +479,7 @@
     <span class="eyebrow mb-10">Parceiros</span>
     <div class="flex flex-wrap items-center justify-center gap-[clamp(28px,6vw,64px)] max-sm:gap-[26px_32px]">
         {#each parceiros as [ src, alt ]}
-            <img {src}
-                 {alt}
+            <img {src} {alt}
                  class="h-[54px] w-auto max-w-[160px] object-contain opacity-90 transition-opacity duration-[240ms] hover:opacity-100 max-sm:h-[42px]" />
         {/each}
     </div>
