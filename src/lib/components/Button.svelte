@@ -8,6 +8,8 @@
         onclick?: (event: MouseEvent) => void;
         target?: string;
         disabled?: boolean;
+        'aria-expanded'?: boolean;
+        'aria-controls'?: string;
         class?: string;
         children: Snippet;
     }
@@ -19,6 +21,8 @@
         onclick,
         target,
         disabled = false,
+        'aria-expanded': ariaExpanded,
+        'aria-controls': ariaControls,
         class: className = '',
         children,
     }: Props = $props();
@@ -32,6 +36,8 @@
         {href}
         {target}
         {onclick}
+        aria-expanded={ariaExpanded}
+        aria-controls={ariaControls}
         class="lal-btn lal-btn--{variant} lal-btn--{size} {className}"
         rel={target === '_blank' ? 'noopener' : undefined}
 >
@@ -41,6 +47,8 @@
     <button
         {onclick}
         {disabled}
+        aria-expanded={ariaExpanded}
+        aria-controls={ariaControls}
         class="lal-btn lal-btn--{variant} lal-btn--{size} {className}"
     >
         {@render children()}
